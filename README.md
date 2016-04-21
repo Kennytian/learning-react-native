@@ -36,19 +36,19 @@ npm config set disturl https://npm.taobao.org/dist
 ### 初始化项目
 在命令行里执行
 
-``` react-native init RNProject ```
+<pre><code>react-native init RNProject</code></pre>
 
 请耐心等待10分钟。
 
 ### 运行React Native
 进入RNProject目录, 在命令行里执行
 
-``` react-native run-android ```
+<pre><code>react-native run-android</code></pre>
 
 ### 连接手机
 在命令行里执行
 
-``` adb reverse tcp:8081 tcp:8081 ```
+<pre><code>adb reverse tcp:8081 tcp:8081</code></pre>
 
 (建议使用Android 5.0系统手机，最低4.1)
 
