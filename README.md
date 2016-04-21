@@ -9,7 +9,7 @@
     - Android 6.0 (API 23)
     - Android Support Library(23.0.1)
 
-推荐使用[腾讯Bugly](http://android-mirror.bugly.qq.com:8080/include/usage.html)的镜像加速下载
+推荐从[AndroidDevTools](http://androiddevtools.cn/)下载或者用[腾讯Bugly](http://android-mirror.bugly.qq.com:8080/include/usage.html)镜像加速下载
 
 
 ### 安装C++环境
@@ -26,15 +26,34 @@ npm config set registry https://registry.npm.taobao.org
 npm config set disturl https://npm.taobao.org/dist
 </code></pre>
 
-
 ### 安装Gradle
 - 虽然在编译Android项目时会自动下载，但如果网络状态不好，很容易下载失败，建议先下载[gradle-2.4-all.zip](http://pan.baidu.com/s/1c0dcgfe)。
+- 下载上述文件后，将zip文件放在C:\Users\kenny\.gradle\wrapper\dists\gradle-2.4-all\6r4uqcc6ovnq6ac6s0txzcpc0 (不存在的目录就手动创建)
 
 ### 安装react-native命令行工具
 <pre><code>npm install -g react-native-cli</code></pre>
 
 ### 初始化项目
-<pre><code>react-native init AwesomeProject</code></pre>
+在命令行里执行
+
+``` react-native init RNProject ```
+
+请耐心等待10分钟。
+
+### 运行React Native
+进入RNProject目录, 在命令行里执行
+
+``` react-native run-android ```
+
+### 连接手机
+在命令行里执行
+
+``` adb reverse tcp:8081 tcp:8081 ```
+
+(建议使用Android 5.0系统手机，最低4.1)
+
+### 开发
+用IDE打开RNProject目录, 开始开发吧!
 
 
 
