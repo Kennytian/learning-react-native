@@ -2,18 +2,18 @@
 ###本文档前置条件
 1. 已安装JDK，并配好环境变量。
 2. 已安装如下Android SDK，并配好环境变量。
-- Android SDK Build-tools (23.0.1)
-- Android SDK Tools (24.3.3)
-- Android SDK Platform-tools (22)
-- Android SDK Build-tools (23.0.1)
-- Android 6.0 (API 23)
-- Android Support Library(23.0.1)
+    - Android SDK Build-tools (23.0.1)
+    - Android SDK Tools (24.3.3)
+    - Android SDK Platform-tools (22)
+    - Android SDK Build-tools (23.0.1)
+    - Android 6.0 (API 23)
+    - Android Support Library(23.0.1)
 
 推荐使用[腾讯Bugly](http://android-mirror.bugly.qq.com:8080/include/usage.html)的镜像加速下载
 
 
 ### 安装C++环境
-- 下载并安装[Visual Studio 2013](ed2k://|file|en_visual_studio_express_2013_for_web_x86_dvd_3009395.iso|632700928|166AD0A50E1E342FD3F76ECC41D2690C|/)，编译node.js的C++模块时需要用到。
+- 下载并安装[Visual Studio 2013](http://www.msdn.hk/html/2014/450.html)，编译node.js的C++模块时需要用到。
 
 ### 安装Python
 - 安装[Python 2.7.x](https://www.python.org/downloads/release/python-2711/)（3.x版本不行）。
