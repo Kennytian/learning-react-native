@@ -13,7 +13,7 @@
 强烈建议配置为``` %ANDROID_HOME%; ```  ``` %ANDROID_HOME%\platform-tools; ```  ``` %ANDROID_HOME%\tools ```形式。
 
 ### 安装C++环境
-- 下载并安装[Visual C++ 2013](https://www.microsoft.com/zh-cn/download/details.aspx?id=40784)，选择vcredist_x64.exe（如果32位系统，下载vcredist_x86.exe），仅有7M大小，编译Node.js的C++模块时需要用到。
+- 下载并安装[Visual C++ 2013](https://www.microsoft.com/zh-cn/download/details.aspx?id=40784)，选择vcredist_x64.exe（如果32位系统，下载vcredist_x86.exe），仅有**7M**大小，编译Node.js的C++模块时需要用到。
 
 ### 安装Python
 - 安装[Python 2.7.x](https://www.python.org/downloads/release/python-2711/)（3.x版本不行），安装时确保``` Add python.exe to Path ```已选中状态。
@@ -61,7 +61,8 @@ npm config set disturl https://npm.taobao.org/dist
 
 ### 反馈
 - QQ:2225226
-- kenny_tian # outlook.com(你懂的)
+
+下一篇：[Redux之Action](https://raw.githubusercontent.com/Kennytian/learning-react-native/master/redux/actions.md)
 
 
 
