@@ -1,7 +1,7 @@
 # React Native旅程
 ###本文档前置条件
 1. 已安装JDK，并配好环境变量。
-2. 已安装如下Android SDK，强烈建议配置为%ANDROID_HOME%;%ANDROID_HOME%\platform-tools;%ANDROID_HOME%\tools形式。
+2. 已安装如下Android SDK，并配好环境变量。
     - Android SDK Build-tools (23.0.1)
     - Android SDK Tools (24.3.3)
     - Android SDK Platform-tools (22)
@@ -10,13 +10,15 @@
 
 推荐从[AndroidDevTools](http://androiddevtools.cn/)下载或者用[腾讯Bugly](http://android-mirror.bugly.qq.com:8080/include/usage.html)镜像加速下载
 
+强烈建议配置为``` %ANDROID_HOME%; ```  ``` %ANDROID_HOME%\platform-tools; ```  ``` %ANDROID_HOME%\tools ```形式。
+
 ### 安装C++环境
-- 下载并安装[Visual C++ 2013](https://www.microsoft.com/zh-cn/download/details.aspx?id=40784)，选择vcredist_x64.exe（如果32位系统，下载vcredist_x86.exe），编译node.js的C++模块时需要用到。
+- 下载并安装[Visual C++ 2013](https://www.microsoft.com/zh-cn/download/details.aspx?id=40784)，选择vcredist_x64.exe（如果32位系统，下载vcredist_x86.exe），仅有7M大小，编译Node.js的C++模块时需要用到。
 
 ### 安装Python
 - 安装[Python 2.7.x](https://www.python.org/downloads/release/python-2711/)（3.x版本不行），安装时确保``` Add python.exe to Path ```已选中状态。
 
-### 安装node.js
+### 安装Node.js
 - 从官网下载[Node.js 4.4.x](https://nodejs.org/dist/v4.4.2/node-v4.4.2-x64.msi)的官方4.x版本，``` 不要安装5.x版本 ```，安装时确保``` Add to PATH ```已选中状态。
 - 建议设置npm镜像以加速后面的过程（或使用科学上网工具）。
 <pre><code>
@@ -26,7 +28,7 @@ npm config set disturl https://npm.taobao.org/dist
 
 ### 安装Gradle
 - 虽然在编译Android项目时会自动下载，但如果网络状态不好，很容易下载失败，建议先下载[gradle-2.4-all.zip](http://pan.baidu.com/s/1c0dcgfe)。
-- 下载上述文件后，将zip文件放在C:\Users\kenny\\.gradle\wrapper\dists\gradle-2.4-all\6r4uqcc6ovnq6ac6s0txzcpc0 (不存在的目录就手动创建)
+- 下载上述文件后，将zip文件放在``` C:\Users\kenny\\.gradle\wrapper\dists\gradle-2.4-all\6r4uqcc6ovnq6ac6s0txzcpc0 ```  (不存在的目录就手动创建)。
 
 ### 安装react-native命令行工具
 <pre><code>npm install -g react-native-cli</code></pre>
@@ -44,7 +46,7 @@ npm config set disturl https://npm.taobao.org/dist
 
 <pre><code>react-native run-android</code></pre>
 
-注意：如果Android SDK Build-tools (23.0.1)下载不到，用23.0.2也行，就在RNProject\android\app\build.gradle里找到buildToolsVersion "23.0.1"，改为buildToolsVersion "23.0.2"就可以了
+注意：如果Android SDK Build-tools (23.0.1)下载不到，用23.0.2也行，就在``` RNProject\android\app\build.gradle ```里找到``` buildToolsVersion "23.0.1" ```，改为``` buildToolsVersion "23.0.2" ```就可以了
 
 ### 连接手机
 在命令行里执行
@@ -52,7 +54,7 @@ npm config set disturl https://npm.taobao.org/dist
 <pre><code>adb reverse tcp:8081 tcp:8081</code></pre>
 
 建议使用Android 5.0系统手机，不用手动设置Debug server host，但是最低要求Android 4.1系统手机。
-提示：如果你执行``` adb devices ```没有问题，但执行上面``` adb reverse ```命令出问题，请下载[adb](https://raw.githubusercontent.com/Kennytian/learning-react-native/master/utility/adb.zip),解压后，将3个文件放在``` %ANDROID_HOME%\platform-tools ```下
+提示：如果你执行``` adb devices ```没有问题，但执行上面``` adb reverse ```命令出问题，请下载[utility/adb.zip](https://raw.githubusercontent.com/Kennytian/learning-react-native/master/utility/adb.zip),解压后，将3个文件放在``` %ANDROID_HOME%\platform-tools ```下
 
 ### 开发
 用IDE打开RNProject目录, 开始开发吧!
