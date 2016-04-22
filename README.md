@@ -51,10 +51,15 @@ npm config set disturl https://npm.taobao.org/dist
 
 <pre><code>adb reverse tcp:8081 tcp:8081</code></pre>
 
-(建议使用Android 5.0系统手机，最低4.1)
+建议使用Android 5.0系统手机，不用手动设置Debug server host，但是最低要求Android 4.1系统手机。
+提示：如果你执行``` adb devices ```没有问题，但执行上面``` adb reverse ```命令出问题，请下载[adb](https://raw.githubusercontent.com/Kennytian/learning-react-native/master/utility/adb.zip),解压后，将3个文件放在``` %ANDROID_HOME%\platform-tools ```下
 
 ### 开发
 用IDE打开RNProject目录, 开始开发吧!
+
+### 反馈
+- QQ:2225226
+- kenny_tian # outlook.com(你懂的)
 
 
 
