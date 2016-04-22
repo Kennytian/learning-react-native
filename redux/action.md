@@ -31,15 +31,7 @@ store里能直接通过`store.dispatch()`调用`dispatch()`方法，但多数情
 
 `bindActionCreators()`更是可以自动把多个**action创建函数**绑定到`dispatch()`方法上。
 
-
-
-
-
-
-
-
-
-
-
-
-
+### 相关文档
+* [React Native 学习旅程](https://github.com/Kennytian/learning-react-native/blob/master/README.md)
+* [Redux 之 Action](https://github.com/Kennytian/learning-react-native/blob/master/redux/action.md)
+* [Redux 之 Reducer](https://github.com/Kennytian/learning-react-native/blob/master/redux/reducer.md)

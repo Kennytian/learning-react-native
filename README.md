@@ -1,4 +1,4 @@
-# React Native旅程
+# React Native 学习旅程
 ###本文档前置条件
 1. 已安装JDK，并配好环境变量。
 2. 已安装如下Android SDK，并配好环境变量。
@@ -21,10 +21,8 @@
 ### 安装Node.js
 - 从官网下载[Node.js 4.4.x](https://nodejs.org/dist/v4.4.2/node-v4.4.2-x64.msi)的官方4.x版本，``` 不要安装5.x版本 ```，安装时确保``` Add to PATH ```已选中状态。
 - 建议设置npm镜像以加速后面的过程（或使用科学上网工具）。
-<pre><code>
-npm config set registry https://registry.npm.taobao.org
-npm config set disturl https://npm.taobao.org/dist
-</code></pre>
+<pre><code>npm config set registry https://registry.npm.taobao.org
+npm config set disturl https://npm.taobao.org/dist</code></pre>
 
 ### 安装Gradle
 - 虽然在编译Android项目时会自动下载，但如果网络状态不好，很容易下载失败，建议先下载[gradle-2.4-all.zip](http://pan.baidu.com/s/1c0dcgfe)。
@@ -54,7 +52,8 @@ npm config set disturl https://npm.taobao.org/dist
 <pre><code>adb reverse tcp:8081 tcp:8081</code></pre>
 
 建议使用Android 5.0系统手机，不用手动设置Debug server host，但是最低要求Android 4.1系统手机。
-提示：如果你执行``` adb devices ```没有问题，但执行上面``` adb reverse ```命令出问题，请下载[utility/adb.zip](https://raw.githubusercontent.com/Kennytian/learning-react-native/master/utility/adb.zip),解压后，将3个文件放在``` %ANDROID_HOME%\platform-tools ```下
+
+提示：如果你执行``` adb devices ```没有问题，但执行上面``` adb reverse ```命令出问题，请下载 [utility/adb.zip](https://raw.githubusercontent.com/Kennytian/learning-react-native/master/utility/adb.zip) ,解压后，将3个文件放在``` %ANDROID_HOME%\platform-tools ```下
 
 ### 开发
 用IDE打开RNProject目录, 开始开发吧!
@@ -62,14 +61,7 @@ npm config set disturl https://npm.taobao.org/dist
 ### 反馈
 - QQ:2225226
 
-下一篇：[Redux之Action](https://raw.githubusercontent.com/Kennytian/learning-react-native/master/redux/actions.md)
-
-
-
-
-
-
-
-
-
-
+### 相关文档
+* [React Native 学习旅程](https://github.com/Kennytian/learning-react-native/blob/master/README.md)
+* [Redux 之 Action](https://github.com/Kennytian/learning-react-native/blob/master/redux/action.md)
+* [Redux 之 Reducer](https://github.com/Kennytian/learning-react-native/blob/master/redux/reducer.md)
