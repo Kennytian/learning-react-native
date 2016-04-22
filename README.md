@@ -19,7 +19,7 @@
 - 安装[Python 2.7.x](https://www.python.org/downloads/release/python-2711/)（3.x版本不行）。
 
 ### 安装node.js
-- 从官网下载[Node.js 4.4.x](https://nodejs.org/dist/v4.4.2/node-v4.4.2-x64.msi)的官方4.x版本或更[高版本 5.10.x](https://nodejs.org/dist/v5.10.1/node-v5.10.1-x64.msi)。
+- 从官网下载[Node.js 4.4.x](https://nodejs.org/dist/v4.4.2/node-v4.4.2-x64.msi)的官方4.x版本，``` 不要安装5.x版本 ```。
 - 建议设置npm镜像以加速后面的过程（或使用科学上网工具）。
 <pre><code>
 npm config set registry https://registry.npm.taobao.org
@@ -28,7 +28,7 @@ npm config set disturl https://npm.taobao.org/dist
 
 ### 安装Gradle
 - 虽然在编译Android项目时会自动下载，但如果网络状态不好，很容易下载失败，建议先下载[gradle-2.4-all.zip](http://pan.baidu.com/s/1c0dcgfe)。
-- 下载上述文件后，将zip文件放在C:\Users\kenny\.gradle\wrapper\dists\gradle-2.4-all\6r4uqcc6ovnq6ac6s0txzcpc0 (不存在的目录就手动创建)
+- 下载上述文件后，将zip文件放在C:\Users\kenny\\.gradle\wrapper\dists\gradle-2.4-all\6r4uqcc6ovnq6ac6s0txzcpc0 (不存在的目录就手动创建)
 
 ### 安装react-native命令行工具
 <pre><code>npm install -g react-native-cli</code></pre>
