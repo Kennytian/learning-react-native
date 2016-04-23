@@ -1,34 +1,34 @@
 # React Native 学习旅程
 ###本文档前置条件
-1. 已安装JDK，并配好环境变量。
-2. 已安装如下Android SDK，并配好环境变量。
+1. 已安装 JDK，并配好环境变量。
+2. 已安装如下 Android SDK，并配好环境变量。
     - Android SDK Build-tools (23.0.1)
     - Android SDK Tools (24.3.3)
     - Android SDK Platform-tools (22)
     - Android 6.0 (API 23)
     - Android Support Library(23.0.1)
 
-推荐从[AndroidDevTools](http://androiddevtools.cn/)下载或者用[腾讯Bugly](http://android-mirror.bugly.qq.com:8080/include/usage.html)镜像加速下载
+推荐从[AndroidDevTools](http://androiddevtools.cn/)下载或者用[腾讯Bugly](http://android-mirror.bugly.qq.com:8080/include/usage.html)镜像加速下载。
 
 强烈建议配置为``` %ANDROID_HOME%; ```  ``` %ANDROID_HOME%\platform-tools; ```  ``` %ANDROID_HOME%\tools ```形式。
 
-### 安装C++环境
-- 下载并安装[Visual C++ 2013](https://www.microsoft.com/zh-cn/download/details.aspx?id=40784)，选择vcredist_x64.exe（如果32位系统，下载vcredist_x86.exe），仅有**7M**大小，编译Node.js的C++模块时需要用到。
+### 安装 C++ 环境
+- 下载并安装[Visual C++ 2013](https://www.microsoft.com/zh-cn/download/details.aspx?id=40784)，选择 vcredist_x64.exe（如果32位系统，下载 vcredist_x86.exe），仅有**7M**大小，编译 Node.js 的 C++ 模块时需要用到。
 
-### 安装Python
-- 安装[Python 2.7.x](https://www.python.org/downloads/release/python-2711/)（3.x版本不行），安装时确保``` Add python.exe to Path ```已选中状态。
+### 安装 Python
+- 安装[Python 2.7.x](https://www.python.org/downloads/release/python-2711/)（3.x版本不行），安装时确保 ``` Add python.exe to Path ``` 已选中状态。
 
-### 安装Node.js
+### 安装 Node.js
 - 从官网下载[Node.js 4.4.x](https://nodejs.org/dist/v4.4.2/node-v4.4.2-x64.msi)的官方4.x版本，``` 不要安装5.x版本 ```，安装时确保``` Add to PATH ```已选中状态。
 - 建议设置npm镜像以加速后面的过程（或使用科学上网工具）。
 <pre><code>npm config set registry https://registry.npm.taobao.org
 npm config set disturl https://npm.taobao.org/dist</code></pre>
 
-### 安装Gradle
+### 安装 Gradle
 - 虽然在编译Android项目时会自动下载，但如果网络状态不好，很容易下载失败，建议先下载[gradle-2.4-all.zip](http://pan.baidu.com/s/1c0dcgfe)。
-- 下载上述文件后，将zip文件放在``` C:\Users\kenny\\.gradle\wrapper\dists\gradle-2.4-all\6r4uqcc6ovnq6ac6s0txzcpc0 ```  (不存在的目录就手动创建)。
+- 下载上述文件后，将zip文件放在``` C:\Users\kenny\.gradle\wrapper\dists\gradle-2.4-all\6r4uqcc6ovnq6ac6s0txzcpc0 ```  (不存在的目录就手动创建)。
 
-### 安装react-native命令行工具
+### 安装 react-native 命令行工具
 <pre><code>npm install -g react-native-cli</code></pre>
 请耐心等待1-3分钟。
 
@@ -39,7 +39,7 @@ npm config set disturl https://npm.taobao.org/dist</code></pre>
 
 请耐心等待5-10分钟。
 
-### 运行React Native
+### 运行 React Native
 进入RNProject目录, 在命令行里执行
 
 <pre><code>react-native run-android</code></pre>
@@ -51,12 +51,12 @@ npm config set disturl https://npm.taobao.org/dist</code></pre>
 
 <pre><code>adb reverse tcp:8081 tcp:8081</code></pre>
 
-建议使用Android 5.0系统手机，不用手动设置Debug server host，但是最低要求Android 4.1系统手机。
+建议使用 Android 5.0 系统手机，不用手动设置 Debug server host ，但是最低要求 Android 4.1 系统手机。
 
-提示：如果你执行``` adb devices ```没有问题，但执行上面``` adb reverse ```命令出问题，请下载 [utility/adb.zip](https://raw.githubusercontent.com/Kennytian/learning-react-native/master/utility/adb.zip) ,解压后，将3个文件放在``` %ANDROID_HOME%\platform-tools ```下
+提示：如果你执行``` adb devices ```没有问题，但执行上面``` adb reverse ```命令出问题，请下载 [utility/adb.zip](https://raw.githubusercontent.com/Kennytian/learning-react-native/master/utility/adb.zip) 关解压，将3个文件放在``` %ANDROID_HOME%\platform-tools ```下
 
 ### 开发
-用IDE打开RNProject目录, 开始开发吧!
+用 IDE 打开 RNProject 目录，开始开发吧!
 
 ### 反馈
 - QQ:2225226
