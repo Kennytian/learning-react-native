@@ -63,8 +63,10 @@ reducer就是一个函数，接收旧的state和action，返回新的state.
 }
 </code></pre>
 
-注意:
+**注意:**
+
 1. **不要修改state**, 使用 [Object.assign()](https://cnodejs.org/topic/56c49662db16d3343df34b13) 新建一个副本( `assign() 可以快速的复制一个或者多个对象到目标对象中` ). 不能`Object.assign(state, {visibilityFilter: action.filter})`, 因为它会改变第一个参数的值, **必须把第一个参数设置为空对象**, 即: `Object.assign({}, {visibilityFilter: action.filter})`
+
 2. 在 default 情况下返回旧的 state. 遇到未知的 action时, 一定要返回旧的state.
 
 ## 处理多个Action
