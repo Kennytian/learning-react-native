@@ -58,10 +58,11 @@ npm config set disturl https://npm.taobao.org/dist</code></pre>
 ### 开发
 用 IDE 打开 RNProject 目录，开始开发吧!
 
-### 反馈
+### 纠错
 - QQ:2225226
 
 ### 相关文档
 * [React Native 学习旅程](https://github.com/Kennytian/learning-react-native/blob/master/README.md)
 * [Redux 之 Action](https://github.com/Kennytian/learning-react-native/blob/master/redux/action.md)
 * [Redux 之 Reducer](https://github.com/Kennytian/learning-react-native/blob/master/redux/reducer.md)
+

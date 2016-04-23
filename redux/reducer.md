@@ -117,20 +117,18 @@ console.log(obj); // { a: 1, b: 2, c: 3 }
 console.log(o1);  // { a: 1, b: 2, c: 3 }, target object itself is changed.
 </code></pre>
 
-<pre><code>var str="Hello happy world!"
+<pre><code>var str = "Hello happy world!"
 str.slice(6); //happy world!
 
-var str="Hello happy world!"
+var str = "Hello happy world!"
 str.slice(6, 11) //happy
 </code></pre>
 
+
+### 纠错
+- QQ:2225226
 
 ### 相关文档
 * [React Native 学习旅程](https://github.com/Kennytian/learning-react-native/blob/master/README.md)
 * [Redux 之 Action](https://github.com/Kennytian/learning-react-native/blob/master/redux/action.md)
 * [Redux 之 Reducer](https://github.com/Kennytian/learning-react-native/blob/master/redux/reducer.md)
-
-
-
-
-

@@ -10,8 +10,7 @@ action内使用字符串类似的type字段来表示要执行的动作，但大�
 ##Action创建函数
 Action创建函数就是生成action方法，"action"和"action创建函数"很容易混在一起，注意区分。
 Redux中的action创建函数仅返回一个action对象，如下：
-<pre><code>
-function addData(text) {
+<pre><code>function addData(text) {
     return {
         type:ADD_DATA,
         text
@@ -30,6 +29,9 @@ let boundAddData = (text) => dispatch(addData(text));
 store里能直接通过`store.dispatch()`调用`dispatch()`方法，但多数情况下使用react-redux的connect()来调用。
 
 `bindActionCreators()`更是可以自动把多个**action创建函数**绑定到`dispatch()`方法上。
+
+### 纠错
+- QQ:2225226
 
 ### 相关文档
 * [React Native 学习旅程](https://github.com/Kennytian/learning-react-native/blob/master/README.md)
