@@ -11,8 +11,7 @@ Action只描述了**有事情发生了**这一事实，而reducer要做的事就
 
 通常，这个state树还需要存放其它一些UI数据，但尽量把这些数据与UI相关的state分开。
 
-<pre><code>
-{
+<pre><code>{
   visibilityFilter: 'SHOW_ALL',
   hotels:[
   {
@@ -44,8 +43,7 @@ reducer就是一个函数，接收旧的state和action，返回新的state.
 
 只需要谨记reducer一定要保持纯净，**只要传入参数一样，返回必须一样。没有特殊情况，没有副作用，没有API请求、没有修改参数、单纯执行计算**。
 
-<pre><code>
-function hotelApp(state = initialState, action) {
+<pre><code>function hotelApp(state = initialState, action) {
     // 这里暂不处理任何 action，
     // 仅返回传入的 state。
     return state;
@@ -53,8 +51,7 @@ function hotelApp(state = initialState, action) {
 </code></pre>
 
 现在可以处理SET_VISIBILITY_FILTER, 需要做的只是改变state中的visibilityFilter.
-<pre><code>
-function hotelApp(state = initialState, action) {
+<pre><code>function hotelApp(state = initialState, action) {
     switch(action.type) {
         case SET_VISIBILITY_FILTER:
             return Object.assign({}, state, {
@@ -72,8 +69,7 @@ function hotelApp(state = initialState, action) {
 
 ## 处理多个Action
 还有两个action需要处理, 我们先处理`ADD_HOTEL`.
-<pre><code>
-function hotelApp(state = initialState, action) {
+<pre><code>function hotelApp(state = initialState, action) {
     switch(action.type) {
         case SET_VISIBILITY_FILTER:
             return Object.assign({}, state, {
@@ -91,8 +87,7 @@ function hotelApp(state = initialState, action) {
 </code></pre>
 
 COMPLETE_TODO 也很好理解：
-<pre><code>
-case COMPLETE_TODO:
+<pre><code>case COMPLETE_TODO:
   return Object.assign({}, state, {
     todos: [
       ...state.todos.slice(0, action.index),          //比如: 0 ~ 5
@@ -106,16 +101,14 @@ case COMPLETE_TODO:
 我们不能直接修改却要更新数组中指定的一项数据，要先把**前面**和**后面**都切开。**时刻谨记永远不要在克隆 state 前修改它**。
 
 combineReducers 接收一个对象, 可以把所有顶级的reducer 放到一个独立的文件中, 通过 export 暴露出每个 reducer 函数,然后使用 import * as reducer 得到一个以它们名字作为 key 的 object:
-<pre><code>
-import { combineReducers } from 'redux';
+<pre><code>import { combineReducers } from 'redux';
 import * as reducers from './reducers';
 
 const hotelApp = combineReducers(reducers);
 </code></pre>
 
 ### 知识补充:
-<pre><code>
-var o1 = { a: 1 };
+<pre><code>var o1 = { a: 1 };
 var o2 = { b: 2 };
 var o3 = { c: 3 };
 
@@ -124,8 +117,7 @@ console.log(obj); // { a: 1, b: 2, c: 3 }
 console.log(o1);  // { a: 1, b: 2, c: 3 }, target object itself is changed.
 </code></pre>
 
-<pre><code>
-var str="Hello happy world!"
+<pre><code>var str="Hello happy world!"
 str.slice(6); //happy world!
 
 var str="Hello happy world!"
