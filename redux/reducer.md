@@ -134,3 +134,4 @@ str.slice(6, 11) //happy
 * [React Native 学习旅程](https://github.com/Kennytian/learning-react-native/blob/master/README.md)
 * [Redux 之 Action](https://github.com/Kennytian/learning-react-native/blob/master/redux/action.md)
 * [Redux 之 Reducer](https://github.com/Kennytian/learning-react-native/blob/master/redux/reducer.md)
+* [Redux 之 Store](https://github.com/Kennytian/learning-react-native/blob/master/redux/store.md)
