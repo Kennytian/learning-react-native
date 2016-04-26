@@ -57,6 +57,12 @@ npm config set disturl https://npm.taobao.org/dist</code></pre>
 
 ### 开发
 用 IDE 打开 RNProject 目录，开始开发吧!
+* [Visual Studio Code](https://www.visualstudio.com/products/code-vs)，微软免费产品，不到30M，超强智能代码提示、代码导航、断点调试、集成Git
+* [WebStorm](https://www.jetbrains.com/webstorm/)，JetBrains收费产品，160M，前端开发神器，用过[Intellij IDEA](https://www.jetbrains.com/idea/)，[Android Studio](http://www.androiddevtools.cn/)推荐使用。
+
+### 调试
+* 当Node.js服务意外停了或不小心把窗口关了，只需手动开启这个服务即可，在命令行进入react native目录，运行`react-native start`
+* 查看Node.js服务是否在运行状态，只需在浏览器里输入`http://localhost:8081/index.android.bundle?platform=android`，在第一行看到`(function(global) {global.` 表示服务正常
 
 ### 纠错
 - QQ:2225226
