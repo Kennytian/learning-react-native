@@ -1,0 +1,12 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Run Android" type="js.build_tools.npm" factoryName="npm">
+    <package-json value="$PROJECT_DIR$/package.json" />
+    <command value="help" />
+    <node-interpreter value="project" />
+    <envs />
+    <method>
+      <option name="ToolBeforeRunTask" enabled="true" actionId="Tool_External Tools_Launch Genymotion VM" />
+      <option name="ToolBeforeRunTask" enabled="true" actionId="Tool_External Tools_Run Android" />
+    </method>
+  </configuration>
+</component>
