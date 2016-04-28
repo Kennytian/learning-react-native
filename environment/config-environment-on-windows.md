@@ -53,7 +53,7 @@ npm config set disturl https://npm.taobao.org/dist</code></pre>
 
 建议使用 Android 5.0 系统手机，不用手动设置 Debug server host ，但是最低要求 Android 4.1 系统手机。
 
-提示：如果你执行``` adb devices ```没有问题，但执行上面``` adb reverse ```命令出问题，请下载 [utility/adb.zip](https://raw.githubusercontent.com/Kennytian/learning-react-native/master/utility/adb.zip) 关解压，将3个文件放在``` %ANDROID_HOME%\platform-tools ```下
+提示：如果你执行``` adb devices ```没有问题，但执行上面``` adb reverse ```命令出问题，请下载 [utility/adb.zip](https://raw.githubusercontent.com/Kennytian/learning-react-native/master/utilities/adb.zip) 关解压，将3个文件放在``` %ANDROID_HOME%\platform-tools ```下
 
 ### 开发
 用 IDE 打开 RNProject 目录，开始开发吧!
