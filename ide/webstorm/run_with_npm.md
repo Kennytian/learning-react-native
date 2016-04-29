@@ -8,7 +8,7 @@ WebStorm 在开发 React Native 时能不能像其它 IDE 工具一样, 做到�
 
 按下图打开配置项
 
-![编辑配置](https://raw.githubusercontent.com/Kennytian/embedded/master/images/edit_config_menu.png)
+![编辑配置](https://raw.githubusercontent.com/Kennytian/learning-react-native/master/images/edit_config_menu.png)
 
 
 
