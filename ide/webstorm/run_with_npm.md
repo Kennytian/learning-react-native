@@ -9,20 +9,25 @@ WebStorm 在开发 React Native 时能不能像其它 IDE 工具一样, 做到�
 注:下载和安装 Genymotion, 这里就不过多介绍了, 见谅!
 
 按下图打开配置项
+
 ![编辑配置](https://raw.githubusercontent.com/Kennytian/learning-react-native/master/images/edit_config_menu.png)
 
 点击+号, 选择添加npm配置
+
 ![点击+号, 选择添加npm配置](https://raw.githubusercontent.com/Kennytian/learning-react-native/master/images/add_npm.png)
 
 配置启动 Genymotion 启动界面, 请按红色框操作
+
 ![配置启动 Genymotion 启动界面, 请按红色框操作](https://raw.githubusercontent.com/Kennytian/learning-react-native/master/images/lauch_genymotion.png)
 
 选择 Genymotion 路径, 默认在 `/Applications/Genymotion.app`
+
 ![选择 Genymotion 路径](https://raw.githubusercontent.com/Kennytian/learning-react-native/master/images/config_genymotion.png)
 
 点击几次OK, 完成配置
+
 ![点击几次OK, 完成配置](https://raw.githubusercontent.com/Kennytian/learning-react-native/master/images/config_genymotion_ok.png)
 
 测试一下启动 Genymtion, 点一下右上角绿色箭头
-f![测试一下启动 Genymtion, 点一下右上角绿色箭头](https://raw.githubusercontent.com/Kennytian/learning-react-native/master/images/lauch_genymotion_ok.png)
 
+![测试一下启动 Genymtion, 点一下右上角绿色箭头](https://raw.githubusercontent.com/Kennytian/learning-react-native/master/images/lauch_genymotion_ok.png)
