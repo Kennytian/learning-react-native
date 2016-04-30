@@ -1,7 +1,7 @@
 # React Native 学习笔记
 ## 入门
 * [React Native 在 Windows 环境搭建](https://github.com/Kennytian/learning-react-native/blob/master/environment/config-environment-on-windows.md)
-* [React Native 常用控件](https://github.com/Kennytian/learning-react-native/blob/master/components/cpopular-component.md)
+* [React Native 常用控件](https://github.com/Kennytian/learning-react-native/blob/master/components/popular-component.md)
 * [WebStorm 一键运行 Android 项目](https://github.com/Kennytian/learning-react-native/blob/master/ide/webstorm/run_with_npm.md)
 
 ## 中级
