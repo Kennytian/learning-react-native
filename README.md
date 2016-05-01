@@ -12,3 +12,5 @@
 * [Redux 之 Store](https://github.com/Kennytian/learning-react-native/blob/master/redux/store.md)
 
 ## 高级
+* [React Native API 学习](https://github.com/Kennytian/learning-react-native/blob/master/api/react-native-api.md)
+

@@ -2,9 +2,9 @@
 
 ## 前言
 
-新建一个 React Native 项目后，我们可以在 index.android.js(index.ios.js)里看到这么一句：`AppRegistry.registerComponent('hotelApp', ()=>HotelApp);`
+新建一个 React Native 项目后，我们可以在 index.android.js(index.ios.js)里看到这么一句：`AppRegistry.registerComponent('hotelApp', ()=>HotelApp);`，“hotelApp” 是我随便取的名字。
 
-我们来了解一下 `AppRegistry` 和 `registerComponent` 都是起什么作用的。
+接下来了解一下 `AppRegistry` 和 `registerComponent` 都是什么意思，各起什么作用。
 
 ## API 分析
 ### 1. AppRegistry
@@ -60,10 +60,22 @@ AppRegistry 是JS运行 React Native 程序的入口点，App的根组件通过`
   return appKey;
 },</code></pre>
 
+* 定义了 `func` 类型的回调入参。
+
+* 将`{run: func}`对象赋值给`runnables['hotelApp']`。
+
+* 返回`string`类型数据。
+
+
 ### 5. getAppKeys
-<pre><code>getAppKeys: function(): Array<string> {
+<pre><code>getAppKeys: function(): Array< string > {
   return Object.keys(runnables);
 },</code></pre>
+
+* 获取整个应用的 keys, 无入参。
+
+* 返回`Array<string>`类型的数据。
+
 
 ### 6. runApplication
 <pre><code>runApplication: function(appKey: string, appParameters: any): void {
@@ -84,8 +96,22 @@ AppRegistry 是JS运行 React Native 程序的入口点，App的根组件通过`
 },
 </code></pre>
 
+* `function(appKey: string, appParameters: any): void {` 第一行有两个知识点：
+	1. any 用来描述一些不明确数据类型，比如动态内容、网络请求结果、用户提供的。*我感觉与React.PropTypes.any差不多（不确定）*。
+	2. void 表示无返回类型，这和C#、Java一样。
+
+* 用`JSON.stringify(appParameters)`来序列化上面提到的 any 类型入参。
+
+* 执行`runnables[appKey].run(appParameters)`方法来运行 “hotelApp” 应用，参数为 appParameters。
+
+
 ### 7. unmountApplicationComponentAtRootTag
 
 <pre><code>unmountApplicationComponentAtRootTag: function(rootTag : number) {
   ReactNative.unmountComponentAtNodeAndRemoveContainer(rootTag);
 },</code></pre>
+
+* 卸载应用的组件，并销毁视图、终结应用。
+
+* 传入数字类型的 rootTag，见：`rootTag : number`(为什么是 number 类型，而不是 string 或者其它类型，没有搞懂)
+
