@@ -23,12 +23,12 @@
 
 打开 `/Users/.gradle/gradle.properties`(没有就创建一个), 添加这一句`org.gradle.daemon=true`, Save it.
 
-or
+or 来点有逼格的玩法：
 
-* Windows 下命令行创建
+* Windows 下命令行创建该文件, 并添加上述优化内容
 <pre><code>(if not exist "%USERPROFILE%/.gradle" mkdir "%USERPROFILE%/.gradle") && (echo org.gradle.daemon=true >> "%USERPROFILE%/.gradle/gradle.properties")</code></pre>
 
-* Mac 下命令行创建
+* Mac 下命令行创建, 并添加上述优化内容
 <pre><code>touch ~/.gradle/gradle.properties && echo "org.gradle.daemon=true" >> ~/.gradle/gradle.properties</code></pre>
 
 #### 配置本地项目的 gradle.properties

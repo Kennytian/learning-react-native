@@ -1,4 +1,9 @@
-#常用控件介绍
+# 常用控件介绍
+
+### 说明
+1. 由于 stars 一直在变化, 所以只按写这文章时的 stars 排序
+2. 有些控件只看名称好像只是某个平台，但作者让它支持 Android/iOS, 我会特别标注
+3. 欢迎您帮忙纠错, QQ：2225226
 
 * [redux](https://github.com/reactjs/redux)
     - **17,589+ stars**, latest commit 27 April 2016
@@ -7,7 +12,7 @@
 
 * [immutable](https://github.com/facebook/immutable-js)
     - **12,659+ stars**, latest commit 25 April 2016
-    - JavaScript 不变集合
+    - JavaScript 不可变持久数据集
     - `npm install immutable`
 
 * [react-redux](https://github.com/reactjs/react-redux)
@@ -35,6 +40,11 @@
     - 功能丰富, 支持嵌套, 隐藏/显示导航条, 自定义render, 支持重置导航历史
     - `npm install --save react-native-router-flux`
 
+* [tcomb-form-native](https://github.com/gcanti/tcomb-form-native)
+    - 941+ stars, latest commit 15 April 2016
+    - React Native 表单控件
+    - `npm install --save tcomb-form-native`
+
 * [react-native-drawer](https://github.com/root-two/react-native-drawer)
     - 538+ stars, latest commit 24 April 2016
     - 抽屉控件, 支持Android/iOS,
@@ -55,10 +65,15 @@
     - React Native的按钮控件, 支持按钮样式和容器内部样式
     - `npm install --save react-native-button`
 
+* [react-native-simple-store](https://github.com/jasonmerino/react-native-simple-store)
+    - 177+ stars, latest commit 30 April 2016
+    - 一个基于AsyncStorage的解决方案, 无需重复构建相同的 save 和 get 函数
+    - `npm install --save react-native-simple-store`
+
+
 * [react-native-storage](https://github.com/sunnylqm/react-native-storage)
-    - 170+ stars, latest commit 28 April 2016
-    - 本地持久存储的控件, 同时支持react-native(AsyncStorage)和浏览器(localStorage)
+    - 171+ stars, latest commit 28 April 2016
+    - 国人开发的本地缓存的控件, 支持react-native和浏览器, 缓存大小, 自动过期, 远程数据自动同步与批量查询
     - `npm install --save react-native-storage`
 
-### 纠错
-- QQ:2225226
+
