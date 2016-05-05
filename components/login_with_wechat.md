@@ -1,4 +1,4 @@
-# 集成微信登录就5步：
+# 集成微信登录就5步
 
 React Native 集成微信 for Android
 
