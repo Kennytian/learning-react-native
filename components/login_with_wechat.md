@@ -29,13 +29,13 @@ gradlew assembleRelease</code></pre>
 
 1. 把已签名的 apk 拷到手机某个目录, 然后手机进入该目录, 点击安装。
 2. 如果方法1提示无法安装, 就执行下面命令
-<pre><code>adb push  /User/kenny/xxx.apk  /data/local/tmp/com.company.xxx
-adb shell pm install -r  "/data/local/tmp/com.company.xxx"</code></pre>
+<pre><code>adb push /User/kenny/xxx.apk "/data/local/tmp/com.company.xxx"
+adb shell pm install -r "/data/local/tmp/com.company.xxx"</code></pre>
    * adb push 就是把电脑里的 apk 文件拷到 Android 手机的 `/data/local/tmp/com.company.xxx` 目录下
    * adb shell pm install 就是安装该 apk 文件。
 
 ## 4. 读出签名包的 md5 值
-[安装 QRCodeGenius.apk 读出 md5 值](https://github.com/ihyperwin/QRCodeGenius), 打开 QRCodeGenius 输入你的 Release 包名, 如:com.company.xxx, 读出 App md5 值。如下图所示:
+[安装 app_signatures.apk]( https://github.com/mobileresearch/weibo_android_sdk), 打开 App Signatures 输入你的 Release 包名, 如:com.company.xxx, 读出 App md5 值(_保存好这个值, QQ 和微博开发者后台都会用到_)。如下图所示:
 
 ![读取 app md5 值](https://raw.githubusercontent.com/Kennytian/learning-react-native/master/images/my_app_md5.png)
 
@@ -46,6 +46,19 @@ adb shell pm install -r  "/data/local/tmp/com.company.xxx"</code></pre>
 
 这时就应该可以在你的 Release 版 App 里实现微信登录了。
 
-欢迎您帮忙纠错, QQ：2225226
+## 其它平台
+
+顺便提一下 QQ 和微博在开发调试时需要添加测试账号, 如下图所示:
+
+* 添加 QQ 测试账号, 添加的 QQ 号必须是 开发者 QQ 的好友
+
+![QQ 开发者后台](https://raw.githubusercontent.com/Kennytian/learning-react-native/master/images/qq_auth.png)
+
+* 添加测试微博的昵称
+
+![微博开发者后台](https://raw.githubusercontent.com/Kennytian/learning-react-native/master/images/weibo_auth.png)
+
+
+欢迎您帮忙纠错, 一起帮忙更多的人, QQ：2225226
 
 
