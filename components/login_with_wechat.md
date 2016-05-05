@@ -31,9 +31,8 @@ gradlew assembleRelease</code></pre>
 2. 如果方法1提示无法安装, 就执行下面命令
 <pre><code>adb push  /User/kenny/xxx.apk  /data/local/tmp/com.company.xxx
 adb shell pm install -r  "/data/local/tmp/com.company.xxx"</code></pre>
-adb push 就是把电脑里的 apk 文件拷到 Android 手机的 `/data/local/tmp/com.company.xxx` 目录下
-
-adb shell pm install 就是安装该 apk 文件。
+* adb push 就是把电脑里的 apk 文件拷到 Android 手机的 `/data/local/tmp/com.company.xxx` 目录下
+* adb shell pm install 就是安装该 apk 文件。
 
 ## 4. 读出签名包的 md5 值
 [安装 QRCodeGenius.apk 读出 md5 值](https://github.com/ihyperwin/QRCodeGenius), 打开 QRCodeGenius 输入你的 Release 包名, 如:com.company.xxx, 读出 App md5 值。如下图所示:
