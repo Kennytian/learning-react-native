@@ -11,6 +11,7 @@
 * [Redux 之 Action](https://github.com/Kennytian/learning-react-native/blob/master/redux/action.md)
 * [Redux 之 Reducer](https://github.com/Kennytian/learning-react-native/blob/master/redux/reducer.md)
 * [Redux 之 Store](https://github.com/Kennytian/learning-react-native/blob/master/redux/store.md)
+* [ES6 之 Promise]
 
 ## 高级
 * [React Native API 学习](https://github.com/Kennytian/learning-react-native/blob/master/api/react-native-api.md)
