@@ -35,7 +35,7 @@ adb shell pm install -r "/data/local/tmp/com.company.xxx"</code></pre>
    * adb shell pm install 就是安装该 apk 文件。
 
 ## 4. 读出签名包的 md5 值
-[安装 app_signatures.apk]( https://github.com/mobileresearch/weibo_android_sdk), 打开 App Signatures 输入你的 Release 包名, 如:com.company.xxx, 读出 App md5 值(_保存好这个值, QQ 和微博开发者后台都会用到_)。如下图所示:
+[安装 app_signatures.apk]( https://github.com/mobileresearch/weibo_android_sdk), 打开 MD5签名生成器 输入你的 Release 包名, 如:com.company.xxx, 读出你应用 md5 值(_保存好这个值, QQ 和微博开发者后台都会用到_)。如下图所示:
 
 ![读取 app md5 值](https://raw.githubusercontent.com/Kennytian/learning-react-native/master/images/my_app_md5.png)
 
