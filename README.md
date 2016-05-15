@@ -6,6 +6,7 @@
 * [React Native 坑大发](https://github.com/Kennytian/learning-react-native/blob/master/environment/react_native_pit.md)
 
 ## 中级
+* [开发 Native Modules 供 JS 调用](https://github.com/Kennytian/learning-react-native/blob/master/components/develop_native_modules.md)
 * [Gradle 知识点](https://github.com/Kennytian/learning-react-native/blob/master/gradle/gradle-basic.md)
 * [将 React Native 集成至现有 Android 项目中](https://github.com/Kennytian/embedded)
 * [集成微信登录至 React Native 项目中](https://github.com/Kennytian/learning-react-native/blob/master/components/login_with_wechat.md)
@@ -16,4 +17,5 @@
 
 ## 高级
 * [React Native API 学习](https://github.com/Kennytian/learning-react-native/blob/master/api/react-native-api.md)
+* [Native Modules 原理]
 
