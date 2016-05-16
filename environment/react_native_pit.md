@@ -3,7 +3,7 @@
 欢迎您帮忙纠错, 一起帮助更多的人, QQ：2225226
 
 ## 12. 开发时 Java Module 不能使用方法重载
-在 C# / Java 中方法重载是非常常见的, 但在如果在开发时 Java Module 使用了重载, 就会报: [method name already registered 错误](https://github.com/Kennytian/learning-react-native/blob/master/components/develop_native_modules.md#24-当心重载陷阱), 解决办法就是换个方法名, 建议不要在方法名后面加2、3之类的, 不专业 :)
+在 C# / Java 中方法重载是非常常见的, 但在如果开发 Java Module 使用了重载, 就会报: [method name already registered 错误](https://github.com/Kennytian/learning-react-native/blob/master/components/develop_native_modules.md#24-当心重载陷阱), 解决办法就是换个方法名, 建议不要在方法名后面加2、3之类的, 不专业 :)
 
 ## 11.（接第10条）虽然安装成功, 但icon图标不显示
 
@@ -13,7 +13,7 @@
 * 将 apk 文件拷到报 `Unable to upload some APKs` 错误的手机里, 点击 apk, 成功安装, require 方式的图片正常显示。
 
 
-## 10. 魅族 Meizu m2 note / 魅族 Meizu MX4 / 华为 Huawei Mate 7 / 华为 Huawei P8 / 小米 Redmi Note 2 / 乐视 Letv X500 无法安装
+## 10. 魅族 Meizu m2 note / 魅族 Meizu MX4 / 华为 Huawei Mate 7 / 华为 Huawei P8 / 小米 Redmi Note 2/3 / 乐视 Letv X500 / 华为荣耀X2(GEM-703L) 无法安装
 
 开发调试期间, 以上手机安装apk时, **可能会**报一个 `com.android.ddmlib.InstallException: Unable to upload some APKs`, 我们需要修改如下几个位置:
 
