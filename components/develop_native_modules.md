@@ -1,5 +1,7 @@
 # 开发 Native Modules 供 JS 调用
 
+欢迎您帮忙纠错, 一起帮助更多的人, QQ：2225226
+
 如果项目中某个功能要与 Native 交互, 此时就要开发 Native Modules 供 JS 调用。比如:我们要在 React Native 项目中实现一个截图（用于分享）功能。
 
 ## 1.JavaScript 调用代码
@@ -42,7 +44,7 @@
 }</code></pre>
 
 ### 2.4 当心重载陷阱
-不要使用方法重载, JS 端会报错, 导致程序无法运行, 为什么呢? 请看下图:
+不要使用方法重载, JS 端会报错 `(Java Module method name already registered:)` , 导致程序无法运行, 为什么呢? 请看下图:
 
 ![Java module already registered](https://raw.githubusercontent.com/Kennytian/learning-react-native/master/images/java_module_already_registered.png)
 

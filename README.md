@@ -19,3 +19,5 @@
 * [React Native API 学习](https://github.com/Kennytian/learning-react-native/blob/master/api/react-native-api.md)
 * [Native Modules 原理]
 
+欢迎您帮忙纠错, 一起帮助更多的人, QQ：2225226
+

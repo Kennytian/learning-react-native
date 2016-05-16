@@ -59,6 +59,6 @@ adb shell pm install -r "/data/local/tmp/com.company.xxx"</code></pre>
 ![微博开发者后台](https://raw.githubusercontent.com/Kennytian/learning-react-native/master/images/weibo_auth.png)
 
 
-欢迎您帮忙纠错, 一起帮忙更多的人, QQ：2225226
+欢迎您帮忙纠错, 一起帮助更多的人, QQ：2225226
 
 
