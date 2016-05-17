@@ -11,7 +11,7 @@
    color: '#666'
  },</code></pre>
 
-果然在某样式文件的底部也发现一个名为 **counselorCompany** 的属性, 直接删除（合并）, 验证 Android Release/Debug 包都运行正常。_为什么 iOS 不会报错, 难道兼容性好些?_
+果然在某样式文件的底部又发现定义一个名为 **counselorCompany** 的属性, 直接删除（合并）, 验证 Android Release/Debug 包都运行正常。_为什么 iOS 不会报错, 难道兼容性好些?_
 
 歪果盆友也有遇到这个问题的, https://github.com/facebook/react-native/issues/4032
 
