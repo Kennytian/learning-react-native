@@ -2,6 +2,19 @@
 
 欢迎您帮忙纠错, 一起帮助更多的人, QQ：2225226
 
+## 13. iOS Release 版运行正常, 但 Android Release 版一打开就 crash
+先把 Android 端改为 Debug 打包, 然后调试起来, 发现报大红页错误, 显示 "`synatax error attempted to redefine property counselorCompany`"
+<pre><code>export default StyleSheet.create(Object.assign({}, commonStyle, {
+ counselorCompany: {
+   marginLeft: 10,
+   fontSize: 11,
+   color: '#666'
+ },</code></pre>
+
+果然在某样式文件的底部也发现一个名为 **counselorCompany** 的属性, 直接删除（合并）, 验证 Android Release/Debug 包都运行正常。_为什么 iOS 不会报错, 难道兼容性好些?_
+
+歪果盆友也有遇到这个问题的, https://github.com/facebook/react-native/issues/4032
+
 ## 12. 开发时 Java Module 不能使用方法重载
 在 C# / Java 中方法重载是非常常见的, 但在如果开发 Java Module 使用了重载, 就会报: [method name already registered 错误](https://github.com/Kennytian/learning-react-native/blob/master/components/develop_native_modules.md#24-当心重载陷阱), 解决办法就是换个方法名, 建议不要在方法名后面加2、3之类的, 不专业 :)
 
