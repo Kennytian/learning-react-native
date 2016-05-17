@@ -46,7 +46,7 @@
 ### 2.4 当心重载陷阱
 不要使用方法重载, JS 端会报错 `(Java Module method name already registered:)` , 导致程序无法运行, 为什么呢? 请看下图:
 
-![Java module already registered](https://raw.githubusercontent.com/Kennytian/learning-react-native/master/images/java_module_already_registered.png)
+![Java module already registered](https://raw.githubusercontent.com/Kennytian/learning-react-native/master/images/java_module_already_registered.jpeg)
 
 我们从 `if (methods.containsKey(methodName))` 代码中可以看出, 底层是按方法名作为key来注册的, 所以不能重名。
 

@@ -37,12 +37,12 @@ adb shell pm install -r "/data/local/tmp/com.company.xxx"</code></pre>
 ## 4. 读出签名包的 md5 值
 [安装 app_signatures.apk]( https://github.com/mobileresearch/weibo_android_sdk), 打开 MD5签名生成器 输入你的 Release 包名, 如:com.company.xxx, 读出你应用 md5 值(_保存好这个值, QQ 和微博开发者后台都会用到_)。如下图所示:
 
-![读取 app md5 值](https://raw.githubusercontent.com/Kennytian/learning-react-native/master/images/my_app_md5.png)
+![读取 app md5 值](https://raw.githubusercontent.com/Kennytian/learning-react-native/master/images/my_app_md5.jpeg)
 
 ## 5. 将 md5 值提交到微信开发者后台
 如下图所示:
 
-![微信开发者后台](https://raw.githubusercontent.com/Kennytian/learning-react-native/master/images/wechat_auth.png)
+![微信开发者后台](https://raw.githubusercontent.com/Kennytian/learning-react-native/master/images/wechat_auth.jpeg)
 
 这时就应该可以在你的 Release 版 App 里实现微信登录了。
 
@@ -52,11 +52,11 @@ adb shell pm install -r "/data/local/tmp/com.company.xxx"</code></pre>
 
 * 添加 QQ 测试账号, 添加的 QQ 号必须是 开发者 QQ 的好友
 
-![QQ 开发者后台](https://raw.githubusercontent.com/Kennytian/learning-react-native/master/images/qq_auth.png)
+![QQ 开发者后台](https://raw.githubusercontent.com/Kennytian/learning-react-native/master/images/qq_auth.jpeg)
 
 * 添加测试微博的昵称
 
-![微博开发者后台](https://raw.githubusercontent.com/Kennytian/learning-react-native/master/images/weibo_auth.png)
+![微博开发者后台](https://raw.githubusercontent.com/Kennytian/learning-react-native/master/images/weibo_auth.jpeg)
 
 
 欢迎您帮忙纠错, 一起帮助更多的人, QQ：2225226
