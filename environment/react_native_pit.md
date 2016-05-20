@@ -2,6 +2,22 @@
 
 欢迎您帮忙纠错, 一起帮助更多的人, QQ：2225226
 
+## 14. 使用 Android 低端机使用拍照功能会 crash
+项目中有个拍照设置头像功能, 有个低端手机拍照后一点确定, logcat 就报红色 Error `android openSDK_LOG.UIListenerManager: getListner action is null! rquestCode=1`, 难到是底层出错啦?
+在网上查了半天也没有找到原因, 会不会是 image picker 控件出了问题? 决定从如下几步下手:
+ 1. [升级 `npm install react-native-image-picker@latest --save`](https://github.com/marcshilling/react-native-image-picker#install)
+ 2. [重新检查 android manifest 权限声明](https://github.com/marcshilling/react-native-image-picker#android)
+ 3. [对比官方 Usage 代码](https://github.com/marcshilling/react-native-image-picker#usage)<pre><code>var options = {
+  ...
+  quality: 0.2, // 0 to 1, photos only
+  ...
+  allowsEditing: false, // Built in functionality to resize/reposition the image after selection
+  ...
+};</code></pre>
+
+发现本机代码这两项与官方用法不一样, 将 **quality** 改为适当的值, **allowsEditing**(允许编辑) 改为 false, 重新验证, Android crash bug 不再出现。
+
+
 ## 13. iOS Release 版运行正常, 但 Android Release 版一打开就 crash
 先把 Android 端改为 Debug 打包, 然后调试起来, 发现报大红页错误, 显示 "`synatax error attempted to redefine property counselorCompany`"
 <pre><code>export default StyleSheet.create(Object.assign({}, commonStyle, {
