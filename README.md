@@ -6,7 +6,7 @@
 * [React Native 坑大发](https://github.com/Kennytian/learning-react-native/blob/master/environment/react_native_pit.md)
 
 ## 中级
-* [React Native Module for CodePush 入门]
+* [React Native Module for CodePush 入门](https://github.com/Kennytian/learning-react-native/blob/master/components/code-push-basic.md)
 * [开发 Native Modules 供 JS 调用](https://github.com/Kennytian/learning-react-native/blob/master/components/develop_native_modules.md)
 * [Gradle 知识点](https://github.com/Kennytian/learning-react-native/blob/master/gradle/gradle-basic.md)
 * [将 React Native 集成至现有 Android 项目中](https://github.com/Kennytian/embedded)
