@@ -1,4 +1,4 @@
-##从命令中认识code push
+## 从命令中认识 code push
 
 欢迎您帮忙纠错, 一起帮助更多的人, QQ：2225226
 
@@ -35,3 +35,14 @@
 **15.whoami**           显示当前登录的账号信息
 
 以后我会根据项目实战, 展开介绍, 请关注!
+
+## code push 的常用命令
+**code-push app ls** 列出 CodePush 管理的 app 名称, 如:elongApp
+
+**code-push deployment ls elongApp -k** 列出 elongApp 部署信息, 注: -k 参数表示显示部署key
+
+**code-push deployment rm elongApp beta** 删除 elongApp 的部署名, 注: elongApp 为 app 名, beta 为部署名
+
+**code-push deployment rename elongApp Production prod** 修改 elongApp 的部署名, 注: elongApp 为 app 名, 将 Production 名改为 prod
+
+**code-push access-key ls** 列出授权认证访问密钥
