@@ -23,11 +23,13 @@
 
 ## 3.查看推送下载安装情况
 `code-push deployment ls tougudashi`
-`code-push deployment ls tougudashi --format json`
+
+`code-push deployment ls tougudashi --format json` (以 json 格式查看)
 
 ## 4.查看部署历史记录
 `code-push deployment history tougudashi prod`
-`code-push deployment history tougudashi prod --format json`
+
+`code-push deployment history tougudashi prod --format json` (以 json 格式查看)
 
 ## 5.清除dev的部署记录
 `code-push deployment clear tougudashi dev`
