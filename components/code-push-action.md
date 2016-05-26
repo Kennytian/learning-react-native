@@ -1,0 +1,37 @@
+# React Native Module for CodePush 实战
+
+欢迎您帮忙纠错, 一起帮助更多的人, QQ：2225226
+
+## 1.强制更新所有文件, 按用户量50%批量推送
+`code-push release-react tougudashi ios -d prod --dev false -m true -r 50`
+
+说明:
+1. `release-react` 表示向 React Native app 推送一个更新
+2. `tougudashi` 表示 CodePush 管理的 app 名称 (打个广告, 欢迎下载安装 '投顾大师' 体验体验)
+3. `ios` 表示手机平台, windows/android/ios
+4. `-d prod` 表示部署名为 prod（前提是已经将默认的 Production 改为了 prod）
+5. `--dev false` 表示编译 release 版, 默认为 true 开发版
+6. `-x true` 表示本次推送立即下载, 默认为 false 不立即下载(如果指定为 true, 历史记录里显示Disabled: Yes, 并且是灰色, 不解)
+7. `-m true` 表示本次推送强制接收, 默认为 false 不强制接收
+8. `-r 50%` 表示每次更新50%的用户, 更新完再更新剩下50%用户（1~100）
+
+注: 4以后的选项都不是必填的, 大家可以根据实际需求调整。
+
+
+## 2.只更新 js 文件，不更新图片等资源
+`code-push release-react tougudashi android -d prod --dev false -r 20`
+
+## 3.查看推送下载安装情况
+`code-push deployment ls tougudashi`
+`code-push deployment ls tougudashi --format json`
+
+## 4.查看部署历史记录
+`code-push deployment history tougudashi prod`
+`code-push deployment history tougudashi prod --format json`
+
+## 5.清除dev的部署记录
+`code-push deployment clear tougudashi dev`
+
+执行该命令后, 会提示输入大写的 Y 来确定, 成功后会显示如下提示:
+
+Successfully cleared the release history associated with the "dev" deployment from the "tougudashi" app.

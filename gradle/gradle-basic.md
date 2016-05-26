@@ -9,17 +9,18 @@
 * /Users/<username> (Mac OS X)
 * /home/<username> (Linux)
 
-## 常用版本路径
-* /Users/kenny/.gradle/wrapper/dists/**gradle-2.13-all**/1b9wlm73elu4cqnbc0rk7r7qn
-* /Users/kenny/.gradle/wrapper/dists/**gradle-2.12-all**/8ywkdai6puj5z81fume4e7njw
-* /Users/kenny/.gradle/wrapper/dists/**gradle-2.10-all**/a4w5fzrkeut1ox71xslb49gst
-* /Users/kenny/.gradle/wrapper/dists/**gradle-2.4-all**/6r4uqcc6ovnq6ac6s0txzcpc0
-* gradle-1.11-all etpezq1xtmacak8xwbc3ogwxf
-* gradle-2.1-all 488seql5pimt7vjvdsuqhh1ut
-* gradle-2.2.1-all c64ydeuardnfqctvr1gm30w53
-* gradle-2.2-all 1vevkra640w3rb9hkuw50q5we
-* gradle-2.8-all ah86jmo43de9lfa8xg9ux3c4h
-* gradle-2.11-all ace7yl0a7udokebb27mt9s3qr
+## 常用版本路径(以下为 Mac OS X 平台示例)
+* /Users/username/.gradle/wrapper/dists/**gradle-2.13-all**/1b9wlm73elu4cqnbc0rk7r7qn
+* /Users/username/.gradle/wrapper/dists/**gradle-2.12-all**/8ywkdai6puj5z81fume4e7njw
+* /Users/username/.gradle/wrapper/dists/**gradle-2.11-all**/ace7yl0a7udokebb27mt9s3qr
+* /Users/username/.gradle/wrapper/dists/**gradle-2.10-all**/a4w5fzrkeut1ox71xslb49gst
+* /Users/username/.gradle/wrapper/dists/**gradle-2.8-all**/ah86jmo43de9lfa8xg9ux3c4h
+* /Users/username/.gradle/wrapper/dists/**gradle-2.4-all**/6r4uqcc6ovnq6ac6s0txzcpc0
+* /Users/username/.gradle/wrapper/dists/**gradle-2.2.1-all**/c64ydeuardnfqctvr1gm30w53
+* /Users/username/.gradle/wrapper/dists/**gradle-2.2-all**/1vevkra640w3rb9hkuw50q5we
+* /Users/username/.gradle/wrapper/dists/**gradle-2.1-all**/488seql5pimt7vjvdsuqhh1ut
+* /Users/username/.gradle/wrapper/dists/**gradle-1.11-all**/etpezq1xtmacak8xwbc3ogwxf
+
 ## 简单优化
 #### 配置全局的 gradle.properties
 #### 1. daemon

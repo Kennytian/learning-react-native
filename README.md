@@ -17,7 +17,7 @@
 * [ES6 之 Promise]
 
 ## 高级
-* [React Native Module for CodePush 实战]
+* [React Native Module for CodePush 实战](https://github.com/Kennytian/learning-react-native/blob/master/components/code-push-action.md)
 * [Native Modules 原理]
 * [React Native API 学习](https://github.com/Kennytian/learning-react-native/blob/master/api/react-native-api.md)
 
