@@ -1,8 +1,10 @@
-# React Native Module for CodePush 实战
+### React Native Module for CodePush 实战
 
 欢迎您帮忙纠错, 一起帮助更多的人, QQ：2225226
 
-## 1.强制更新所有文件, 按用户量50%批量推送
+#### 0.[入门常用命令, 添加 App 名, 添加、删除部署名](https://github.com/Kennytian/learning-react-native/blob/master/components/code-push-basic.md#code-push-的常用命令)
+
+#### 1.强制更新所有文件, 按用户量50%批量推送
 `code-push release-react tougudashi ios -d prod --dev false -m true -r 50`
 
 说明:
@@ -15,25 +17,26 @@
 >7. `-m true` 表示本次推送强制接收, 默认为 false 不强制接收
 >8. `-r 50%` 表示每次更新50%的用户, 更新完再更新剩下50%用户（1~100）
 
-注: 4以后的选项都不是必填的, 大家可以根据实际需求调整。
+_注: 4以后的选项都不是必填的, 大家可以根据实际需求调整。_
 
 
-## 2.只更新 js 文件，不更新图片等资源
+#### 2.只更新 js 文件，不更新图片等资源
 `code-push release-react tougudashi android -d prod --dev false -r 20`
 
-## 3.查看推送下载安装情况
+#### 3.查看推送下载安装情况
 `code-push deployment ls tougudashi`
 
 `code-push deployment ls tougudashi --format json` (以 json 格式查看)
 
-## 4.查看部署历史记录
+#### 4.查看部署历史记录
 `code-push deployment history tougudashi prod`
 
 `code-push deployment history tougudashi prod --format json` (以 json 格式查看)
 
-## 5.清除dev的部署记录
-`code-push deployment clear tougudashi dev`
+#### 5.清除dev的部署记录
+`code-push deployment clear tougudashi dev` (dev 为部署名)
 
-执行该命令后, 会提示输入大写的 Y 来确定, 成功后会显示如下提示:
+#### 6.回滚到指定的某个版本
+`code-push rollback tougudashi prod --targetRelease v10`
 
-Successfully cleared the release history associated with the "dev" deployment from the "tougudashi" app.
+_注:比如当前版本为 v11, 执行这条命令, 会回滚到 v10 的内容, 但版本号已经更新为 v12 了。_

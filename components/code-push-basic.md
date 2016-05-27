@@ -1,6 +1,8 @@
-## React Native Module for CodePush 入门
+### React Native Module for CodePush 入门
 
 欢迎您帮忙纠错, 一起帮助更多的人, QQ：2225226
+
+####从 help 认识 CodePush
 
 我们在 Terminal 里输入 `code-push -help` , 出现如下命令:
 
@@ -34,13 +36,16 @@
 
 `15.whoami`           显示当前登录的账号信息
 
-## code push 的常用命令
+#### code push 的常用命令
+
+_注:tougudashi 为 App 名, 以后都用这个名称, code push 默认部署名叫"Production", 我已改为 prod_
+
 `code-push app ls` 列出 CodePush 管理的 app 名称
 
-`code-push deployment ls tougudashi -k` 列出 tougudashi 部署信息, 注: -k 参数表示显示部署key
+`code-push deployment ls tougudashi -k` 列出 App 部署信息, 注: -k 参数表示显示部署key
 
-`code-push deployment rm tougudashi beta` 删除 tougudashi 的部署名, 注: tougudashi 为 app 名, beta 为部署名
+`code-push deployment rm tougudashi beta` 删除 App 的部署名, beta 为部署名
 
-`code-push deployment rename tougudashi Production prod` 修改 tougudashi 的部署名, 注: tougudashi 为 app 名, 将 Production 名改为 prod
+`code-push deployment rename tougudashi Production prod` 修改 App 的部署名, 将 Production 名改为 prod
 
 `code-push access-key ls` 列出授权认证访问密钥
