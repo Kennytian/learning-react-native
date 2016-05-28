@@ -40,3 +40,8 @@ _注: 4以后的选项都不是必填的, 大家可以根据实际需求调整�
 `code-push rollback tougudashi prod --targetRelease v10`
 
 _注:比如当前版本为 v11, 执行这条命令, 会回滚到 v10 的内容, 但版本号已经更新为 v12 了。_
+
+#### 7.给1.0.0~1.0.9某个版本推送更新, 而不影响1.2.0版本
+`code-push release-react tougudashi android -d prod -m true -r 100 --dev false --targetBinaryVersion "~1.0.0"`
+
+_关于 "~1.0.0" 的解译: http://www.u396.com/semver-range.html_
