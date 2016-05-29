@@ -5,7 +5,7 @@
 #### 0.[入门常用命令, 添加 App 名, 添加、删除部署名](https://github.com/Kennytian/learning-react-native/blob/master/components/code-push-basic.md#code-push-的常用命令)
 
 #### 1.强制更新所有文件, 按用户量50%批量推送
-`code-push release-react tougudashi ios -d prod --dev false -m true -r 50`
+`code-push release-react tougudashi ios -d prod --dev false -m true -r 50 --desc "for ios"`
 
 说明:
 >1. `release-react` 表示向 React Native app 推送一个更新
@@ -21,7 +21,7 @@ _注: 4以后的选项都不是必填的, 大家可以根据实际需求调整�
 
 
 #### 2.只更新 js 文件，不更新图片等资源
-`code-push release-react tougudashi android -d prod --dev false -r 20`
+`code-push release-react tougudashi android -d prod --dev false -r 20 --desc "for android"`
 
 #### 3.查看推送下载安装情况
 `code-push deployment ls tougudashi`
@@ -41,7 +41,7 @@ _注: 4以后的选项都不是必填的, 大家可以根据实际需求调整�
 
 _注:比如当前版本为 v11, 执行这条命令, 会回滚到 v10 的内容, 但版本号已经更新为 v12 了。_
 
-#### 7.给1.0.0~1.0.9某个版本推送更新, 而不影响1.2.0版本
-`code-push release-react tougudashi android -d prod -m true -r 100 --dev false --targetBinaryVersion "~1.0.0"`
+#### 7.给1.0.0~1.0.9某个版本推送更新, 而不影响1.1.0版本
+`code-push release-react tougudashi android -d prod -m true --dev false --targetBinaryVersion "1.0.x" --desc "for ios"`
 
-_关于 "~1.0.0" 的解译: http://www.u396.com/semver-range.html_
+_关于 "1.0.x" 的解译: http://www.u396.com/semver-range.html_
