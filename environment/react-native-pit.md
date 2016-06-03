@@ -2,6 +2,17 @@
 
 欢迎您帮忙纠错, 一起帮助更多的人, QQ：2225226
 
+## 15. 有时候 Android 打包时报 recordFilesBeforeBundleCommandDebug 错误
+<pre><code>FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:recordFilesBeforeBundleCommandPgDebug'.
+> A problem occurred starting process 'command 'node''
+</code></pre>
+重启 react-native 无效。node 路径一直没动过。 gradlew clean 无效。
+
+直到查到了这个条命令: `./gradlw --stop`, 意思就是 `Stops the Gradle daemon if it is running`。 重新打包时会启动 `Gradle daemon`
+
 ## 14. 使用 Android 低端机使用拍照功能会 crash
 项目中有个拍照设置头像功能, 有个低端手机拍照后一点确定, logcat 就报红色 Error `android openSDK_LOG.UIListenerManager: getListner action is null! rquestCode=1`, 难到是底层出错啦?
 在网上查了半天也没有找到原因, 会不会是 image picker 控件出了问题? 决定从如下几步下手:
