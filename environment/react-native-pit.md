@@ -9,9 +9,9 @@
 Execution failed for task ':app:recordFilesBeforeBundleCommandPgDebug'.
 > A problem occurred starting process 'command 'node''
 </code></pre>
-重启 react-native 无效。node 路径一直没动过。 gradlew clean 无效。
+重新运行 `react-native start` 无效。 node 路径一直没动过。 `./gradlew clean` 无效。
 
-直到查到了这个条命令: `./gradlw --stop`, 意思就是 `Stops the Gradle daemon if it is running`。 重新打包时会启动 `Gradle daemon`
+直到查到了这个条命令: `./gradlew --stop`, 意思就是 `Stops the Gradle daemon if it is running`。 重新打包时会启动 `Gradle daemon`
 
 ## 14. 使用 Android 低端机使用拍照功能会 crash
 项目中有个拍照设置头像功能, 有个低端手机拍照后一点确定, logcat 就报红色 Error `android openSDK_LOG.UIListenerManager: getListner action is null! rquestCode=1`, 难到是底层出错啦?
