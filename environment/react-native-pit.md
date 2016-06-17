@@ -2,6 +2,18 @@
 
 欢迎您帮忙纠错, 一起帮助更多的人, QQ：2225226
 
+## 16. 小米4手机无法安装应用, 报 Failed to establish session 错误
+大致的错误提示如下:<pre><code>com.android.ddmlib.InstallException: Failed to establish session
+    at com.android.ddmlib.Device.installPackages(Device.java:930)
+    at com.android.builder.testing.ConnectedDevice.installPackages(ConnectedDevice.java:113)
+    at com.android.build.gradle.internal.tasks.InstallVariantTask.install(InstallVariantTask.java:134)
+    at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+    at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+    at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+</code></pre>
+原来是小米4做了“优化”, 造成无法 debug 安装 APP。 按如下操作可以解决:
+* **设置 > 开发者选项 > 优化MIUI > 关闭**
+
 ## 15. 有时候 Android 打包时报 recordFilesBeforeBundleCommandDebug 错误
 <pre><code>FAILURE: Build failed with an exception.
 
