@@ -4,12 +4,11 @@
 
 ## 17. iOS 编译时下载 realm-core-0.100.2.tar.bz2, 但一直下载不成功, 编译超时
 项目中使用了 realm 控件来做缓存, 刚刚编译时一直下载不成功, 经过查资料发现需要下载这个 **`https://static.realm.io/downloads/core/realm-core-0.100.2.tar.bz2`** 文件, 使用浏览器（用迅雷没有下载成功）下来回来(70.2M), 然后执行如下操作:
-1. 将 `realm-core-0.100.2.tar.bz2` 重命名为 `core-0.100.2.tar.bz2`
-2. 进 `$TMPDIR/core_bin` 目录, 将原来下载失败的临时文件删除（`rm realm-core-*.*`）
-3. 将 `core-0.100.2.tar.bz2` 拷贝到当前目录（`cp ~/Downloads/core-0.100.2.tar.bz2 ./`）
-4. rebuild, 成功! （**为什么是下载`realm-core-0.100.2.tar.bz2`?** 这需要你进`$TMPDIR/core_bin` 目录下看一眼下载失败是哪个版本）
 
-
+ 1. 将 `realm-core-0.100.2.tar.bz2` 重命名为 `core-0.100.2.tar.bz2`
+ 2. 进 `$TMPDIR/core_bin` 目录, 将原来下载失败的临时文件删除（`rm realm-core-*.*`）
+ 3. 将 `core-0.100.2.tar.bz2` 拷贝到当前目录（`cp ~/Downloads/core-0.100.2.tar.bz2 ./`）
+ 4. rebuild, 成功! （**为什么是下载`realm-core-0.100.2.tar.bz2`?** 这需要你进`$TMPDIR/core_bin` 目录下看一眼下载失败是哪个版本）
 
 ## 16. 小米4手机无法安装应用, 报 Failed to establish session 错误
 大致的错误提示如下:<pre><code>com.android.ddmlib.InstallException: Failed to establish session
