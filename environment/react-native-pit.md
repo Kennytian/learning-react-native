@@ -34,7 +34,7 @@ ERROR  watchman--no-pretty get-sockname returned with exit code 1
  2. 进 `$TMPDIR/core_bin` 目录, 将原来下载失败的临时文件删除（`rm core-*.*`）
  3. 将 `core-0.100.2.tar.bz2` 拷贝到当前目录（`cp ~/Downloads/core-0.100.2.tar.bz2 ./`）
  4. rebuild, 成功! （**为什么是下载`realm-core-0.100.2.tar.bz2`?** 这需要你进`$TMPDIR/core_bin` 目录下看一眼下载失败是哪个版本）
- 5. 完整写法:  cd $TMPDIR/core_bin &amp;&amp; rm core-\*\.\* &amp;&amp; cp ~/Downloads/core-0.100.2.tar.bz2 ./
+ 5. 完整写法: `cd $TMPDIR/core_bin &amp;&amp; rm core-\*\.\* &amp;&amp; cp ~/Downloads/core-0.100.2.tar.bz2 ./`
 
 ## 16. 小米4手机无法安装应用, 报 Failed to establish session 错误
 大致的错误提示如下:<pre><code>com.android.ddmlib.InstallException: Failed to establish session
