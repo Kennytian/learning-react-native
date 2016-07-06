@@ -2,6 +2,31 @@
 
 欢迎您帮忙纠错, 一起帮助更多的人, QQ：2225226
 
+## 18. watchman 报错, 一直提示reconnecting, 项目无法 running
+
+我的错误跟歪国盆友这个一样, https://github.com/facebook/react-native/issues/7006#issue-148766715
+
+<pre><code>[sane] Warning: Lost connection to watchman, reconnecting..
+[sane] Warning: Lost connection to watchman, reconnecting..
+[cli] failed to identify PDU: fill_buffer: EOF
+[cli] unable to talk to your watchman on /usr/local/Cellar/watchman/4.4.0/var/run/watchman/%n-state/sock! (Undefined error: 0)
+
+[cli] failed to identify PDU: fill_buffer: EOF
+[cli] unable to talk to your watchman on /usr/local/Cellar/watchman/4.4.0/var/run/watchman/%n-state/sock! (Undefined error: 0)
+
+Watchman:  watchman--no-pretty get-sockname returned with exit code 1
+[cli] failed to identify PDU: fill_buffer: EOF
+[cli] unable to talk to your watchman on /usr/local/Cellar/watchman/4.4.0/var/run/watchman/%n-state/sock! (Undefined error: 0)
+
+ERROR  watchman--no-pretty get-sockname returned with exit code 1
+[cli] failed to identify PDU: fill_buffer: EOF
+2016-04-15T16:33:51,874: [cli] unable to talk to your watchman on /usr/local/Cellar/watchman/4.4.0/var/run/watchman/%n-state/sock! (Undefined error: 0)</code></pre>
+
+在 Terminal 里执行`watchman --no-pretty get-sockname`, 也显示正常。换个项目run, 也报这个错, 难道跟电脑环境有关?
+
+没办法，只好试试万能的重启大法, 1分钟后回来, 项目神奇的 run 起来, 大家遇到这个问题可以试试。
+
+
 ## 17. iOS 编译时下载 realm-core-0.100.2.tar.bz2, 但一直下载不成功, 编译超时
 项目中使用了 realm 控件来做缓存, 刚刚编译时一直下载不成功, 经过查资料发现需要下载这个 **`https://static.realm.io/downloads/core/realm-core-0.100.2.tar.bz2`** 文件, 使用浏览器（用迅雷没有下载成功）下来回来(70.2M), 然后执行如下操作:
 
@@ -82,8 +107,7 @@ Execution failed for task ':app:recordFilesBeforeBundleCommandPgDebug'.
 ## 9. 新 react naitve init 的项目iOS Release 包无法访问 HTTP 网络
 
 在主工程里的 Info.plist 里添加如下 key 和 dict 配置, 从字面意思上也能看出, 是要允许 App 传输的安全性
-<pre><code>
-&lt;key&gt;NSAppTransportSecurity&lt;/key&gt;
+<pre><code>&lt;key&gt;NSAppTransportSecurity&lt;/key&gt;
 &lt;dict&gt;
   &lt;key&gt;NSAllowsArbitraryLoads&lt;/key&gt;
   &lt;true/&gt;
