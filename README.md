@@ -4,13 +4,14 @@
 * [React Native 常用控件](https://github.com/Kennytian/learning-react-native/blob/master/components/popular-component.md)
 * [WebStorm 一键运行 Android 项目](https://github.com/Kennytian/learning-react-native/blob/master/ide/webstorm/run_with_npm.md)
 * [React Native 坑大发](https://github.com/Kennytian/learning-react-native/blob/master/environment/react-native-pit.md)
+* [一句技巧](https://github.com/Kennytian/learning-react-native/blob/master/others/one-word-tips.md)
 
 ## 中级
 * [React Native Module for CodePush 入门](https://github.com/Kennytian/learning-react-native/blob/master/components/code-push-basic.md)
-* [开发 Native Modules 供 JS 调用](https://github.com/Kennytian/learning-react-native/blob/master/components/develop_native_modules.md)
+* [开发 Native Modules 供 JS 调用](https://github.com/Kennytian/learning-react-native/blob/master/components/develop-native-modules.md)
 * [Gradle 知识点](https://github.com/Kennytian/learning-react-native/blob/master/gradle/gradle-basic.md)
 * [将 React Native 集成至现有 Android 项目中](https://github.com/Kennytian/embedded)
-* [集成微信登录至 React Native 项目中](https://github.com/Kennytian/learning-react-native/blob/master/components/login_with_wechat.md)
+* [集成微信登录至 React Native 项目中](https://github.com/Kennytian/learning-react-native/blob/master/components/login-with-wechat.md)
 * [Redux 之 Action](https://github.com/Kennytian/learning-react-native/blob/master/redux/action.md)
 * [Redux 之 Reducer](https://github.com/Kennytian/learning-react-native/blob/master/redux/reducer.md)
 * [Redux 之 Store](https://github.com/Kennytian/learning-react-native/blob/master/redux/store.md)

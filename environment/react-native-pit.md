@@ -89,7 +89,7 @@ Execution failed for task ':app:recordFilesBeforeBundleCommandPgDebug'.
 歪果盆友也有遇到这个问题的, https://github.com/facebook/react-native/issues/4032
 
 ## 12. 开发时 Java Module 不能使用方法重载
-在 C# / Java 中方法重载是非常常见的, 但在如果开发 Java Module 使用了重载, 就会报: [method name already registered 错误](https://github.com/Kennytian/learning-react-native/blob/master/components/develop_native_modules.md#24-当心重载陷阱), 解决办法就是换个方法名, 建议不要在方法名后面加2、3之类的, 不专业 :)
+在 C# / Java 中方法重载是非常常见的, 但在如果开发 Java Module 使用了重载, 就会报: [method name already registered 错误](https://github.com/Kennytian/learning-react-native/blob/master/components/develop-native-modules.md#24-当心重载陷阱), 解决办法就是换个方法名, 建议不要在方法名后面加2、3之类的, 不专业 :)
 
 ## 11.（接第10条）虽然安装成功, 但icon图标不显示
 
