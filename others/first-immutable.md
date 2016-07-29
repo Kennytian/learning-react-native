@@ -34,7 +34,7 @@ m.get('a'); // 'A'
 <pre><code>let m1 = Map({'a':'A','b':'B'});
 let m2 = Map(m1);
 m2.size; // 2
-m2.get('a'); // 'B'
+m2.get('b'); // 'B'
 </code></pre>
 
 #### 1.6 Array 转 Map
