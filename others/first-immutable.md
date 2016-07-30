@@ -38,17 +38,20 @@ m2.get('b'); // 'B'
 </code></pre>
 
 #### 1.6 Array 转 Map
-<pre><code>let a = Map({'one':1,'2':'two'});
+<pre><code>let a = Map({'one':1,2:'two'});
 a.size; // 2
 a.get('one'); // 1
 </code></pre>
+_注: 用数字2也可以作为 key存值, 但取值时要用a.get('2'), 用 a.get(2)会报undefined_
 
 #### 1.7 of（扁平 pairs 转 Map）
-<pre><code>let m:Map<any,any> = Map.of(1,'one',2,'two');
+<pre><code>let m:Map&ltany,any&gt = Map.of(1,'one',2,'two');
 m.size; // 2
 m.get(1); // 'one'
-如:Map.of(1,2,3); // Missing value for key: 3
 </code></pre>
+_注: Map.of(1,2,3); // Missing value for key: 3_
+
+_这里是m.get(1) 取值, **1是当作 key 而不是 index**_
 
 #### 1.8 toObject
 <pre><code>let m = Map({'a':'A','b':'B'});
