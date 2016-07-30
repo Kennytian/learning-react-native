@@ -55,14 +55,16 @@ _这里是m.get(1) 取值, **1是当作 key 而不是 index**_
 
 #### 1.8 toObject
 <pre><code>let m = Map({'a':'A','b':'B'});
-let o = m.toObject();
+let o = m.toObject(); // {a: "A", b: "B"}
 </code></pre>
 
 #### 1.9 merge 用法
-<pre><code>let m1 = Map({'a':'A','b':'B'});
-let m2 = Map({'b':'BB','c':'C'});
-let m3 = m1.merge(m2); //{'a':'A','b':'BB','c':'C'}
+<pre><code>let m1 = Map({'a':'A',"b":'B'});
+let m2 = Map({"b":"BB",2:'two'});
+let m3 = m1.merge(m2);
+let o = m3.toObject(); //{2: "two", a: "A", b: "BB"}
 </code></pre>
+_注: merge 后数据是按 key 的顺序来排列的_
 
 #### 1.10 has 用法
 <pre><code>let m1 = Map({'a':'A','b':'B'});
