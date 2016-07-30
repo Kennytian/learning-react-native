@@ -70,3 +70,29 @@ _注: merge 后数据是按 key 的顺序来排列的_
 <pre><code>let m1 = Map({'a':'A','b':'B'});
 m1.has('b'); // true
 </code></pre>
+
+#### 1.11 set 用法
+<pre><code>let m1 = Map();
+let m2 = m1.set('a', 'A');
+let m3 = m1.set('b', 'B');
+let m4 = m2.set('b', 'B');
+m1.toObject(); // Object {}
+m2.toObject(); // Object {a: "A"}
+m3.toObject(); // Object {b: "B"}
+m4.toObject(); // Object {a: "A", b: "B"}
+</code></pre>
+
+_注: m1 在第2次赋值时会把上一次的值覆盖_
+
+#### 1.12 remove 用法
+<pre><code>let m1 = Map();
+let m2 = m1.set('a', 'A');
+let m3 = m2.set('b', 'B');
+let m4 = m3.remove('a');
+console.debug(m3.toObject());
+console.debug(m4.toObject());
+m3.toObject(); // Object {a: "A", b: "B"}
+m4.toObject(); // Object { b: "B"}
+</code></pre>
+
+_注: 与 1.11 一样, m3.remove 后要重新赋值 m4,它里面的值才会变化_
