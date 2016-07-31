@@ -1,5 +1,8 @@
 ## Immutable 大法好
 
+* [Map 介绍](https://github.com/Kennytian/learning-react-native/blob/master/others/first-immutable.md#1-map-用法)
+* [Range 介绍](https://github.com/Kennytian/learning-react-native/blob/master/others/first-immutable.md#2-range-用法)
+
 ### 1. Map 用法
 #### 1.1 get
 <pre><code>let m = Map({'a':'A', 'b':'B'});
@@ -96,3 +99,13 @@ m4.toObject(); // Object { b: "B"}
 </code></pre>
 
 _注: 与 1.11 一样, m3.remove 后要重新赋值 m4,它里面的值才会变化_
+
+### 2. Range 用法
+#### 2.1 Range 构造函数
+<pre><code>Range() // [0,1,2,3,...,Infinity]
+Range(10) // [10,11,12,13,...,Infinity]
+Range(10,15) // [10,11,12,13,14]
+Range(10,30,5) // [10,15,20,25]
+Range(30,10,5) // [30,25,20,15]
+Range(30,30,5) // []
+</code></pre>
