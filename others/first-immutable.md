@@ -100,6 +100,34 @@ m4.toObject(); // Object { b: "B"}
 
 _注: 与 1.11 一样, m3.remove 后要重新赋值 m4,它里面的值才会变化_
 
+#### 1.13 predicate 用法
+<pre><code>let m = Map({a:'a',b:'b',c:'0',d:'1',e:'2'});
+let r = m.map(v=>v.toUpperCase());
+let s = m.mapKeys(k=>k.toUpperCase());
+let t = m.filter(f=>f % 2 === 1);
+let t = m.filterNot(f=>f % 2 === 1);
+r.toObject(); // {a: "A", b: "B", c: "0", d: "1", e: "2"}
+s.toObject(); // {A: "a", B: "b", C: "0", D: "1", E: "2"}
+t.toObject(); // {d: "1"}
+u.toObject(); // {a: "a", b: "b", c: "0", e: "2"}
+</code></pre>
+
+#### 1.14 keySeq, flip
+<pre><code>let m = Map({a:1,b:2,c:3});
+m.keySeq().toObject(); // {0: "a", 1: "b", 2: "c"}
+m.flip().toObject(); // {1: "a", 2: "b", 3: "c"}
+</code></pre>
+_keySeq: 取出 key 的序列, 从 0 开始索引_
+
+_flip: key 与 value 互换_
+
+#### 1.15 toList
+<pre><code>let m = Map({a:1,b:2,c:3});
+m.toList.toObject(); // {0: 1, 1: 2, 2: 3}
+</code></pre>
+_toList 是将 Map 的 key 换成了 index_
+
+
 ### 2. Range 用法
 #### 2.1 Range 构造函数
 <pre><code>Range() // [0,1,2,3,...,Infinity]
