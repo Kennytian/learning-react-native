@@ -14,6 +14,8 @@ _本篇文章记录的技巧尽量保持与平时工作的 React Native 相关, 
 ## Git
 1. 删除**最后一次**缓存记录 `git stash drop stash@{0}`
 2. 应用**指定某一次**缓存记录 `git stash apply stash@{3}`
+3. **没有 push** 要回滚 `git reset --hard HEAD`
+4. **已经 push** 要回滚 `git revert b3c20ba6fb38cc94fe5a8d`
 
 ## ES6
 1. 用**不定参数** `function foo(a, ...z)`和**默认参数**`function bar(father="Kenny", son="Jerry")` 取代 `arguments` 参数
