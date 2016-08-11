@@ -21,13 +21,16 @@ _本篇文章记录的技巧尽量保持与平时工作的 React Native 相关, 
 1. 用**不定参数** `function foo(a, ...z)`和**默认参数**`function bar(father="Kenny", son="Jerry")` 取代 `arguments` 参数
 2. 在 JavaScript 里 null、undefined、0、-0、NaN 和 "" 都为 false
 3. 使用 **对象展开语法(Object spread)** 来替换 `Object.assign` 用法, 即: `{ ...state, {name:Kenny} }` 来替换 `Object.assign({}, state, {name:Kenny})`
-4. 事件 bind 放在constructor里更高效（bindings once, use forevermore）, 避免使用 Arrow function。如:<pre><code>constructor(props) {
+4. 事件 bind 放在constructor里更高效（bindings once, use forevermore）, 避免使用 Arrow function。如:
+<pre><code>constructor(props) {
   super(props);
   this.handleClick = this.handleClick.bind(this);
 }
 handleClick() { console.log('clicked!'); }
 render(){
-  return( &ltText onPress={this.handleClick}&gtClick Me&lt/Text&gt )
+  return(
+  &ltText onPress={this.handleClick}&gtClick Me&lt/Text&gt
+  )
 }
 </code></pre>
 
