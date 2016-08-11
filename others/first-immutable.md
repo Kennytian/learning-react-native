@@ -2,6 +2,8 @@
 
 * [Map 介绍](https://github.com/Kennytian/learning-react-native/blob/master/others/first-immutable.md#1-map-用法)
 * [Range 介绍](https://github.com/Kennytian/learning-react-native/blob/master/others/first-immutable.md#2-range-用法)
+* [Iterable 介绍](https://github.com/Kennytian/learning-react-native/blob/master/others/first-immutable.md#3-Iterable-用法)
+
 
 ### 1. Map 用法
 #### 1.1 get
@@ -127,7 +129,6 @@ m.toList.toObject(); // {0: 1, 1: 2, 2: 3}
 </code></pre>
 _toList 是将 Map 的 key 换成了 index_
 
-
 ### 2. Range 用法
 #### 2.1 Range 构造函数
 <pre><code>Range() // [0,1,2,3,...,Infinity]
@@ -136,4 +137,20 @@ Range(10,15) // [10,11,12,13,14]
 Range(10,30,5) // [10,15,20,25]
 Range(30,10,5) // [30,25,20,15]
 Range(30,30,5) // []
+</code></pre>
+
+
+### 3. Iterable 用法
+#### 3.1 isIterable
+<pre><code>
+let seq = Seq.of(1,2,3,4);
+if(Iterable.isIterable(seq)) {
+  console.debug('true');
+}
+</code></pre>
+<pre><code>
+if (Iterable.isIterable(state)) {
+  return state.toJS();
+}
+return state;
 </code></pre>
