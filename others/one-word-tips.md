@@ -29,7 +29,7 @@ _本篇文章记录的技巧尽量保持与平时工作的 React Native 相关, 
 handleClick() { console.log('clicked!'); }
 render(){
   return(
-  &ltText onPress={this.handleClick}&gtClick Me&lt/Text&gt
+  &ltText onPress={this.handleClick}&gt Click Me &lt/Text&gt
   )
 }
 </code></pre>
