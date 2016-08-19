@@ -16,23 +16,25 @@ _本篇文章记录的技巧尽量保持与平时工作的 React Native 相关, 
 2. 应用**指定某一次**缓存记录 `git stash apply stash@{3}`
 3. **没有 push** 要回滚 `git reset --hard HEAD`
 4. **已经 push** 要回滚 `git revert b3c20ba6fb38cc94fe5a8d`
+5. 基于某次 Commit ID 打 tag `git tag -a v0.1.1 9fbc3d0`, -a 表示带注释
 
 ## ES6
 1. 用**不定参数** `function foo(a, ...z)`和**默认参数**`function bar(father="Kenny", son="Jerry")` 取代 `arguments` 参数
 2. 在 JavaScript 里 null、undefined、0、-0、NaN 和 "" 都为 false
 3. 使用 **对象展开语法(Object spread)** 来替换 `Object.assign` 用法, 即: `{ ...state, {name:Kenny} }` 来替换 `Object.assign({}, state, {name:Kenny})`
 4. 事件 bind 放在constructor里更高效（bindings once, use forevermore）, 避免使用 Arrow function。如:
-<pre><code>constructor(props) {
+```
+constructor(props) {
   super(props);
   this.handleClick = this.handleClick.bind(this);
 }
 handleClick() { console.log('clicked!'); }
 render(){
   return(
-  ... onPress={this.handleClick} ...
+   <Text onPress={this.handleClick}>Click Me</Text>
   )
 }
-</code></pre>
+```
 
 ## Linux / Mac OS X
 1. 清除 DNS 缓存 `sudo killall -HUP mDNSResponder`
