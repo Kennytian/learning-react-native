@@ -17,6 +17,7 @@ _本篇文章记录的技巧尽量保持与平时工作的 React Native 相关, 
 3. **没有 push** 要回滚 `git reset --hard HEAD`
 4. **已经 push** 要回滚 `git revert b3c20ba6fb38cc94fe5a8d`
 5. 基于某次 Commit ID 打 tag `git tag -a v0.1.1 9fbc3d0`, -a 表示带注释
+6. 修改某次错误 commit 注释, `git reset --soft fb38cc9(上一次 Commit ID)`, --soft不会覆盖stash区和work区的代码
 
 ## ES6
 1. 用**不定参数** `function foo(a, ...z)`和**默认参数**`function bar(father="Kenny", son="Jerry")` 取代 `arguments` 参数

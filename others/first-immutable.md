@@ -1,9 +1,61 @@
 ## Immutable 大法好
 
+* [fromJS 介绍](https://github.com/Kennytian/learning-react-native/blob/master/others/first-immutable.md#0-fromJS-用法)
 * [Map 介绍](https://github.com/Kennytian/learning-react-native/blob/master/others/first-immutable.md#1-map-用法)
 * [Range 介绍](https://github.com/Kennytian/learning-react-native/blob/master/others/first-immutable.md#2-range-用法)
 * [Iterable 介绍](https://github.com/Kennytian/learning-react-native/blob/master/others/first-immutable.md#3-Iterable-用法)
 
+### 0. fromJS 用法
+#### 0.1 介绍
+深度转换扁平的 JS 对象和arrays 为 Immutable Map 和 List。
+
+#### 0.2 项目中使用
+```
+let sourceSame = is(fromJS(nextProps.source), fromJS(this.props.source))
+```
+
+#### 0.3 深层取值
+```
+let m = fromJS({a: {b: {c: 321}}});
+let n = m.getIn(['a', 'b']); //Map {}
+let o = m.getIn(['a', 'b', 'c']); //321
+let p = m.getIn(['a','c']); //undefined
+```
+
+#### 0.4 深层编辑
+```
+let m = fromJS({a: {b: {c: 321}}});
+let n = m.updateIn(['a', 'b', 'c'], value=>value * 3).toJS(); //{a: {b: {c: 963}}}
+```
+
+#### 0.5 深层删除
+```
+let m = fromJS({a: {b: {c: 321}}});
+let n = m.updateIn(['a', 'b'], map=>map.remove('c')).toJS(); //{a: {b: {}}}
+```
+
+#### 0.6 深层设值
+```
+let m = fromJS({a: {b: {c: 10}}});
+let n = m.updateIn(['a', 'b'], map=>map.set('d', 20)).toJS(); //{a:{b:{c:10,d:20}}
+```
+
+#### 0.7 深层添加值
+```
+let m = fromJS({a:{b:[1,2,3]}});
+let n = m.updateIn(['a','b'],list =>list.push(10)).toJS(); //{a: {b: [1,2,3,10]}}
+```
+
+#### 0.8 遍历 map 设值
+```
+let m = fromJS({a: {b: [1, 3, 5]}});
+let n = m.updateIn(['a', 'b'], list=>list.map(value=>value * value)).toJS(); //{a:{b:{1,9,25}}}
+```
+#### 0.9 如果字符串有空隙,就可以插入一个新map
+```
+let m = fromJS({a: {b: {c: 10}}});
+let n = m.updateIn(['a','z'], Map(), map=>map.set('d', 20)).toJS(); //{a: {b: {c: 10}, z: {d: 20}}}
+```
 
 ### 1. Map 用法
 #### 1.1 get
@@ -128,6 +180,12 @@ _flip: key 与 value 互换_
 m.toList.toObject(); // {0: 1, 1: 2, 2: 3}
 </code></pre>
 _toList 是将 Map 的 key 换成了 index_
+
+#### 0.16 提供快速设置值
+```
+let m = Map().setIn(['a','b','c'],'X').toJS(); //{a:{b:{c:'X'}}}
+```
+
 
 ### 2. Range 用法
 #### 2.1 Range 构造函数
