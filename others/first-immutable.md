@@ -189,11 +189,6 @@ m.toList.toObject(); // {0: 1, 1: 2, 2: 3}
 </code></pre>
 _toList 是将 Map 的 key 换成了 index_
 
-#### 0.16 提供快速设置值
-```
-let m = Map().setIn(['a','b','c'],'X').toJS(); //{a:{b:{c:'X'}}}
-```
-
 
 ### 2. Range 用法
 #### 2.1 Range 构造函数
@@ -204,7 +199,6 @@ Range(10,30,5) // [10,15,20,25]
 Range(30,10,5) // [30,25,20,15]
 Range(30,30,5) // []
 </code></pre>
-
 
 ### 3. Iterable 用法
 #### 3.1 isIterable
