@@ -1,6 +1,6 @@
 ## Immutable 大法好
 
-* [fromJS 介绍](https://github.com/Kennytian/learning-react-native/blob/master/others/first-immutable.md#0-fromJS-用法)
+* [fromJS 介绍](https://github.com/Kennytian/learning-react-native/blob/master/others/first-immutable.md#0-fromjs-用法)
 * [Map 介绍](https://github.com/Kennytian/learning-react-native/blob/master/others/first-immutable.md#1-map-用法)
 * [Range 介绍](https://github.com/Kennytian/learning-react-native/blob/master/others/first-immutable.md#2-range-用法)
 * [Iterable 介绍](https://github.com/Kennytian/learning-react-native/blob/master/others/first-immutable.md#3-Iterable-用法)
@@ -20,6 +20,7 @@ let m = fromJS({a: {b: {c: 321}}});
 let n = m.getIn(['a', 'b']); //Map {}
 let o = m.getIn(['a', 'b', 'c']); //321
 let p = m.getIn(['a','c']); //undefined
+let project = data.projects.getIn(['projects', data.props.id])
 ```
 
 #### 0.4 深层编辑
@@ -51,11 +52,18 @@ let n = m.updateIn(['a','b'],list =>list.push(10)).toJS(); //{a: {b: [1,2,3,10]}
 let m = fromJS({a: {b: [1, 3, 5]}});
 let n = m.updateIn(['a', 'b'], list=>list.map(value=>value * value)).toJS(); //{a:{b:{1,9,25}}}
 ```
+
 #### 0.9 如果字符串有空隙,就可以插入一个新map
 ```
 let m = fromJS({a: {b: {c: 10}}});
 let n = m.updateIn(['a','z'], Map(), map=>map.set('d', 20)).toJS(); //{a: {b: {c: 10}, z: {d: 20}}}
 ```
+
+#### 0.10 提供快速设置值
+```
+let m = Map().setIn(['a','b','c'],'X').toJS(); //{a:{b:{c:'X'}}}
+```
+
 
 ### 1. Map 用法
 #### 1.1 get
