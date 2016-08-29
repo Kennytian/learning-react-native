@@ -2,6 +2,17 @@
 
 欢迎您帮忙纠错, 一起帮助更多的人, QQ：2225226
 
+
+## 19. 项目报 WebSocket 错误
+最近运行项目时, 时不时就报 WebSocket 错误, 显示 node_modules/ws/lib/Receiver.js:386 错误。
+
+上网找资料, https://github.com/qeled/discordie/issues/15。
+
+突然想起我和文章中提到的一样, 也是升级到 node 6.x.x 版本。
+
+下载最新稳定版 https://nodejs.org/dist/v4.5.0/node-v4.5.0.pkg, 覆盖安装, 再也不报错了, Oh yes!
+
+
 ## 18. watchman 报错, 一直提示reconnecting, 项目无法 running
 
 我的错误跟歪国盆友这个一样, https://github.com/facebook/react-native/issues/7006#issue-148766715
