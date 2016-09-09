@@ -2,15 +2,17 @@
 
 欢迎您帮忙纠错, 一起帮助更多的人, QQ：2225226
 
-## 20. 小米3手机安装应用之后，打开应用，显示白屏
+## 20. 小米3手机安装应用之后打开应用，显示白屏问题
 
 	解决办法：. 打开应用悬浮框权限(打开安全中心=>授权管理=>应用权限管理=>找到测试app=>显示悬浮框打开)
 	
-	再次打开应用，可能会报"Could not get BatchedBridge, make sure your bundle is packaged correctly" 错误，显示红屏
+	打开应用可能会报"Could not get BatchedBridge, make sure your bundle is packaged correctly" 错误并显示红屏
 	
-	解决办法：设置本地测试Ip/端口：在应用界面摇晃虚拟机（更多->虚拟传感器，摇动传感器），
+	解决办法：设置本地测试Ip/端口：在应用界面摇晃手机，
 	
-	应用弹出选择界面,选择”Dev Settings” / “Debug server host & port for device”，地址是PC机ip:端口号. 再次打开应用，就会正常运行了。 
+	应用弹出选择界面,选择”Dev Settings” / “Debug server host & port for device”，地址是PC机ip:端口号. 
+	
+	再次打开应用，就会正常运行了。 
 
 ## 19. 项目报 WebSocket 错误
 最近运行项目时, 时不时就报 WebSocket 错误, 显示 node_modules/ws/lib/Receiver.js:386 错误。
