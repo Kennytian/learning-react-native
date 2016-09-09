@@ -1,6 +1,5 @@
-npm link 命令解析
+#npm link 命令解析
 
- 文字转的
 
 对开发者而言，这算是最有价值的命令。假设我们开发了一个模块叫 test ，然后我们在 test-example 里引用这个模块 ，每次 test 模块的变动我们都需要反映到 test-example 模块里。不要担心，有了 npm link 命令一切变的非常容易。
 

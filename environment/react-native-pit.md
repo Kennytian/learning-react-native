@@ -57,7 +57,7 @@ ERROR  watchman--no-pretty get-sockname returned with exit code 1
     at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 </code></pre>
 原来是小米4做了“优化”, 造成无法 debug 安装 APP。 按如下操作可以解决:
-* **设置 > 开发者选项 > 优化MIUI > 关闭**
+* **设置 > 其它高级设置 > 开发者选项 > 启用优化MIUI > 关闭**
 
 ## 15. 有时候 Android 打包时报 recordFilesBeforeBundleCommandDebug 错误
 <pre><code>FAILURE: Build failed with an exception.
