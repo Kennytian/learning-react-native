@@ -2,6 +2,19 @@
 
 一起来学习交流React, QQ群：413381701
 
+## 21. Xcode7 升级后 Xcode 8后，项目无法编译（我环境是从0.29升到0.32）
+```
+项目报如下错误
+node_modules/react-native/Libraries/WebSocket/RCTSRWebSocket.m
+ignoring return value of function declared with warn_unused_result attribute
+
+经查资料，改如下几处：
+1. 打开项目 -> Libraries -> RCTWebSocket -> TARGETS -> Build Settings -> custom compiler flags(搜索这个词) -> Other Warning Flags，把里面的‘-Werror -Wall’删除，
+2. Save -> Rebuild -> Enjoy your cdoe!
+
+参考：https://github.com/facebook/react-native/issues/8584#issuecomment-236366222
+```
+
 ## 20. 小米3手机安装应用之后打开应用，显示白屏问题
 ```
 解决办法：
