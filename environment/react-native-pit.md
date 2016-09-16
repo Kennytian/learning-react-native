@@ -9,7 +9,9 @@ node_modules/react-native/Libraries/WebSocket/RCTSRWebSocket.m
 ignoring return value of function declared with warn_unused_result attribute
 
 经查资料，改如下几处：
-1. 打开项目 -> Libraries -> RCTWebSocket -> TARGETS -> Build Settings -> custom compiler flags(搜索这个词) -> Other Warning Flags，把里面的‘-Werror -Wall’删除，
+1. 打开项目 -> Libraries -> RCTWebSocket -> TARGETS -> Build Settings -> 
+custom compiler flags(搜索这个词) -> Other Warning Flags，把里面的‘-Werror -Wall’删除，
+
 2. Save -> Rebuild -> Enjoy your cdoe!
 
 参考：https://github.com/facebook/react-native/issues/8584#issuecomment-236366222

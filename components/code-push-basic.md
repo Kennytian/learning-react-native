@@ -1,6 +1,6 @@
 ### React Native Module for CodePush 入门
 
-欢迎您帮忙纠错, 一起帮助更多的人, QQ：2225226
+欢迎您帮忙纠错, 一起帮助更多的人。 一起来学习交流React, QQ群：413381701
 
 ####从 help 认识 CodePush
 

@@ -65,7 +65,7 @@ npm config set disturl https://npm.taobao.org/dist</code></pre>
 * 查看Node.js服务是否在运行状态，只需在浏览器里输入`http://localhost:8081/index.android.bundle?platform=android`，在第一行看到`(function(global) {global.` 表示服务正常
 
 ### 纠错
-- QQ:2225226
+- 欢迎您帮忙纠错, 一起帮助更多的人。 一起来学习交流React, QQ群：413381701
 
 ### 相关文档
 * [React Native 在Windows环境搭建](https://github.com/Kennytian/learning-react-native/blob/master/environment/config-environment-on-windows.md)

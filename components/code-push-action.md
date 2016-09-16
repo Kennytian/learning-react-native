@@ -1,6 +1,6 @@
 ### React Native Module for CodePush 实战
 
-欢迎您帮忙纠错, 一起帮助更多的人, QQ：2225226
+欢迎您帮忙纠错, 一起帮助更多的人。 一起来学习交流React, QQ群：413381701
 
 #### 0.[入门常用命令, 添加 App 名, 添加、删除部署名](https://github.com/Kennytian/learning-react-native/blob/master/components/code-push-basic.md#code-push-的常用命令)
 
