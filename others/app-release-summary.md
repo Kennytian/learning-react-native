@@ -42,6 +42,7 @@
           enhancer = compose(applyMiddleware(thunkMiddleware))
         }
         ```
+
 ### 2. 项目结构
 * TODO 介绍如何搭建项目结构, 项目文件如何分类和放置。
 
