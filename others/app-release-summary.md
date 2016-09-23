@@ -35,6 +35,7 @@
  * 1.8 调试日志
     - **redux-logger** 是一个直观的查看 redux 请求、响应、更新的日志控件。
     - 这是要特别聊一下, 由于我们最初使用不当, 打出来的 Release 包也非常卡顿, 还以是 `react-native-router-flux` 锅, 换成 `react-native-navigation` 有一点改善（因为是 native 导航）, 但使用一会儿APP, 还是慢慢变卡。 过了半个多月, 突然发现这货一直不停在向外 output log, orz...... 加上如下判断, 性能大幅度提升:
+    
         ```
         if (__DEV__) {
           enhancer = compose(applyMiddleware(thunkMiddleware, reduxLogger))
