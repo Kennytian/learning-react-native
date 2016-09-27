@@ -43,12 +43,40 @@
           enhancer = compose(applyMiddleware(thunkMiddleware))
         }
         ```
+ * 1.9 热更新、修复
+    - **react-native-code-push** APP更新神器，建议上线前多演练几次。使用不当，也是坑人没商量，更新灵活的另一面就是风险更大。
+
 
 ### 2. 项目结构
-* TODO 介绍如何搭建项目结构, 项目文件如何分类和放置。
+* 2.1 项目按如下目录来组织结构，更还优化的更好。
+
+    ```
+    ├── src
+    │   ├── actions      // Redux Actions
+    │   ├── api          // API SDK
+    │   ├── assets       // Media files
+    │   ├── components   // View Components
+    │   ├── config	     // Configuration
+    │   ├── pages        // Container Components
+    │   ├── reducers     // Redux Reducers
+    │   ├── router       // Router configuration
+    │   ├── store        // Redux Store
+    │   ├── utils        // Utility tools
+    │   ├── appIntro.js  // Welcome pages
+    │   ├── init.js      // Some useful function or tools
+    │   └── root.js      // The root of whole app
+    ├── android          // Android Project
+    ├── ios              // iOS Project
+    ├── index.android.js // The entry file for android platform
+    ├── index.ios.js     // The entry file for iOS platform
+    ├── package.json     // Component packages file
+    └── readme.md        // readme note file
+    ```
 
 ### 3.开发与调试
-* TODO 介绍一下开发与调试期间的技巧
+* 3.1 建议在命令行手动启动 `react-native start` 服务，少用 react-native run-android(ios)启动的 node 服务。原因是当该服务挂了或手动 ctrl(control)+c 停止，可以再次使用 `react-native start`，这个操作几乎要每天伴随我T_T。
+* 3.2 开发 Android 端时，可以使用在命令行 `adb shell input keyevent 82` 呼出 dev menu 菜单（不是有快按MM吗？）
+* 3.3 多用 
 
 ### 4.提交审核
 * TODO 介绍一下 checklist、 被拒原因
