@@ -20,6 +20,8 @@ _本篇文章记录的技巧尽量保持与平时工作的 React Native 相关, 
 4. **已经 push** 要回滚 `git revert b3c20ba6fb38cc94fe5a8d`
 5. 基于某次 Commit ID 打 tag `git tag -a v0.1.1 9fbc3d0`, -a 表示带注释
 6. 修改某次错误 commit 注释, `git reset --soft fb38cc9(上一次 Commit ID)`, --soft不会覆盖stash区和work区的代码
+7. 配置git本地用户名, `git config --local user.name "Kennytian"`
+8. 将本地git文件提交到远程`git remote add origin https://github.com/Kennytian/learning-react-native.git; git push -u origin master`
 
 ## ES6
 1. 用**不定参数** `function foo(a, ...z)`和**默认参数**`function bar(father="Kenny", son="Jerry")` 取代 `arguments` 参数
