@@ -12,8 +12,19 @@ _本篇文章记录的技巧尽量保持与平时工作的 React Native 相关, 
 ## iOS
 1. 要添加或修改 `header` 引用, 可以打开 `pbxproj` 文件, 找到 `HEADER_SEARCH_PATHS` 节点(注意**Debug**,**Release**版), 添加或修改相应引用
 2. 让你的 React Native APP 支持 iPhone 和 iPad，`General -> Deployment -> Devices， 选择 Univesral`
-3. 当遇到比整数大得多、也复杂得多的数据时，就有必要用指针来传递地址。程序不一定通过拷贝来传递数据，但一定能够直接传递或通过拷贝来传递的*起始地址*。
+3. 当遇到比整数大得多、也复杂得多的数据时，就有必要用指针来传递地址。程序不一定通过拷贝来传递数据，但一定能够直接传递或通过拷贝来传递的**起始地址**。
 4. 在 `Objective-C` 中 `nil` 等价于 `NULL`
+5. 使用 `typedef` 可以为 `struct` 声明一个等价的别名。
+```oc
+typedef struct {
+    float height;
+    int weight;
+} Person
+...
+Person person;
+person.weight= 75;
+person.height = 1.73
+```
 
 ## Git
 1. 删除**最后一次**缓存记录 `git stash drop stash@{0}`
