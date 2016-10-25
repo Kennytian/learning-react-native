@@ -33,9 +33,15 @@ Step 0-4 `npm install --save-dev -d eslint-config-airbnb`
 
 ![airbnb can not install](http://ww4.sinaimg.cn/mw690/77c29b23jw1f94nlzi8dtj20i90attbn.jpg)
 
-满世界找资料，
+满世界找资料，https://www.google.com/search?q=The+package+eslint-plugin-import%402.0.1+does+not+satisfy+its+siblings%27+peerDependencies+requirements!&oq=The+package+eslint-plugin-import%402.0.1+does+not+satisfy+its+siblings%27+peerDependencies+requirements!&aqs=chrome..69i57.1296j0j7&sourceid=chrome&ie=UTF-8
 
-网上的解决方案没有一个是管用的，后来问群里好友，告诉我用 cnpm 试试，结果神奇的一幕出现了。
+唯一一个看起来比较靠谱的，https://github.com/airbnb/javascript/issues/956#issuecomment-233696181
+
+`npm install --save-dev eslint-config-airbnb eslint-plugin-import@^1.8.0 eslint-plugin-react@^5.1.1 eslint-plugin-jsx-a11y@^1.2.2 eslint@^2.10.2`
+
+最后结论：网上的解决方案没有一个是可用的（_后来才发现其实是我的姿势不对，请接着看_）。
+
+后来问群里好友，告诉我用 cnpm 试试，结果神奇的一幕出现了。
 
 ![airbnb installed successful with cnpm](http://ww4.sinaimg.cn/mw690/77c29b23jw1f94nlj37m7j20i805njtc.jpg)
 
