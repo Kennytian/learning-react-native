@@ -21,13 +21,13 @@
 ```
 按着网上的教程，一步一步来。补充一句：-d 是 detail 的意思，可以看安装的细节。
 
-Step 0-1 `npm install -g eslint`
+**Step 0-1** `npm install -g eslint`
 
-Step 0-2 `npm install --save-dev -d eslint-plugin-react`
+**Step 0-2** `npm install --save-dev -d eslint-plugin-react`
 
-Step 0-3 `npm install --save-dev -d eslint-plugin-react-native`
+**Step 0-3** `npm install --save-dev -d eslint-plugin-react-native`
 
-Step 0-4 `npm install --save-dev -d eslint-config-airbnb`
+**Step 0-4** `npm install --save-dev -d eslint-config-airbnb`
 
 错误来了，airbnb 死活安装不上，报如下错误
 
@@ -45,7 +45,7 @@ Step 0-4 `npm install --save-dev -d eslint-config-airbnb`
 
 ![airbnb installed successful with cnpm](http://ww4.sinaimg.cn/mw1024/77c29b23jw1f94o1ri873j20i805ndhp.jpg)
 
-Step 0-5 在 React Native 项目中，找到 package.json，添加下面这行
+**Step 0-5** 在 React Native 项目中，找到 package.json，添加下面这行
 ```diff
 "scripts": {
   "start": "node node_modules/react-native/local-cli/cli.js start",
@@ -53,9 +53,9 @@ Step 0-5 在 React Native 项目中，找到 package.json，添加下面这行
 }
 ```
 
-Step 0-6 在命令行下执行，`npm run lint`, 
+**Step 0-6** 在命令行下执行，`npm run lint`, 
 
-Step 0-7 如果项目大的话，会有上千条 errors，慢慢改代码吧！ ：D
+**Step 0-7** 如果项目大的话，会有上千条 errors，慢慢改代码吧！ ：D
 
 
 
