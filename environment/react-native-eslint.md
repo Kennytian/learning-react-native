@@ -68,7 +68,7 @@ _提示：这里为了演示，所以执行了两次 eslint --init，选项是�
 }
 ```
 
-**Step 8** 在命令行下执行，`npm run lint` 
+**Step 8** 项目目录下执行，`npm run lint` 
 
 **Step 9** 如果项目大的话，会有上千条 errors，慢慢改代码吧！ ：D  也可以选择修改`.eslintrc`的配置文件，改到自己满意为止，233。
 
