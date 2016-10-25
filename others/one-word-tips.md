@@ -12,7 +12,7 @@ _本篇文章记录的技巧尽量保持与平时工作的 React Native 相关, 
 
 ## node和npm
 1. 安装或更新 npm `curl -L https://www.npmjs.com/install.sh | sh`
-2. 查看 npm 版本信息用 `npm veresion`，内容要比`npm -v` 全面
+2. 查看 npm 版本信息用 `npm version`，内容要比`npm -v` 全面
 
 ## iOS
 1. 要添加或修改 `header` 引用, 可以打开 `pbxproj` 文件, 找到 `HEADER_SEARCH_PATHS` 节点(注意**Debug**,**Release**版), 添加或修改相应引用
@@ -40,7 +40,7 @@ person.height = 1.73
 6. 修改某次错误 commit 注释, `git reset --soft fb38cc9(上一次 Commit ID)`, --soft不会覆盖stash区和work区的代码
 7. 配置git本地用户名, `git config --local user.name "Kennytian"`
 8. 将本地git文件提交到远程`git remote add origin https://github.com/Kennytian/learning-react-native.git; git push -u origin master`
-9. 撤销未提交的修改，支持通配符 `git checkout *`,  `git checkout *.js`  
+9. 撤销未提交的修改，支持通配符 `git checkout *`,  `git checkout *.js`
 
 ## ES6
 1. 用**不定参数** `function foo(a, ...z)`和**默认参数**`function bar(father="Kenny", son="Jerry")` 取代 `arguments` 参数
