@@ -12,6 +12,7 @@ _本篇文章记录的技巧尽量保持与平时工作的 React Native 相关, 
 
 ## node和npm
 1. 安装或更新 npm `curl -L https://www.npmjs.com/install.sh | sh`
+2. 查看 npm 版本信息用 `npm veresion`，内容要比`npm -v` 全面
 
 ## iOS
 1. 要添加或修改 `header` 引用, 可以打开 `pbxproj` 文件, 找到 `HEADER_SEARCH_PATHS` 节点(注意**Debug**,**Release**版), 添加或修改相应引用
