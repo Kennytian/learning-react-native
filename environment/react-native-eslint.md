@@ -41,7 +41,7 @@
 
 唯一一个看起来比较靠谱的，https://github.com/airbnb/javascript/issues/956#issuecomment-233696181
 
-`npm install --save-dev eslint-config-airbnb eslint-plugin-import@^1.8.0 eslint-plugin-react@^5.1.1 eslint-plugin-jsx-a11y@^1.2.2 eslint@^2.10.2`
+`npm install --save-dev -d eslint-config-airbnb eslint-plugin-import eslint-plugin-react eslint-plugin-jsx-a11y eslint`
 
 最后结论：网上的解决方案没有一个是可用的（_后来才发现其实是我的姿势不对，请接着看_）。
 
@@ -57,6 +57,7 @@
 
 _提示：这里为了演示，所以执行了两次 eslint --init，选项是可以用光标上下选择。_
 
+**Step 7** 
 执行完成后，会在项目根目录生成一个名为`.eslintrc`的配置文件，后面慢慢配置该文件。
 
 在 React Native 项目中，找到 package.json，添加下面这行：
@@ -67,9 +68,19 @@ _提示：这里为了演示，所以执行了两次 eslint --init，选项是�
 }
 ```
 
-**Step 7** 在命令行下执行，`npm run lint` 
+**Step 8** 在命令行下执行，`npm run lint` 
 
-**Step 8** 如果项目大的话，会有上千条 errors，慢慢改代码吧！ ：D  也可以选择修改`.eslintrc`的配置文件，改到自己满意为止，233。
+**Step 9** 如果项目大的话，会有上千条 errors，慢慢改代码吧！ ：D  也可以选择修改`.eslintrc`的配置文件，改到自己满意为止，233。
 
 #### 正确姿势
-1. `npm` 版本太低，大神建议我升级到 `3.x`，说 `npm 2.x` 的依赖处理很糟糕，安装或更新 npm `curl -L https://www.npmjs.com/install.sh | sh`
+**Step 1**  `npm` 版本太低，大神建议我升级到 `3.x`，说 `npm 2.x` 的依赖处理很糟糕，安装或更新 npm `curl -L https://www.npmjs.com/install.sh | sh`
+
+**Step 2** `npm install -g -d eslint`
+
+**Step 3** `eslint --init`, 选 Airbnb，会自动执行`npm install --save-dev -d eslint eslint-plugin-react eslint-plugin-jsx-a11y eslint-plugin-import eslint-config-airbnb`
+
+接上面的 **Step 7**
+
+Enjoy your code!
+
+
