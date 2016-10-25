@@ -43,6 +43,19 @@ Step 0-4 `npm install --save-dev -d eslint-config-airbnb`
 
 后来问群里好友，告诉我用 cnpm 试试，结果神奇的一幕出现了。
 
-![airbnb installed successful with cnpm](http://ww4.sinaimg.cn/mw690/77c29b23jw1f94nlj37m7j20i805njtc.jpg)
+![airbnb installed successful with cnpm](http://ww4.sinaimg.cn/mw1024/77c29b23jw1f94o1ri873j20i805ndhp.jpg)
+
+Step 0-5 在 React Native 项目中，找到 package.json，添加下面这行
+```diff
+"scripts": {
+  "start": "node node_modules/react-native/local-cli/cli.js start",
++  "lint":"eslint --ext .js ./src"
+}
+```
+
+Step 0-6 在命令行下执行，`npm run lint`, 
+
+Step 0-7 如果项目大的话，会有上千条 errors，慢慢改代码吧！ ：D
+
 
 
