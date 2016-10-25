@@ -18,6 +18,7 @@
 * [ES6 之 Promise]
 
 ## 高级
+* [React Native ESLint & Airbnb 配置](https://github.com/Kennytian/learning-react-native/blob/master/environment/react-native-eslint.md)
 * [用 Jenkins CI 打 Android 和 iOS 包](https://github.com/Kennytian/learning-react-native/blob/master/environment/react-native-ci.md)
 * [React Native Module for CodePush 实战](https://github.com/Kennytian/learning-react-native/blob/master/components/code-push-action.md)
 * [Native Modules 原理]
