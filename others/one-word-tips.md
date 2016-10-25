@@ -7,15 +7,19 @@ _本篇文章记录的技巧尽量保持与平时工作的 React Native 相关, 
 2. 自定义属性中,要么指定具体数字,要么用full `width: PropTypes.oneOfType([PropTypes.number, PropTypes.oneOf(['full'])]).isRequired`
 3. 之前判断根据不同平台写 Style 时用`height: Platform.OS === 'ios' ? 200 : 100,` , 今天发现还有另一种写法 `...Platform.select({ ios: { top : 20 }, android : { top : 10 } }),`
 4. `componentWillReceiveProps(nextProps)` 在组件接收新的props时触发, 用法: `if (nextProps.project !== this.props.project) { }`
-5. 避免用户调整字体(大小)影响APP界面布局 `Text.defaultProps.allowFontScaling=false` 在程序启动页面加入这句。
+5. 避免用户调整字体(大小)影响APP界面布局 `Text.defaultProps.allowFontScaling=false` 在程序启动页面加入这句
+
+
+## node和npm
+1. 安装或更新 npm `curl -L https://www.npmjs.com/install.sh | sh`
 
 ## iOS
 1. 要添加或修改 `header` 引用, 可以打开 `pbxproj` 文件, 找到 `HEADER_SEARCH_PATHS` 节点(注意**Debug**,**Release**版), 添加或修改相应引用
-2. 让你的 React Native APP 支持 iPhone 和 iPad，`General -> Deployment -> Devices， 选择 Univesral`
-3. 当遇到比整数大得多、也复杂得多的数据时，就有必要用指针来传递地址。程序不一定通过拷贝来传递数据，但一定能够直接传递或通过拷贝来传递的**起始地址**。
+2. 让你的 React Native APP 支持 iPhone 和 iPad，`General -> Deployment -> Devices， 选择 Univesral`。
+3. 当遇到比整数大得多、也复杂得多的数据时，就有必要用指针来传递地址。程序不一定通过拷贝来传递数据，但一定能够直接传递或通过拷贝来传递的**起始地址**
 4. 在 `Objective-C` 中 `nil` 等价于 `NULL`
-5. 使用 `typedef` 可以为 `struct` 声明一个等价的别名。
-```oc
+5. `typedef`为某个类型声明一个新的类型，使用 `typedef` 可以为 `struct` 声明一个等价的别名
+```
 typedef struct {
     float height;
     int weight;
