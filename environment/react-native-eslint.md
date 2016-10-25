@@ -52,8 +52,10 @@
 ![airbnb installed successful with cnpm](http://ww4.sinaimg.cn/mw1024/77c29b23jw1f94o1ri873j20i805ndhp.jpg)
 
 **Step 6** 执行 eslint --init
+
 ![airbnb installed successful with cnpm](http://ww4.sinaimg.cn/mw1024/77c29b23jw1f94pawx733j20d505rgmq.jpg)
-_提示：选项是可以用光标上下选择_
+
+_提示：这里为了演示，所以执行了两次 eslint --init，选项是可以用光标上下选择。_
 
 执行完成后，会在项目根目录生成一个名为`.eslintrc`的配置文件，后面慢慢配置该文件。
 
@@ -67,9 +69,7 @@ _提示：选项是可以用光标上下选择_
 
 **Step 7** 在命令行下执行，`npm run lint` 
 
-**Step 8** 如果项目大的话，会有上千条 errors，慢慢改代码吧！ ：D 
+**Step 8** 如果项目大的话，会有上千条 errors，慢慢改代码吧！ ：D  也可以选择修改`.eslintrc`的配置文件，改到自己满意为止，233。
 
-也可以选择修改`.eslintrc`的配置文件，改到你满意为止。
-
-
-
+#### 正确姿势
+1. `npm` 版本太低，大神建议我升级到 `3.x`，说 `npm 2.x` 的依赖处理很糟糕，安装或更新 npm `curl -L https://www.npmjs.com/install.sh | sh`
