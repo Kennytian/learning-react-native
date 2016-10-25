@@ -4,9 +4,9 @@
 - 欢迎您帮忙纠错, 一起帮助更多的人。 一起来学习交流React, QQ群：413381701
 ```
 
-我在配置的时候也遇坑无数，差不多搞了半天才配置完毕，现记录下来，供以后参考。
+差不多搞了半天才配置完毕，现记录下来，供以后参考。
 
-#### 0.遇坑环境
+#### 遇坑环境
 ```js
 { npm: '2.15.9',
   ares: '1.10.1-DEV',
@@ -19,15 +19,19 @@
   v8: '4.5.103.37',
   zlib: '1.2.8' }
 ```
-按着网上的教程，一步一步来。补充一句：-d 是 detail 的意思，可以看安装的细节。
+按着网上的教程，一步一步来。
 
-**Step 0-1** `npm install -g eslint`
+补充两句：
+1. -d 是 detail 的意思，可以看安装的细节。
+2. npm install 都是在 react native 项目根目录下操作。
 
-**Step 0-2** `npm install --save-dev -d eslint-plugin-react`
+**Step 1** `npm install -g -d eslint`
 
-**Step 0-3** `npm install --save-dev -d eslint-plugin-react-native`
+**Step 2** `npm install --save-dev -d eslint-plugin-react`
 
-**Step 0-4** `npm install --save-dev -d eslint-config-airbnb`
+**Step 3** `npm install --save-dev -d eslint-plugin-react-native`
+
+**Step 4** `npm install --save-dev -d eslint-config-airbnb`
 
 错误来了，airbnb 死活安装不上，报如下错误
 
@@ -43,9 +47,17 @@
 
 后来问群里好友，告诉我用 cnpm 试试，结果神奇的一幕出现了。
 
+**Step 5** `cnpm install --save-dev -d eslint-config-airbnb`
+
 ![airbnb installed successful with cnpm](http://ww4.sinaimg.cn/mw1024/77c29b23jw1f94o1ri873j20i805ndhp.jpg)
 
-**Step 0-5** 在 React Native 项目中，找到 package.json，添加下面这行
+**Step 6** 执行 eslint --init
+![airbnb installed successful with cnpm](http://ww4.sinaimg.cn/mw1024/77c29b23jw1f94pawx733j20d505rgmq.jpg)
+_提示：选项是可以用光标上下选择_
+
+执行完成后，会在项目根目录生成一个名为`.eslintrc`的配置文件，后面慢慢配置该文件。
+
+在 React Native 项目中，找到 package.json，添加下面这行：
 ```diff
 "scripts": {
   "start": "node node_modules/react-native/local-cli/cli.js start",
@@ -53,9 +65,11 @@
 }
 ```
 
-**Step 0-6** 在命令行下执行，`npm run lint`, 
+**Step 7** 在命令行下执行，`npm run lint` 
 
-**Step 0-7** 如果项目大的话，会有上千条 errors，慢慢改代码吧！ ：D
+**Step 8** 如果项目大的话，会有上千条 errors，慢慢改代码吧！ ：D 
+
+也可以选择修改`.eslintrc`的配置文件，改到你满意为止。
 
 
 
