@@ -73,11 +73,11 @@ _提示：这里为了演示，所以执行了两次 eslint --init，选项是�
 **Step 9** 如果项目大的话，会有上千条 errors，慢慢改代码吧！ ：D  也可以选择修改`.eslintrc`的配置文件，改到自己满意为止，233。
 
 #### 正确姿势
-**Step 1**  `npm` 版本太低，大神建议我升级到 `3.x`，说 `npm 2.x` 的依赖处理很糟糕，安装或更新 npm `curl -L https://www.npmjs.com/install.sh | sh`
+**Step 1**  `npm` 版本太低，大神建议我升级到 `3.x`，说 `npm 2.x` 的依赖处理很糟糕，安装或更新 npm，执行： `curl -L https://www.npmjs.com/install.sh | sh`
 
-**Step 2** `npm install -g -d eslint`
+**Step 2** 项目目录下执行 `npm install -g -d eslint`
 
-**Step 3** `eslint --init`, 选 Airbnb，会自动执行`npm install --save-dev -d eslint eslint-plugin-react eslint-plugin-jsx-a11y eslint-plugin-import eslint-config-airbnb`
+**Step 3** 项目目录下执行 `eslint --init`, 选 Airbnb，会自动执行这一段`npm install --save-dev -d eslint eslint-plugin-react eslint-plugin-jsx-a11y eslint-plugin-import eslint-config-airbnb`
 
 接上面的 **Step 7**
 
