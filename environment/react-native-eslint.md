@@ -87,7 +87,7 @@ npm info "$PKG" peerDependencies --json | command sed 's/[\{\},]//g ; s/: /@/g' 
 
 **Step 4** `npm install --save-dev -d babel-eslint`，用于转换 ES6 的 eslint 的插件包
 
-**Step 5** `eslint --init`, `.eslintrc` 的配置文件，用于初始化选 Airbnb
+**Step 5** `eslint --init`, 初始化选popular style、Airbnb
 
 接上面的 **Step 7**
 
