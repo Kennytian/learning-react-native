@@ -75,9 +75,19 @@ _提示：这里为了演示，所以执行了两次 eslint --init，选项是�
 #### 正确姿势
 **Step 1**  `npm` 版本太低，大神建议我升级到 `3.x`，说 `npm 2.x` 的依赖处理很糟糕，安装或更新 npm，执行： `curl -L https://www.npmjs.com/install.sh | sh`
 
-**Step 2** 项目目录下执行 `npm install -g -d eslint`
+**Step 2**  `npm install -g -d eslint`
 
-**Step 3** 项目目录下执行 `eslint --init`, 选 Airbnb，会自动执行这一段`npm install --save-dev -d eslint eslint-plugin-react eslint-plugin-jsx-a11y eslint-plugin-import eslint-config-airbnb`
+**Step 3** 全部粘贴至命令行执行
+```
+(
+export PKG=eslint-config-airbnb;
+npm info "$PKG" peerDependencies --json | command sed 's/[\{\},]//g ; s/: /@/g' | xargs npm install --save-dev -d "$PKG"
+)
+```
+
+**Step 4** `npm install --save-dev -d babel-eslint`，用于转换 ES6 的 eslint 的插件包
+
+**Step 5** `eslint --init`, `.eslintrc` 的配置文件，用于初始化选 Airbnb
 
 接上面的 **Step 7**
 
