@@ -24,6 +24,11 @@ marginTop:Platform.select({android:2, ios:0})
 ## node和npm
 1. 安装或更新 npm `npm install -g -d npm@latest`
 2. 查看 npm 版本信息用 `npm version`，内容要比`npm -v` 全面
+3. `npm update` 命令对指定的 Package 进行升级，例如`npm update redux`
+4. `npm outdated` 查询当前安装的所有 npm 包中是否有存在新版本, Wanted 列是当前项目支持的最高版本
+5. `npm install --save redux` --save 的意思是安装的同时, 把模块和版本号添加到 dependencies 里
+6. `npm install --save-dev eslint` --save-dev，将模块和版本号添加到 devDependencies，仅供开发期间使用
+7. `npm uninstall --save redux` 删除 node_modules 包的同时，也从 dependencies 里清除模块和版本信息
 
 ## iOS
 1. 要添加或修改 `header` 引用, 可以打开 `pbxproj` 文件, 找到 `HEADER_SEARCH_PATHS` 节点(注意**Debug**,**Release**版), 添加或修改相应引用
