@@ -26,7 +26,7 @@ npm config set disturl https://npm.taobao.org/dist</code></pre>
 
 ### 安装 Gradle
 - 虽然在编译Android项目时会自动下载，但如果网络状态不好，很容易下载失败，建议先下载[gradle-2.4-all.zip](http://pan.baidu.com/s/1pLEkm4F)。
-- 下载上述文件后，将zip文件放在``` C:\Users\kenny\.gradle\wrapper\dists\gradle-2.4-all\6r4uqcc6ovnq6ac6s0txzcpc0 ```  (不存在的目录就手动创建)。
+- 下载上述文件后，将zip文件放在``` C:\Users\kenny\.gradle\wrapper\dists\gradle-2.4-all\6r4uqcc6ovnq6ac6s0txzcpc0 ```  (不存在的目录就手动创建, 把 kenny 改成你的用户名)。
 
 ### 安装 react-native 命令行工具
 <pre><code>npm install -g react-native-cli</code></pre>
