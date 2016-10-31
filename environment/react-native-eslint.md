@@ -91,6 +91,8 @@ npm info "$PKG" peerDependencies --json | command sed 's/[\{\},]//g ; s/: /@/g' 
 
 接上面的 **Step 7**
 
+最后：推荐大家用这个eslintrc编辑器，真是太方便了 https://pirosikick.github.io/eslintrc-editor
+
 Enjoy your code!
 
 
