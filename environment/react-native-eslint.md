@@ -1,8 +1,6 @@
 ### React Native ESLint & Airbnb 配置
 
-```diff
-- 欢迎您帮忙纠错, 一起帮助更多的人。 一起来学习交流React, QQ群：413381701
-```
+欢迎您帮忙纠错, 一起帮助更多的人。 一起来学习交流React, QQ群：[413381701](http://shang.qq.com/wpa/qunwpa?idkey=3b9474dacbf35e4a9659e89399758406e510e5b8a3f81109f7d07efaadc6056d)
 
 差不多搞了半天才配置完毕，现记录下来，供以后参考。
 
