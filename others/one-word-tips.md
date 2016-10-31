@@ -11,7 +11,7 @@ _本篇文章记录的技巧尽量保持与平时工作的 React Native 相关, 
 
 
 ## node和npm
-1. 安装或更新 npm `curl -L https://www.npmjs.com/install.sh | sh`
+1. 安装或更新 npm `npm install -g -d npm@latest`
 2. 查看 npm 版本信息用 `npm version`，内容要比`npm -v` 全面
 
 ## iOS
