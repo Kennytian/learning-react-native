@@ -20,7 +20,6 @@ marginTop:Platform.select({android:2, ios:0})
 4. `componentWillReceiveProps(nextProps)` 在组件接收新的props时触发, 用法: `if (nextProps.project !== this.props.project) { }`
 5. 避免用户调整字体(大小)影响APP界面布局 `Text.defaultProps.allowFontScaling=false` 在程序启动页面加入这句
 
-
 ## node和npm
 1. 安装或更新 npm `npm install -g -d npm@latest`
 2. 查看 npm 版本信息用 `npm version`，内容要比`npm -v` 全面
@@ -29,6 +28,15 @@ marginTop:Platform.select({android:2, ios:0})
 5. `npm install --save redux` --save 的意思是安装的同时, 把模块和版本号添加到 dependencies 里
 6. `npm install --save-dev eslint` --save-dev，将模块和版本号添加到 devDependencies，仅供开发期间使用
 7. `npm uninstall --save redux` 删除 node_modules 包的同时，也从 dependencies 里清除模块和版本信息
+
+## Android
+adb 常用命令：
+1. `adb reverse tcp:8081 tcp:8081` 连不上 node sever 了执行
+2. `adb devices` 查看已连接电脑的设备
+3. `adb shell input keyevent 82` 弹出开发调试菜单
+4. `adb install ./android/app/build/outputs/apk/app-debug-unaligned.apk` 安装 apk 包（apk 名称可能不同）
+5. `adb uninstall com.AppName` 删除 APP（package 名可能不同）
+6. `adb -s 192.168.56.101:5555 shell am start -n com.AppName/.MainActivity` 打开 APP，启动首页（IP、端口和包名可能不同）
 
 ## iOS
 1. 要添加或修改 `header` 引用, 可以打开 `pbxproj` 文件, 找到 `HEADER_SEARCH_PATHS` 节点(注意**Debug**,**Release**版), 添加或修改相应引用
