@@ -28,9 +28,10 @@ marginTop:Platform.select({android:2, ios:0})
 5. `npm install --save redux` --save 的意思是安装的同时, 把模块和版本号添加到 dependencies 里
 6. `npm install --save-dev eslint` --save-dev，将模块和版本号添加到 devDependencies，仅供开发期间使用
 7. `npm uninstall --save redux` 删除 node_modules 包的同时，也从 dependencies 里清除模块和版本信息
+8. `npm shrinkwrap` 允许用户锁定整个依赖树，让每个包使用特定的版本
 
 ## Android
-adb 常用命令：
+####adb 常用命令：
 1. `adb reverse tcp:8081 tcp:8081` 连不上 node sever 了执行
 2. `adb devices` 查看已连接电脑的设备
 3. `adb shell input keyevent 82` 弹出开发调试菜单
