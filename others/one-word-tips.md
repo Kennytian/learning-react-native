@@ -86,5 +86,8 @@ render(){
 }
 ```
 
+## Tools
+Beyound Compare 永久试用：`rm "/Users/$(whoami)/Library/Application Support/Beyond Compare/registry.dat"`
+
 ## Linux / Mac OS X
 1. 清除 DNS 缓存 `sudo killall -HUP mDNSResponder`
