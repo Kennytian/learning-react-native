@@ -8,6 +8,7 @@
 * [WebStorm 一键运行 Android 项目](https://github.com/Kennytian/learning-react-native/blob/master/ide/webstorm/run_with_npm.md)
 * [React Native 坑大发](https://github.com/Kennytian/learning-react-native/blob/master/environment/react-native-pit.md)
 * [一句技巧](https://github.com/Kennytian/learning-react-native/blob/master/others/one-word-tips.md)
+* **[React Native 面试题](https://github.com/Kennytian/learning-react-native/blob/master/others/react-native-interview.md)**
 
 ## 中级
 * [React Native Module for CodePush 入门](https://github.com/Kennytian/learning-react-native/blob/master/components/code-push-basic.md)
@@ -26,4 +27,3 @@
 * [React Native Module for CodePush 实战](https://github.com/Kennytian/learning-react-native/blob/master/components/code-push-action.md)
 * [Native Modules 原理]
 * [React Native API 学习](https://github.com/Kennytian/learning-react-native/blob/master/api/react-native-api.md)
-* **[React Native 面试题](https://github.com/Kennytian/learning-react-native/blob/master/others/react-native-interview.md)**

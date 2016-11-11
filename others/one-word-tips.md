@@ -39,6 +39,7 @@ marginTop:Platform.select({android:2, ios:0})
 4. `adb install ./android/app/build/outputs/apk/app-debug-unaligned.apk` 安装 apk 包（apk 名称可能不同）
 5. `adb uninstall com.AppName` 删除 APP（package 名可能不同）
 6. `adb -s 192.168.56.101:5555 shell am start -n com.AppName/.MainActivity` 打开 APP，启动首页（IP、端口和包名可能不同）
+7. `gradlew andDep` 查看项目中哪些lib依赖需要解除
 
 ## iOS
 1. 要添加或修改 `header` 引用, 可以打开 `pbxproj` 文件, 找到 `HEADER_SEARCH_PATHS` 节点(注意**Debug**,**Release**版), 添加或修改相应引用
