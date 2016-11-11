@@ -26,3 +26,4 @@
 * [React Native Module for CodePush 实战](https://github.com/Kennytian/learning-react-native/blob/master/components/code-push-action.md)
 * [Native Modules 原理]
 * [React Native API 学习](https://github.com/Kennytian/learning-react-native/blob/master/api/react-native-api.md)
+* **[React Native 面试题](https://github.com/Kennytian/learning-react-native/blob/master/others/react-native-interview.md)**
