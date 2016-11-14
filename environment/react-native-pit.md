@@ -2,6 +2,30 @@
 
 一起来学习交流React, QQ群：413381701
 
+## 22. 开启 `Hot Reloading` 后，经常报`reducer is not a function`
+项目大了之后不可避免要使用 `Redux` 来管理数据流，在模拟器上开启 `Hot Reloading` 后，时不时报 `reducer is not a function`，经查资料代码整理如下：
+```
+function isHot() {
+  // 参考： https://github.com/gaearon/redux-devtools/issues/233#issuecomment-176210686
+  // Enable Webpack hot module replacement for reducers
+  if (module.hot) {
+    let reducerPath = '../reducers/rootReducer';
+    module.hot.accept(reducerPath, () => {
+      let nextRootReducer = require(reducerPath).default;
+      store.replaceReducer(nextRootReducer);
+    });
+  }
+}
+
+export default function configureStore(initialState = {}) {
+  store = createStore(rootReducer, initialState, enhancers);
+
+  isHot();
+
+  return store;
+}
+```
+
 ## 21. Xcode7 升级后 Xcode 8后，项目无法编译（我环境是从0.29升到0.32）
 ```
 项目报如下错误

@@ -18,8 +18,8 @@ marginTop:Platform.select({android:2, ios:0})
 ```
 4. 解决 eslint 报 switch case 缩进错误 `"indent": [2, 2, {"SwitchCase": 1}]`
 
-4. `componentWillReceiveProps(nextProps)` 在组件接收新的props时触发, 用法: `if (nextProps.project !== this.props.project) { }`
-5. 避免用户调整字体(大小)影响APP界面布局 `Text.defaultProps.allowFontScaling=false` 在程序启动页面加入这句
+5. `componentWillReceiveProps(nextProps)` 在组件接收新的props时触发, 用法: `if (nextProps.project !== this.props.project) { }`
+6. 避免用户调整字体(大小)影响APP界面布局 `Text.defaultProps.allowFontScaling=false` 在程序启动页面加入这句
 
 ## node和npm
 1. 安装或更新 npm `npm install -g -d npm@latest`
