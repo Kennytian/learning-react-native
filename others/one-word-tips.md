@@ -20,6 +20,8 @@ marginTop:Platform.select({android:2, ios:0})
 
 5. `componentWillReceiveProps(nextProps)` 在组件接收新的props时触发, 用法: `if (nextProps.project !== this.props.project) { }`
 6. 避免用户调整字体(大小)影响APP界面布局 `Text.defaultProps.allowFontScaling=false` 在程序启动页面加入这句
+7. 用命令行打包 `react-native bundle --assets-dest /Users/kenny/temp/ --bundle-output /Users/kenny/temp/main.jsbundle --dev false --entry-file index.ios.js --platform ios`， _路径地址请根据自己的环境修改_
+
 
 ## node和npm
 1. 安装或更新 npm `npm install -g -d npm@latest`
