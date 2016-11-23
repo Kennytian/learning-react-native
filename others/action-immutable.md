@@ -19,6 +19,7 @@ if (!currentConversation && conversations) {
 * `includes`(同contains) 判断是否包含某个值, 源码: https://github.com/facebook/immutable-js/blob/master/type-definitions/Immutable.d.ts#L1763
 * `first` 返回集合中的第一个值, 源码: https://github.com/facebook/immutable-js/blob/master/type-definitions/Immutable.d.ts#L1769
 
+ 
 #### Immutable 实战2（fromJS、is）
 
 ```javascript
@@ -33,6 +34,7 @@ shouldComponentUpdate(nextProps, nextState) {
 * `fromJS` 将 JSON 对象转换为 Immutable 对象, 源码:: https://github.com/facebook/immutable-js/blob/master/type-definitions/Immutable.d.ts#L86
 * `is` 判断两个对象是否相等，源码:：https://github.com/facebook/immutable-js/blob/master/type-definitions/Immutable.d.ts#L109
 
+ 
 #### Immutable 实战3（getIn、get）
 ```javascript
 state => state.getIn(['messages', 'isDone'])
@@ -41,6 +43,7 @@ state => state.get('auth')
 * `getIn` 取出树形结构中 messages -> isDone 的值，源码:：https://github.com/facebook/immutable-js/blob/master/type-definitions/Immutable.d.ts#L1783
 * `get` 用 key 取值，源码:：https://github.com/facebook/immutable-js/blob/master/type-definitions/Immutable.d.ts#L1752
 
+ 
 #### Immutable 实战4（updateIn、set）
 ```javascript
 let messageList = state.updateIn(['messages', action.message.id], (oldValue) => {
@@ -54,6 +57,7 @@ return messageList;
 * `updateIn` 更新树形结构中 messages -> id 的赋值，源码:：https://github.com/facebook/immutable-js/blob/master/type-definitions/Immutable.d.ts#L605
 * `set` 给指定的 key 赋值，源码:：https://github.com/facebook/immutable-js/blob/master/type-definitions/Immutable.d.ts#L166
 
+ 
 #### Immutable 实战5（withMutations、mergeDeep）
 ```javascript
 export default function reducer(state = initialState, action) {
