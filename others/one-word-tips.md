@@ -88,6 +88,11 @@ render(){
   )
 }
 ```
+5. `Array.from()` 方法可以将一个类数组对象或可遍历对象转换成真正的数组
+6. `Array.of()` 方法会将它的任意类型的多个参数放在一个数组里并返回，Array.of(1, 0, 24) // [1, 0, 24]
+7. `Array.copyWithin()` 方法会浅拷贝数组的部分元素到同一数组的不同位置，且不改变数组的大小，返回该数组。[1, 2, 3, 4, 5].copyWithin(0, 3); // 4,5,3,4,5
+8. `Array.find()` 如果数组中某个元素满足测试条件，就会返回那个元素的值，[1,3,5,7].find(n => n<3) //1
+9. `Array.findIndex()` findIndex()方法用来查找数组中某指定元素的索引, 如果找不到指定的元素, 则返回 -1，[1,3,5,7].find(n => n>3) //2
 
 ## Tools
 Beyound Compare 永久试用：`rm "/Users/$(whoami)/Library/Application Support/Beyond Compare/registry.dat"`
