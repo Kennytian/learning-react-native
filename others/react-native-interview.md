@@ -3,16 +3,15 @@
 _其实这不是面试题，就是一些 React Native 的知识点。如果你用来 interview，请一定反复验证，有错的话，记得 PR 给我，谢谢！_
 
 #### React Native
->**Q1: Props 变化后会触发页面生命周期中的哪些方法？执行顺序是什么？**
+>**Q1: Props 和 State 变化后会触发页面生命周期中的哪些方法？执行顺序是什么？**
 
-> A1: compoentWillReceiveProps, shouldComponentUpdate, componentWillUpdate, render, componentDidUpdate
-
-
->**Q2: State 变化后会触发页面生命周期中的哪些方法？执行顺序是什么？**
-
-> A2: shouldComponentUpdate, componentWillUpdate, render, componentDidUpdate
-
-
+Props Change | State Change
+-----|-----
+compoentWillReceiveProps | 
+shouldComponentUpdate | shouldComponentUpdate
+componentWillUpdate | componentWillUpdate
+render | render
+componentDidUpdate | componentDidUpdate
 
 #### Redux
 >**Q1: 同步 action 与异步 action 最大的区别是什么？**
