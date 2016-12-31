@@ -45,7 +45,11 @@ marginTop:Platform.select({android:2, ios:0})
 
 ## iOS
 1. 要添加或修改 `header` 引用, 可以打开 `pbxproj` 文件, 找到 `HEADER_SEARCH_PATHS` 节点(注意**Debug**,**Release**版), 添加或修改相应引用
-2. 让你的 React Native APP 支持 iPhone 和 iPad，`General -> Deployment -> Devices， 选择 Univesral`。
+2. 让你的 React Native APP 支持 iPhone 和 iPad，`General -> Deployment -> Devices， 选择 Univesral`。或者在 `firstApp/ios/firstApp.xcodeproj/project.pbxproj` 找到 `VERSIONING_SYSTEM` 附近，在 `debug` 和 `release` 两处添加
+```diff
++ TARGETED_DEVICE_FAMILY = "1,2";
+VERSIONING_SYSTEM = "apple-generic";
+```
 3. 当遇到比整数大得多、也复杂得多的数据时，就有必要用指针来传递地址。程序不一定通过拷贝来传递数据，但一定能够直接传递或通过拷贝来传递的**起始地址**
 4. 在 `Objective-C` 中 `nil` 等价于 `NULL`
 5. `typedef`为某个类型声明一个新的类型，使用 `typedef` 可以为 `struct` 声明一个等价的别名
