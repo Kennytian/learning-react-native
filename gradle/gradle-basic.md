@@ -5,7 +5,7 @@
 官网地址: https://docs.gradle.org
 
 ## Gradle 默认安装路径
-* C:\Users\<username> (大微软 Windows)
+* C:\Users\\<username> (大微软 Windows)
 * /Users/<username> (Mac OS X)
 * /home/<username> (Linux)
 
