@@ -10,6 +10,8 @@
 * /home/<username> (Linux)
 
 ## 常用版本路径(以下为 Mac OS X 平台示例)
+* /Users/username/.gradle/wrapper/dists/**gradle-3.2.1-all**/8lz77g2tsnl6gxlpeowwkfgj1
+* /Users/username/.gradle/wrapper/dists/**gradle-2.14.1-all**/8bnwg5hd3w55iofp58khbp6yv
 * /Users/username/.gradle/wrapper/dists/**gradle-2.13-all**/1b9wlm73elu4cqnbc0rk7r7qn
 * /Users/username/.gradle/wrapper/dists/**gradle-2.12-all**/8ywkdai6puj5z81fume4e7njw
 * /Users/username/.gradle/wrapper/dists/**gradle-2.11-all**/ace7yl0a7udokebb27mt9s3qr
