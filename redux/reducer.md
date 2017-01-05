@@ -11,7 +11,8 @@
 
 通常，这个 `state` 树还需要存放其它一些 `UI` 数据，但尽量把这些数据与 `UI` 相关的 `state` 分开。
 
-```{
+```
+{
   visibilityFilter: 'SHOW_ALL',
   hotels:[
   {
@@ -43,7 +44,8 @@
 
 只需要谨记 `reducer` 一定要保持纯净，**只要传入参数一样，返回必须一样。没有特殊情况，没有副作用，没有API请求、没有修改参数、单纯执行计算**。
 
-```function hotelApp(state = initialState, action) {
+```
+function hotelApp(state = initialState, action) {
     // 这里暂不处理任何 action，
     // 仅返回传入的 state。
     return state;
@@ -51,7 +53,8 @@
 ```
 
 现在可以处理 `SET_VISIBILITY_FILTER` , 需要做的只是改变 `state` 中的 `visibilityFilter`
-```function hotelApp(state = initialState, action) {
+```
+function hotelApp(state = initialState, action) {
     switch(action.type) {
         case SET_VISIBILITY_FILTER:
             return Object.assign({}, state, {
@@ -71,7 +74,8 @@
 
 ## 处理多个Action
 还有两个 `action` 需要处理, 我们先处理 `ADD_HOTEL`.
-```function hotelApp(state = initialState, action) {
+```
+function hotelApp(state = initialState, action) {
     switch(action.type) {
         case SET_VISIBILITY_FILTER:
             return Object.assign({}, state, {
@@ -89,7 +93,8 @@
 ```
 
 `COMPLETE_TODO` 也很好理解：
-```case COMPLETE_TODO:
+```
+case COMPLETE_TODO:
   return Object.assign({}, state, {
     todos: [
       ...state.todos.slice(0, action.index),          //比如: 0 ~ 5
@@ -103,14 +108,16 @@
 我们不能直接修改却要更新数组中指定的一项数据，要先把**前面**和**后面**都切开。**时刻谨记永远不要在克隆 `state` 前修改它**。
 
 `combineReducers` 接收一个对象, 可以把所有顶级的 `reducer` 放到一个独立的文件中, 通过 `export` 暴露出每个 `reducer` 函数,然后使用 `import * as reducer` 得到一个以它们名字作为 key 的 object:
-```mport { combineReducers } from 'redux';
+```
+import { combineReducers } from 'redux';
 import * as reducers from './reducers';
 
 const hotelApp = combineReducers(reducers);
 ```
 
 ### 知识补充:
-```var o1 = { a: 1 };
+```
+var o1 = { a: 1 };
 var o2 = { b: 2 };
 var o3 = { c: 3 };
 
@@ -119,7 +126,8 @@ console.log(obj); // { a: 1, b: 2, c: 3 }
 console.log(o1);  // { a: 1, b: 2, c: 3 }, target object itself is changed.
 ```
 
-```var str = "Hello happy world!"
+```
+var str = "Hello happy world!"
 str.slice(6); //happy world!
 
 var str = "Hello happy world!"
