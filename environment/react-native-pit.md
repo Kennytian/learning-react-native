@@ -2,6 +2,25 @@
 
 一起来学习交流React, QQ群：413381701
 
+## 23. 在一台新电脑上打开之前的 `React Native` 项目，运行 `react-native run-ios` 命令直接闪退，用 `xcode` 运行，报 `“Error watching file for changes: EMFILE”` 错误
+
+错误详情：
+```
+Error watching file for changes: EMFILE
+{"code":"EMFILE","errno":"EMFILE","syscall":"Error watching file for changes:","filename":null}
+Error: Error watching file for changes: EMFILE
+    at exports._errnoException (util.js:1008:11)
+    at FSEvent.FSWatcher._handle.onchange (fs.js:1406:11)
+```
+在网上查阅资料发现是该电脑没有安装 `watchman`， 执行 `brew install --HEAD watchman` 项目成功运行起来。
+
+补充知识点：
+* `watchman` 是由 `Facebook` 提供的监视文件系统变更的工具。安装此工具可以提高开发时的性能（packager可以快速捕捉文件的变化从而实现实时刷新）
+* `--HEAD` 表示获取 '最新版' 而非 '稳定版'
+
+参考链接：https://github.com/facebook/react-native/issues/10088
+
+
 ## 22. 开启 `Hot Reloading` 后，经常报`reducer is not a function`
 项目大了之后不可避免要使用 `Redux` 来管理数据流，在模拟器上开启 `Hot Reloading` 后，时不时报 `reducer is not a function`，经查资料代码整理如下：
 ```
