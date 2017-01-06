@@ -9,6 +9,7 @@
 * [React Native 坑大发](https://github.com/Kennytian/learning-react-native/blob/master/environment/react-native-pit.md)
 * [一句技巧](https://github.com/Kennytian/learning-react-native/blob/master/others/one-word-tips.md)
 * **[React Native 面试题](https://github.com/Kennytian/learning-react-native/blob/master/others/react-native-interview.md)**
+* [实用 package scripts 配置大甩卖](https://github.com/Kennytian/learning-react-native/blob/master/others/package-scripts.md)
 
 ## 中级
 * [React Native Module for CodePush 入门](https://github.com/Kennytian/learning-react-native/blob/master/components/code-push-basic.md)
