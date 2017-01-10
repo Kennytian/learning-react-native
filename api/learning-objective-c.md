@@ -4,6 +4,15 @@
 
 **_`React Native` 虽然大多数工作量是前端 `JavaScript` 开发，但掌握基础的 `Objective C` 语法还是很有必要的。_**
 
+### 13. self 和 super
+#### self
+* `self` 是方法的隐含参数，类似于 `C#` `Java` 中的 `this`
+* `self` 是指向当前对象的指针，它的值可以改变
+* 当 `fun1` 方法调用同类中的 `fun2` 时，`self` 可以省略； 必须使用 `self` 指消息的接受者
+
+#### super
+* `super` 是调用父类的方法与属性
+
 ### 12. Objective C 属性
 
 #### 属性声明
