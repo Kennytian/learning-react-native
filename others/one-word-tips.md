@@ -30,13 +30,15 @@ marginTop:Platform.select({android:2, ios:0})
 4. `npm outdated` 查询当前安装的所有 npm 包中是否有存在新版本, Wanted 列是当前项目支持的最高版本
 5. `npm install --save redux` --save 的意思是安装的同时, 把模块和版本号添加到 dependencies 里
 6. `npm install --save-dev eslint` --save-dev，将模块和版本号添加到 devDependencies，仅供开发期间使用
-7. `npm uninstall --save redux` 删除 node_modules 包的同时，也从 dependencies 里清除模块和版本信息
+7. `npm uninstall --save redux` 删除 `node_modules` 包的同时，也从 `dependencies` 里清除模块和版本信息
 8. `npm shrinkwrap` 允许用户锁定整个依赖树，让每个包使用特定的版本
 9. `exportFun.fun2(response); exportFun['fun3'](response);` 在 Node 里支持**字符串**参数形式调用 exports 函数写法
+10. yarn 与 npm 相比的优势在：1.本地缓存文件；2.并行化处理，安装更快；3.使用文件锁，保证跨终端的文件结构一致；4.安装包更安全
+11. `node --inspect index.js`，使用 `Chrome` 开发者工具调试 `Node.js`
 
 ## Android
 ####adb 常用命令：
-1. `adb reverse tcp:8081 tcp:8081` 连不上 node sever 了执行
+1. `adb reverse tcp:8081 tcp:8081` 连不上 `node sever` 了执行
 2. `adb devices` 查看已连接电脑的设备
 3. `adb shell input keyevent 82` 弹出开发调试菜单
 4. `adb install ./android/app/build/outputs/apk/app-debug-unaligned.apk` 安装 apk 包（apk 名称可能不同）
