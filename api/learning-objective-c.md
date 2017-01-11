@@ -2,7 +2,13 @@
 
 欢迎您帮忙纠错, 一起帮助更多的人。 一起来学习交流React, QQ群：[413381701](http://shang.qq.com/wpa/qunwpa?idkey=3b9474dacbf35e4a9659e89399758406e510e5b8a3f81109f7d07efaadc6056d)
 
-**_`React Native` 虽然大多数工作量是前端 `JavaScript` 开发，但掌握基础的 `Objective C` 语法还是很有必要的。_**
+**_`React Native` 虽然大多数工作量是前端 `JavaScript` 开发，但掌握基础的 `Objective C` 语法还是有必要的。_**
+
+### 14. 内存管理规则
+* `Objective C` 中所有对象创建在内存堆上，由程序员负责翻译对象所占用的内存
+* `Objective C` 中有三种内存管理机制：1. 引用计数；2. ARC；3. 垃圾回收
+
+
 
 ### 13. self 和 super
 #### self
