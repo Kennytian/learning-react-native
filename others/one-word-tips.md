@@ -32,6 +32,7 @@ marginTop:Platform.select({android:2, ios:0})
 6. `npm install --save-dev eslint` --save-dev，将模块和版本号添加到 devDependencies，仅供开发期间使用
 7. `npm uninstall --save redux` 删除 node_modules 包的同时，也从 dependencies 里清除模块和版本信息
 8. `npm shrinkwrap` 允许用户锁定整个依赖树，让每个包使用特定的版本
+9. `exportFun.fun2(response); exportFun['fun3'](response);` 在 Node 里支持**字符串**参数形式调用 exports 函数写法
 
 ## Android
 ####adb 常用命令：
