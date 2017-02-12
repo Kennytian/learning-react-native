@@ -1,5 +1,7 @@
 ## 使用 NVM 管理不同的 Node.js 版本
 
+欢迎您帮忙纠错, 一起帮助更多的人。 一起来学习交流React, QQ群：[413381701](http://shang.qq.com/wpa/qunwpa?idkey=3b9474dacbf35e4a9659e89399758406e510e5b8a3f81109f7d07efaadc6056d)
+
 ### 前言
 之前用 npm 安装过 nvm，就以为安装成功了，但运行 nvm 就报如下提示： _This is not the package you are looking for: please go to http://nvm.sh_
 
