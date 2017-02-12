@@ -11,6 +11,7 @@
 * **[React Native 面试题](https://github.com/Kennytian/learning-react-native/blob/master/others/react-native-interview.md)**
 * [实用 package scripts 配置大甩卖](https://github.com/Kennytian/learning-react-native/blob/master/others/package-scripts.md)
 * [Objective C 基础知识](https://github.com/Kennytian/learning-react-native/blob/master/api/learning-objective-c.md)
+* [使用 NVM 管理本机不同的 Node.js 版本](https://github.com/Kennytian/learning-react-native/blob/master/environment/nvm.md)
 
 ## 中级
 * [React Native Module for CodePush 入门](https://github.com/Kennytian/learning-react-native/blob/master/components/code-push-basic.md)
