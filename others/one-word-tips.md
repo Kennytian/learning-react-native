@@ -78,6 +78,7 @@ person.height = 1.73
 7. 配置git本地用户名, `git config --local user.name "Kennytian"`
 8. 将本地git文件提交到远程`git remote add origin https://github.com/Kennytian/learning-react-native.git; git push -u origin master`
 9. 撤销未提交的修改，支持通配符 `git checkout *`,  `git checkout *.js`
+10. 强行推送到 `master` 分支上 `git push -f origin master`
 
 ## ES6
 1. 用**不定参数** `function foo(a, ...z)`和**默认参数**`function bar(father="Kenny", son="Jerry")` 取代 `arguments` 参数
