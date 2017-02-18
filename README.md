@@ -6,7 +6,8 @@
 * [React Native 在 Windows 环境搭建](https://github.com/Kennytian/learning-react-native/blob/master/environment/config-environment-on-windows.md)
 * [React Native 常用控件](https://github.com/Kennytian/learning-react-native/blob/master/components/popular-component.md)
 * [WebStorm 一键运行 Android 项目](https://github.com/Kennytian/learning-react-native/blob/master/ide/webstorm/run_with_npm.md)
-* [React Native 坑大发](https://github.com/Kennytian/learning-react-native/blob/master/environment/react-native-pit.md)
+* [React Native 坑大发](https://github.com/Kennytian/learning-react-native/blob/master/api/react-native-pit.md)
+* [React Native 命令大全](https://github.com/Kennytian/learning-react-native/blob/master/api/react-native-commands.md)
 * [一句技巧](https://github.com/Kennytian/learning-react-native/blob/master/others/one-word-tips.md)
 * **[React Native 面试题](https://github.com/Kennytian/learning-react-native/blob/master/others/react-native-interview.md)**
 * [实用 package scripts 配置大甩卖](https://github.com/Kennytian/learning-react-native/blob/master/others/package-scripts.md)
