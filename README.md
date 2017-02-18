@@ -6,7 +6,7 @@
 * [React Native 在 Windows 环境搭建](https://github.com/Kennytian/learning-react-native/blob/master/environment/config-environment-on-windows.md)
 * [React Native 常用控件](https://github.com/Kennytian/learning-react-native/blob/master/components/popular-component.md)
 * [WebStorm 一键运行 Android 项目](https://github.com/Kennytian/learning-react-native/blob/master/ide/webstorm/run_with_npm.md)
-* [React Native 坑大发](https://github.com/Kennytian/learning-react-native/blob/master/api/react-native-pit.md)
+* [React Native 坑大发](https://github.com/Kennytian/learning-react-native/blob/master/environment/react-native-pit.md)
 * [React Native 命令大全](https://github.com/Kennytian/learning-react-native/blob/master/api/react-native-commands.md)
 * [一句技巧](https://github.com/Kennytian/learning-react-native/blob/master/others/one-word-tips.md)
 * **[React Native 面试题](https://github.com/Kennytian/learning-react-native/blob/master/others/react-native-interview.md)**
@@ -18,7 +18,7 @@
 * [React Native Module for CodePush 入门](https://github.com/Kennytian/learning-react-native/blob/master/components/code-push-basic.md)
 * [开发 Native Modules 供 JS 调用](https://github.com/Kennytian/learning-react-native/blob/master/components/develop-native-modules.md)
 * [Gradle 知识点](https://github.com/Kennytian/learning-react-native/blob/master/gradle/gradle-basic.md)
-* [xcode 知识点](https://github.com/Kennytian/learning-react-native/blob/master/environment/xcode.md)
+* [Xcode 知识点](https://github.com/Kennytian/learning-react-native/blob/master/environment/xcode.md)
 * [Immutable 基础](https://github.com/Kennytian/learning-react-native/blob/master/others/first-immutable.md)
 * [将 React Native 集成至现有 Android 项目中](https://github.com/Kennytian/embedded)
 * [集成微信登录至 React Native 项目中](https://github.com/Kennytian/learning-react-native/blob/master/components/login-with-wechat.md)
