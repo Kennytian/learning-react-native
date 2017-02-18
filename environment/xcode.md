@@ -46,8 +46,8 @@ end
 ```
 
 参考文档
-http://www.jianshu.com/p/8af475c4f717
-http://www.devzhang.com/14557860422170.html
+* http://www.jianshu.com/p/8af475c4f717
+* http://www.devzhang.com/14557860422170.html
 
 ## Podlist.lock 用途
 
