@@ -1,4 +1,4 @@
-# xcode 环境配置
+# Xcode 环境配置
 
 ## ruby 配置
 
@@ -11,7 +11,7 @@
 ## pod 常用命令
 
 ## 配置 Podlist
-`Podfile` 是 iOS 下包管理工具，类似于 JavaScript 里的 `npm` 或 `yarn`。
+`pod` 是 iOS 下包管理工具，类似于 JavaScript 里的 `npm` 或 `yarn`。
 
 #### 创建 `Podfile`
 创建 `Podfile` 有两种方式：
@@ -47,7 +47,7 @@ end
 
 #### 安装依赖包
 
-_注：要先关闭 xcode， 不然不能正常生成 Podfile.lock 和 xxx.xcworkspace 文件_
+_注：要先关闭 Xcode， 不然不能正常生成 Podfile.lock 和 xxx.xcworkspace 文件_
 
 打开 Terminal，在 iOS 项目的根目录，执行 `pod install`
 
