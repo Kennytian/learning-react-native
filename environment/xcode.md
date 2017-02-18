@@ -13,13 +13,13 @@
 ## 配置 Podlist
 `Podfile` 是 iOS 下包管理工具，类似于 JavaScript 里的 `npm` 或 `yarn`。
 
-## 创建 `Podfile`
+#### 创建 `Podfile`
 创建 `Podfile` 有两种方式：
 * 进入 Terminal，在 iOS 项目的根目录，执行 `touch Podfile`
 *或者*
 * 进入 Terminal，在 iOS 项目的根目录，执行 `pod init`
 
-## 配置 `Podfile`
+#### 配置 `Podfile`
 一个简单的 `Podfile`
 ```
 target 'MyApp'
