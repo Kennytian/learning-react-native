@@ -15,9 +15,9 @@
 
 #### 创建 `Podfile`
 创建 `Podfile` 有两种方式：
-* 进入 Terminal，在 iOS 项目的根目录，执行 `touch Podfile`
+* 打开 Terminal，在 iOS 项目的根目录，执行 `touch Podfile`
 *或者*
-* 进入 Terminal，在 iOS 项目的根目录，执行 `pod init`
+* 打开 Terminal，在 iOS 项目的根目录，执行 `pod init`
 
 #### 配置 `Podfile`
 一个简单的 `Podfile`
@@ -44,6 +44,9 @@ pod 'AFNetworking','<=4.0'  # AFNetworking 版本必须<=4.0
   end
 end
 ```
+
+#### 安装依赖包
+打开 Terminal，在 iOS 项目的根目录，执行 `pod install`
 
 参考文档
 * http://www.jianshu.com/p/8af475c4f717
