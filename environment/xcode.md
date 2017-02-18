@@ -46,6 +46,9 @@ end
 ```
 
 #### 安装依赖包
+
+_注：要先关闭 xcode， 不然不能正常生成 Podfile.lock 和 xxx.xcworkspace 文件_
+
 打开 Terminal，在 iOS 项目的根目录，执行 `pod install`
 
 参考文档
