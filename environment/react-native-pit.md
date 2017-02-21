@@ -2,6 +2,23 @@
 
 一起来学习交流React, QQ群：413381701
 
+## 24. 解决项目中提示 `'useNativeDriver' is not supported` 警告
+
+警告详情显示：`Animated: 'useNativeDriver' is not supported because the native animation module is missing`
+
+本着努力消灭所有警告的原则，经过查阅资料，得到如下解决方案：
+1. find RCTAnimation.xcodeproj The file can be found from node_modules/react-native/Libraries/NativeAnimation
+2. open xcode
+3. open project navigator (press cmd + 1 OR click folder icon from the left)
+4. drag & drop RCTAnimation.xcodeproj from the previous step to Libraries folder
+5. Expand RCTAnimation.xcodeproj in project navigator and find libRCTAnimation.a file inside of Products folder
+6. click on your project name on top of project navigator and go to Build Phrases tab
+7. drag and drop libRCTAnimation.a to Link Binary With Libraries
+8. Clean and run :)
+
+参考链接：https://github.com/facebook/react-native/issues/11094#issuecomment-263240420
+
+
 ## 23. 在一台新电脑上打开之前的 `React Native` 项目，运行 `react-native run-ios` 命令直接闪退，用 `xcode` 运行，报 `“Error watching file for changes: EMFILE”` 错误
 
 错误详情：
