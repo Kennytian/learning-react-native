@@ -1,8 +1,7 @@
 # React Native 坑大发
 
 一起来学习交流, QQ群：[413381701](http://shang.qq.com/wpa/qunwpa?idkey=3b9474dacbf35e4a9659e89399758406e510e5b8a3f81109f7d07efaadc6056d)
-           
-           ## 入门
+
 ## 24. 解决项目中提示 `'useNativeDriver' is not supported` 警告
 
 警告详情显示：`Animated: 'useNativeDriver' is not supported because the native animation module is missing`
