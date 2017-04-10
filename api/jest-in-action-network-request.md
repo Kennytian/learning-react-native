@@ -80,6 +80,8 @@ PASS  ./network.test.js
 
 4.补充说明：
 
+4.0 本只使用了 toBe 和 not.toBe方法，更多 Jest API，请参考 http://facebook.github.io/jest/docs/api.html
+
 4.1 如果报 `fetch is undefined` 之类的错误，添加这行就可以了，`import fetch from 'isomorphic-fetch'`
 
 4.2 如果你的项目中使用 ESLint，并且把 `no-undef` 设置为 `error`，但 `__tests__` 目录下的代码想禁用这个规则，可以在 `network.test.js` 代码 `import` 代码前，添加如下代码：
@@ -91,6 +93,8 @@ import { getMoviesFromApi } from './network';
 ```
 
 参考文档：
+
+http://facebook.github.io/jest/docs/getting-started.html
 
 http://zhenhua-lee.github.io/tech/test.html
 
