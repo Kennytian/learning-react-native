@@ -80,7 +80,7 @@ PASS  ./network.test.js
 
 4.补充说明：
 
-4.0 本只使用了 toBe 和 not.toBe方法，更多 Jest API，请参考 http://facebook.github.io/jest/docs/api.html
+4.0 本文只使用了 toBe 和 not.toBe 两个方法，更多 Jest API，请参考 http://facebook.github.io/jest/docs/api.html
 
 4.1 如果报 `fetch is undefined` 之类的错误，添加这行就可以了，`import fetch from 'isomorphic-fetch'`
 
