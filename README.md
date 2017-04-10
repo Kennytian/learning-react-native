@@ -15,16 +15,17 @@
 * [使用 NVM 管理不同的 Node.js 版本](https://github.com/Kennytian/learning-react-native/blob/master/environment/nvm.md)
 
 ## 中级
-* [React Native Module for CodePush 入门](https://github.com/Kennytian/learning-react-native/blob/master/components/code-push-basic.md)
+* [集成微信登录至 React Native 项目中](https://github.com/Kennytian/learning-react-native/blob/master/components/login-with-wechat.md)
+* [将 React Native 集成至现有 Android 项目中](https://github.com/Kennytian/embedded)
 * [开发 Native Modules 供 JS 调用](https://github.com/Kennytian/learning-react-native/blob/master/components/develop-native-modules.md)
 * [Gradle 知识点](https://github.com/Kennytian/learning-react-native/blob/master/gradle/gradle-basic.md)
-* [Xcode 知识点](https://github.com/Kennytian/learning-react-native/blob/master/environment/xcode.md)
 * [Immutable 基础](https://github.com/Kennytian/learning-react-native/blob/master/others/first-immutable.md)
-* [将 React Native 集成至现有 Android 项目中](https://github.com/Kennytian/embedded)
-* [集成微信登录至 React Native 项目中](https://github.com/Kennytian/learning-react-native/blob/master/components/login-with-wechat.md)
+* [Jest 测试之网络请求](https://github.com/Kennytian/learning-react-native/blob/master/api/jest-in-action-network-request.md)
+* [React Native Module for CodePush 入门](https://github.com/Kennytian/learning-react-native/blob/master/components/code-push-basic.md)
 * [Redux 之 Action](https://github.com/Kennytian/learning-react-native/blob/master/redux/action.md)
 * [Redux 之 Reducer](https://github.com/Kennytian/learning-react-native/blob/master/redux/reducer.md)
 * [Redux 之 Store](https://github.com/Kennytian/learning-react-native/blob/master/redux/store.md)
+* [Xcode 知识点](https://github.com/Kennytian/learning-react-native/blob/master/environment/xcode.md)
 
 ## 高级
 * [Immutable 实战](https://github.com/Kennytian/learning-react-native/blob/master/others/action-immutable.md)
