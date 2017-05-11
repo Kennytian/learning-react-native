@@ -79,7 +79,7 @@ person.height = 1.73
 8. 将本地git文件提交到远程`git remote add origin https://github.com/Kennytian/learning-react-native.git; git push -u origin master`
 9. 撤销未提交的修改，支持通配符 `git checkout *`,  `git checkout *.js`
 10. 强行推送到 `master` 分支上 `git push -f origin master`
-11. 删除远程分支 `git push origin --delete origin/development`
+11. 删除远程分支 `git push origin :feature/uiUpragegit`
 12. 删除远程 tag `git push origin :refs/tags/v0224`
 
 ## ES6
