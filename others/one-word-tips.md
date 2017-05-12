@@ -22,7 +22,7 @@ marginTop:Platform.select({android:2, ios:0})
 6. 避免用户调整字体(大小)影响APP界面布局 `Text.defaultProps.allowFontScaling=false` 在程序启动页面加入这句
 7. 用命令行打包 `react-native bundle --assets-dest /Users/kenny/temp/ --bundle-output /Users/kenny/temp/main.jsbundle --dev false --entry-file index.ios.js --platform ios`， _路径地址请根据自己的环境修改_
 8. `react-native init MyProject --version 0.39.2` `React Native` 初始化时指定版本
-
+9. `react-native run-android --variant Huaweidebug` 运行 `React Native` 渠道包
 
 ## node和npm
 1. 安装或更新 npm `npm install -g -d npm@latest`
