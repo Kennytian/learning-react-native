@@ -22,7 +22,8 @@ marginTop:Platform.select({android:2, ios:0})
 6. 避免用户调整字体(大小)影响APP界面布局 `Text.defaultProps.allowFontScaling=false` 在程序启动页面加入这句
 7. 用命令行打包 `react-native bundle --assets-dest /Users/kenny/temp/ --bundle-output /Users/kenny/temp/main.jsbundle --dev false --entry-file index.ios.js --platform ios`， _路径地址请根据自己的环境修改_
 8. `react-native init MyProject --version 0.39.2` `React Native` 初始化时指定版本
-9. `react-native run-android --variant Huaweidebug` 运行 `React Native` 渠道包
+9. `react-native run-android --variant Huaweidebug` 运行调试程序的指定渠道包
+10.`react-native run-ios --device "Kennys iPhone"` 运行调试程序到真机上（指定机器名）
 
 ## node和npm
 1. 安装或更新 npm `npm install -g -d npm@latest`
@@ -79,7 +80,7 @@ person.height = 1.73
 8. 将本地git文件提交到远程`git remote add origin https://github.com/Kennytian/learning-react-native.git; git push -u origin master`
 9. 撤销未提交的修改，支持通配符 `git checkout *`,  `git checkout *.js`
 10. 强行推送到 `master` 分支上 `git push -f origin master`
-11. 删除远程分支 `git push origin :feature/uiUpragegit`
+11. 删除远程分支 `git push origin :feature/uiUpgrade`
 12. 删除远程 tag `git push origin :refs/tags/v0224`
 
 ## ES6
