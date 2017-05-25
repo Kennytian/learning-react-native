@@ -28,6 +28,7 @@
 * [Xcode 知识点](https://github.com/Kennytian/learning-react-native/blob/master/environment/xcode.md)
 
 ## 高级
+* [提交 App Store 审核总结](https://github.com/Kennytian/learning-react-native/blob/master/others/app-store-reject.md)
 * [Immutable 实战](https://github.com/Kennytian/learning-react-native/blob/master/others/action-immutable.md)
 * [React Native ESLint & Airbnb 配置](https://github.com/Kennytian/learning-react-native/blob/master/environment/react-native-eslint.md)
 * [用 Jenkins CI 打 Android 和 iOS 包](https://github.com/Kennytian/learning-react-native/blob/master/environment/react-native-ci.md)
