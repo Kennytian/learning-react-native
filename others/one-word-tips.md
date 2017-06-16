@@ -37,6 +37,7 @@ marginTop:Platform.select({android:2, ios:0})
 9. `exportFun.fun2(response); exportFun['fun3'](response);` 在 Node 里支持**字符串**参数形式调用 exports 函数写法
 10. yarn 与 npm 相比的优势在：1.本地缓存文件；2.并行化处理，安装更快；3.使用文件锁，保证跨终端的文件结构一致；4.安装包更安全
 11. `node --inspect index.js`，使用 `Chrome` 开发者工具调试 `Node.js`
+12. 在 `WebStorm + nodemon` 调试，需配置为：`/usr/local/bin/nodemon --exec /usr/local/bin/node`
 
 ## Android
 ####adb 常用命令：
