@@ -45,14 +45,13 @@ shouldComponentUpdate(nextProps, nextState) {
 }
 ```
 
-
-#### 包优化
+### 包优化
 1. 如果 APP 里的小图标没有阴影和渐变，建议用 iconfont 来代替图片 icon。
 2. 如果 APP 不用考虑 x86 的 Android 设备，包会缩小40%左右。以我们100万+用户后台统计数据，x86用户不到0.1%，所以可以忽略不计。 
 3. 尽可能复用 React Native 项目自带的 lib，少重复添加 lib。
 4. 图片可以转成 WebP 格式，它既支持有损压缩又支持无损压缩的图片文件格式。根据官方介绍其无损压缩后的WebP 比 PNG 文件少了45％的文件大小，即使 PNG 文件经过压缩工具压缩之后，WebP 还可以减少28％的文件大小，这可以大大提高移动端的图片加载速度。
 
-#### UI 响应优化
+### UI 响应优化
 1. 在对动画中途无取消要求或者其他中途回调要求的，比如局部组件特定显示隐藏动画等。我们可以在调用setState之前，调用LayoutAnimation方法。
 ```js
 LayoutAnimation.configureNext(LayoutAnimation.Presets.easeInEaseOut);
@@ -68,8 +67,11 @@ InteractionManager.runAfterInteractions(() => {
 });
 ```
 
-#### 请求时机优化
+### 请求时机优化
 >网络数据请求，建议放在 `componentDidMount` 里，因为这时的页面已经渲染结束，至少让用户可以看点内容(`componentWillMount` -> `render`)，然后再去请求数据。注意：网络请求回来的数据 setState 或 mapStateToProps，会触发一系列事件：`shouldComponentUpdate` -> `componentWillUpdate` -> `render` -> `componentDidUpdate`。
 
 >更多官方说明：https://facebook.github.io/react/docs/react-component.html#componentdidmount
+
+### 禁止这么做
+1. 禁止在 `shouldComponentUpdate`、`componentWillUpdate`、`render`、`componentDidUpdate` 修改 `state` 或修改 `props` ，原因是这样会循环触发，最后 APP 会报错或崩溃。
  
