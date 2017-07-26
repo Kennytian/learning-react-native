@@ -1,0 +1,75 @@
+## React Native 性能优化
+
+欢迎您帮忙纠错, 一起帮助更多的人。 一起来学习交流, QQ群：[413381701](http://shang.qq.com/wpa/qunwpa?idkey=3b9474dacbf35e4a9659e89399758406e510e5b8a3f81109f7d07efaadc6056d)
+
+_注：这里提到的性能技巧，多数是我项目实践过的，但也有少数为网络收集而来，但难免有误，还请不吝指正。_
+
+#### 渲染优化(JS)
+1. shouldComponentUpdate 默认返回 true，就是触发该方法，每次都重新渲染页面。想要优化，就要想办法尽可能的返回 false。那么怎么计算得出 false 呢，请看如下代码：
+```js
+import { is } from 'immutable';
+
+export function deepCompare(instance, nextProps, nextState) {
+  const thisProps = instance.props || {};
+  const thisState = instance.state || {};
+
+  nextProps = nextProps || {};
+  nextState = nextState || {};
+
+  if (Object.keys(thisProps).length !== Object.keys(nextProps).length || Object.keys(thisState).length !== Object.keys(nextState).length) {
+    __DEV__ && console.debug('deepCompare length diff');
+    return true;
+  }
+
+  for (const key in nextProps) {
+    if (thisProps[key] !== nextProps[key] || !is(thisProps[key], nextProps[key])) {
+      __DEV__ && console.debug('deepCompare props diff(key):', key);
+      return true;
+    }
+  }
+
+  for (const key in nextState) {
+    if (thisState[key] !== nextState[key] || !is(thisState[key], nextState[key])) {
+      __DEV__ && console.debug('deepCompare state diff(key):', key);
+      return true;
+    }
+  }
+
+  return false;
+}
+```
+页面中调用：
+```js
+shouldComponentUpdate(nextProps, nextState) {
+  return deepCompare(this, nextProps, nextState);
+}
+```
+
+
+#### 包优化
+1. 如果 APP 里的小图标没有阴影和渐变，建议用 iconfont 来代替图片 icon。
+2. 如果 APP 不用考虑 x86 的 Android 设备，包会缩小40%左右。以我们100万+用户后台统计数据，x86用户不到0.1%，所以可以忽略不计。 
+3. 尽可能复用 React Native 项目自带的 lib，少重复添加 lib。
+4. 图片可以转成 WebP 格式，它既支持有损压缩又支持无损压缩的图片文件格式。根据官方介绍其无损压缩后的WebP 比 PNG 文件少了45％的文件大小，即使 PNG 文件经过压缩工具压缩之后，WebP 还可以减少28％的文件大小，这可以大大提高移动端的图片加载速度。
+
+#### UI 响应优化
+1. 在对动画中途无取消要求或者其他中途回调要求的，比如局部组件特定显示隐藏动画等。我们可以在调用setState之前，调用LayoutAnimation方法。
+```js
+LayoutAnimation.configureNext(LayoutAnimation.Presets.easeInEaseOut);
+this.setState({
+  showDetail: !this.state.showDetail
+});
+```
+
+2. InteractionManager 可以将一些耗时较长的工作安排到所有互动或动画完成之后再进行。这样可以保证JavaScript动画的流畅运行，应用这样可以安排一个任务在交互和动画完成之后执行。
+```js
+InteractionManager.runAfterInteractions(() => {
+  this._doSearch(tab.i);
+});
+```
+
+#### 请求时机优化
+>网络数据请求，建议放在 `componentDidMount` 里，因为这时的页面已经渲染结束，至少让用户可以看点内容(`componentWillMount` -> `render`)，然后再去请求数据。注意：网络请求回来的数据 setState 或 mapStateToProps，会触发一系列事件：`shouldComponentUpdate` -> `componentWillUpdate` -> `render` -> `componentDidUpdate`。
+
+>更多官方说明：https://facebook.github.io/react/docs/react-component.html#componentdidmount
+ 

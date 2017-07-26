@@ -1,6 +1,6 @@
 # React Native 学习笔记
 
-欢迎您帮忙纠错, 一起帮助更多的人。 一起来学习交流, QQ群：[413381701](http://shang.qq.com/wpa/qunwpa?idkey=3b9474dacbf35e4a9659e89399758406e510e5b8a3f81109f7d07efaadc6056d)
+欢迎您帮忙纠错, 一起帮助更多的人，学习交流 QQ 群：[413381701](http://shang.qq.com/wpa/qunwpa?idkey=3b9474dacbf35e4a9659e89399758406e510e5b8a3f81109f7d07efaadc6056d)
 
 ## 入门
 * [React Native 在 Windows 环境搭建](https://github.com/Kennytian/learning-react-native/blob/master/environment/config-environment-on-windows.md)
@@ -35,6 +35,7 @@
 * [React Native Module for CodePush 实战](https://github.com/Kennytian/learning-react-native/blob/master/components/code-push-action.md)
 * [Native Modules 原理]
 * [React Native API 学习](https://github.com/Kennytian/learning-react-native/blob/master/api/react-native-api.md)
+* [React Native 性能优化](https://github.com/Kennytian/learning-react-native/blob/master/others/performance.md)
 
 ## 专家
 * [拆分 JS bundle]
