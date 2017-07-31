@@ -45,7 +45,9 @@ shouldComponentUpdate(nextProps, nextState) {
 }
 ```
 
-### 包优化
+2. 在列表的 item 上设置一个 key，这个 key 必须是唯一，最后不要用 index（用数据库里的 ID）, 因为你如果删除一条记录，index 就都变了。
+
+### 安装包大小优化
 1. 如果 APP 里的小图标没有阴影和渐变，建议用 iconfont 来代替图片 icon。
 2. 如果 APP 不用考虑 x86 的 Android 设备，包会缩小40%左右。以我们100万+用户后台统计数据，x86用户不到0.1%，所以可以忽略不计。 
 3. 尽可能复用 React Native 项目自带的 lib，少重复添加 lib。
@@ -66,6 +68,8 @@ InteractionManager.runAfterInteractions(() => {
   this._doSearch(tab.i);
 });
 ```
+
+3. 而对于某些状态更新，`setNativeProps` 方法可以让我们直接修改原生视图组件的属性，而不用通过setState来重新渲染结构，这样能使整个组件响应速度变快
 
 ### 请求时机优化
 >网络数据请求，建议放在 `componentDidMount` 里，因为这时的页面已经渲染结束，至少让用户可以看点内容(`componentWillMount` -> `render`)，然后再去请求数据。注意：网络请求回来的数据 setState 或 mapStateToProps，会触发一系列事件：`shouldComponentUpdate` -> `componentWillUpdate` -> `render` -> `componentDidUpdate`。
