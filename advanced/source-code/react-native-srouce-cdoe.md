@@ -47,13 +47,27 @@ module.exports = setupBabel;
 
 集中注册 `packager/src` 和 `local-cli` 目录下所有需要用 Babel 转换的 JS 文件，同时将 `buildRegExps` 和 `getOnlyList` 两个属性暴露出来。
 
-* buildRegExps(basePath, dirPaths)
+* `buildRegExps(basePath, dirPaths)`
   * 用正则将文件路径字符中的\\转换为/
 
-* getOnlyList()
+* `getOnlyList()`
   * 获取转换后的路径列表
 
+### 3. local-cli/cli.js
+```js
+require('graceful-fs').gracefulify(require('fs'));
+require('./server/checkNodeVersion')();
+require('../setupBabel')();
 
+var cliEntry = require('./cliEntry');
+if (require.main === module) {
+  cliEntry.run();
+}
+
+module.exports = cliEntry;
+```
+* `graceful-fs` fs 文件操作增强包，gracefulify 意为替换 fs 包成为全局模块
+* 
 
 
 
