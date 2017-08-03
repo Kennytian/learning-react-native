@@ -48,7 +48,14 @@ shouldComponentUpdate(nextProps, nextState) {
 2. 在列表的 item 上设置一个 key，这个 key 必须是唯一，最后不要用 index（用数据库里的 ID）, 因为你如果删除一条记录，index 就都变了。
 
 3. 事件绑定
-onClick.bind(this);
+* 推荐使用：
+  * 在构造函数里 `this.handleChange = this.handleChange.bind(this);`
+  * 在类里 `handleChange = () => {  };`
+* 不推荐使用：
+   * 属性里 `onChange={this.handleChange.bind(this)}`
+   * 属性里 `onChange={e => this.handleChange(e)}`
+
+  _原因：不推荐的两种方式，会在每次执行 render 方法时重新分配资源_
 
 ### 安装包大小优化
 1. 如果 APP 里的小图标没有阴影和渐变，建议用 iconfont 来代替图片 icon。
