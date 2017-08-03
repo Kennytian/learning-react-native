@@ -4,7 +4,7 @@
 
 _注：这里提到的性能技巧，多数是我项目实践过的，但也有少数为网络收集而来，但难免有误，还请不吝指正。_
 
-#### 渲染优化(JS)
+### 渲染优化(JS)
 1. shouldComponentUpdate 默认返回 true，就是触发该方法，每次都重新渲染页面。想要优化，就要想办法尽可能的返回 false。那么怎么计算得出 false 呢，请看如下代码：
 ```js
 import { is } from 'immutable';
@@ -46,6 +46,9 @@ shouldComponentUpdate(nextProps, nextState) {
 ```
 
 2. 在列表的 item 上设置一个 key，这个 key 必须是唯一，最后不要用 index（用数据库里的 ID）, 因为你如果删除一条记录，index 就都变了。
+
+3. 事件绑定
+onClick.bind(this);
 
 ### 安装包大小优化
 1. 如果 APP 里的小图标没有阴影和渐变，建议用 iconfont 来代替图片 icon。
