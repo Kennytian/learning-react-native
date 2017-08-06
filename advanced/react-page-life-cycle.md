@@ -1,6 +1,8 @@
 ## 重温 react 页面生命周期
 
-一直认为改变 `state` 与 `props` 值，`props` 会多执行页面一个生命周期方法 - _componentWillReceiveProps_，但今天试验了一下，惊讶的发现改变 `state`，会触发子控件的 `componentWillReceiveProps`，这是为什么呢？
+一直认为改变 `state` 与 `props` 值，`props` 会多执行页面一个生命周期方法 - _componentWillReceiveProps_，但今天试验了一下，惊讶的发现改变 `state`，会触发子组件的 `componentWillReceiveProps`，这是为什么呢？
+
+一位群友解答：改变当前组件的 `state` 后，组建重新 `render`，触发子组件的 `props` 更新。
 
 ```javascript
 /**
