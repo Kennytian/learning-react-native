@@ -84,6 +84,7 @@ person.height = 1.73
 11. 删除远程分支 `git push origin :feature/uiUpgrade`
 12. 删除远程 tag `git push origin :refs/tags/v0224`
 13. 同步fork过的项目 `git remote add upstream URL; git fetch upstream; git merge upstream/master`
+14. 克隆最近一次commit `git clone --depth=1 https://github.com/Kennytian/learning-react-native.git` 
 
 ## ES6
 1. 用**不定参数** `function foo(a, ...z)`和**默认参数**`function bar(father="Kenny", son="Jerry")` 取代 `arguments` 参数
