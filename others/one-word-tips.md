@@ -24,6 +24,7 @@ marginTop:Platform.select({android:2, ios:0})
 8. `react-native init MyProject --version 0.39.2` `React Native` 初始化时指定版本
 9. `react-native run-android --variant Huaweidebug` 运行调试程序的指定渠道包
 10.`react-native run-ios --device "Kennys iPhone"` 运行调试程序到真机上（指定机器名）
+11. 使用 `PureComponent` 代替 `Component` 来简单优化子组件
 
 ## node和npm
 1. 安装或更新 npm `npm install -g -d npm@latest`
