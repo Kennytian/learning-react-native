@@ -1,10 +1,11 @@
 ## 复选框按钮
 
+欢迎您帮忙纠错, 一起帮助更多的人，学习交流 QQ 群：[413381701](http://shang.qq.com/wpa/qunwpa?idkey=3b9474dacbf35e4a9659e89399758406e510e5b8a3f81109f7d07efaadc6056d)
+
 #### 效果图：
-![](./images/checkbox-button.jpg)
+![效果图](./../../images/checkbox-button.jpg)
 
 #### 调用方式：
-
 ```javascript
 import React, {Component} from 'react';
 import {AppRegistry, StyleSheet, Text, View} from 'react-native';
