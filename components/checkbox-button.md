@@ -3,7 +3,7 @@
 欢迎您帮忙纠错, 一起帮助更多的人，学习交流 QQ 群：[413381701](http://shang.qq.com/wpa/qunwpa?idkey=3b9474dacbf35e4a9659e89399758406e510e5b8a3f81109f7d07efaadc6056d)
 
 #### 效果图：
-![效果图](./../../images/checkbox-button.jpg)
+![效果图](https://github.com/Kennytian/learning-react-native/blob/master/images/checkbox-button.jpg)
 
 #### 调用方式：
 ```javascript
