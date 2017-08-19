@@ -5,7 +5,7 @@
 差不多搞了半天才配置完毕，现记录下来，供以后参考。
 
 #### 遇坑环境
-```js
+```json
 { npm: '2.15.9',
   ares: '1.10.1-DEV',
   http_parser: '2.7.0',
@@ -62,7 +62,7 @@ _提示：这里为了演示，所以执行了两次 eslint --init，选项是�
 ```diff
 "scripts": {
   "start": "node node_modules/react-native/local-cli/cli.js start",
-+  "lint":"eslint --ext .js ./src --fix"
++  "lint": "eslint --ext .js ./src --fix"
 }
 ```
 
@@ -88,6 +88,63 @@ npm info "$PKG" peerDependencies --json | command sed 's/[\{\},]//g ; s/: /@/g' 
 **Step 5** `eslint --init`, 初始化选popular style、Airbnb
 
 接上面的 **Step 7**
+
+### 更正确的姿势
+2017-8-19 因为时代变化了，之前的一些 `workaround` 方案都被社区修复为正规用法，所以现在安装与配置更简单了。
+
+**Step 1** `npm install --save-dev eslint`
+
+**Step 2** 执行 `eslint --init`
+
+推荐：
+1. `ESLint` 风格选 `Use a popular style guide`
+2. 遵循哪个标准选 `Airbnb`
+3. 配置文件格式选 `JSON` 或 `JavaScript`， 这个随意 
+4. 是否支持 `React` 选 `y`
+
+![airbnb installed successful with cnpm](http://ww4.sinaimg.cn/mw1024/77c29b23jw1f94pawx733j20d505rgmq.jpg)
+
+_提示：这里为了演示，所以执行了两次 `eslint --init`，选项是可以用光标上下选择。_
+
+**Step 3** 
+执行完成后，会在项目根目录生成一个名为 `.eslintrc.json` 的配置文件, 但内容几乎为空。所以就把个人项目基本配置分享如下：
+```json
+{
+  "extends": "airbnb",
+  "plugins": [
+    "react",
+    "react-native"
+  ],
+  "globals": {
+    "__DEV__": true,
+    "fetch": true
+  },
+  "parser": "babel-eslint",
+  "rules": {
+    "max-len": ["error", 120],
+    "no-console": 0,
+    "react/forbid-prop-types": [0, { "forbid": ["any", "array", "object"] }],
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
+  }
+}
+```
+
+**Step 4** `npm install --save-dev babel-eslint eslint-plugin-react-native`
+> `babel-eslint` 是 `eslint` 的解析器
+
+> `eslint-plugin-react-native` 是 `react native` 插件。因为 `step 2.4` 已经选了支持 `react`，所以不需要安装
+
+
+**Step 5**
+在 React Native 项目中，找到 package.json，添加下面这行：
+```diff
+"scripts": {
+  "start": "node node_modules/react-native/local-cli/cli.js start",
++  "lint": "eslint --ext .js ./src --fix"
+}
+```
+
+**Step 6** 项目目录下执行，`npm run lint` 
 
 最后：推荐大家用这个eslintrc编辑器，真是太方便了 https://pirosikick.github.io/eslintrc-editor
 
