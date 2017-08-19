@@ -108,24 +108,24 @@ _提示：这里为了演示，所以执行了两次 `eslint --init`，选项是
 
 **Step 3** 
 执行完成后，会在项目根目录生成一个名为 `.eslintrc.json` 的配置文件, 但内容几乎为空。所以就把个人项目基本配置分享如下：
-```json
+```diff
 {
   "extends": "airbnb",
-  "plugins": [
-    "react",
-    "react-native"
-  ],
-  "globals": {
-    "__DEV__": true,
-    "fetch": true
-  },
-  "parser": "babel-eslint",
-  "rules": {
-    "max-len": ["error", 120],
-    "no-console": 0,
-    "react/forbid-prop-types": [0, { "forbid": ["any", "array", "object"] }],
-    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
-  }
++ "plugins": [
++   "react",
++   "react-native"
++ ],
++ "globals": {
++   "__DEV__": true,
++   "fetch": true
++ },
++ "parser": "babel-eslint",
++ "rules": {
++   "max-len": ["error", 120],
++   "no-console": 0,
++   "react/forbid-prop-types": [0, { "forbid": ["any", "array", "object"] }],
++   "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
++ }
 }
 ```
 
