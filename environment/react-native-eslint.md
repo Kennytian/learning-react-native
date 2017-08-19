@@ -62,7 +62,7 @@ _提示：这里为了演示，所以执行了两次 eslint --init，选项是�
 ```diff
 "scripts": {
   "start": "node node_modules/react-native/local-cli/cli.js start",
-+  "lint":"eslint --ext .js ./src"
++  "lint":"eslint --ext .js ./src --fix"
 }
 ```
 
