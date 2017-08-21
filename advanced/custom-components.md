@@ -62,7 +62,7 @@ static propTypes = {
 class Greeting extends Component {
   render() {
     return (
-      <span>Hello, {this.props.name}!</span>
+      <Text>Hello, {this.props.name}!</Text>
     );
   }
 }
@@ -93,7 +93,7 @@ class MyComponent extends Component {
   };
   render() {
     return (
-      <div>{this.props.children}</div>
+      <View>{this.props.children}</View>
     );
   }
 }
@@ -107,10 +107,10 @@ class ShowElement extends Component {
   render() {
     return (
       <MyComponent>
-        <div>
-          <span>一个神奇的网站<span>
-          <span>人人信赖的生活服务平台<span>
-        </div>
+        <View>
+          <Text>一个神奇的网站<Text>
+          <Text>人人信赖的生活服务平台<Text>
+        </View>
       </MyComponent>
     );
   }
@@ -377,7 +377,17 @@ if (inst.shouldComponentUpdate) {
 }
 ```
 
-简而言之，`ReactCompositeComponent` 会在 `mount` 的时候判断各个组件的类型，设定 _`compositeType` ，然后根据这个类型来判断是非需要更新组件。这个 PR 中大部分改动都是 因为加了 `CompositeTypes` 而做的调整性工作，实际跟 `PureComponent` 有关的就是 `shallowEqual` 的那两行。
+简而言之，`ReactCompositeComponent` 会在 `mount` 的时候判断各个组件的类型，设定 `_compositeType`，然后根据这个类型来判断是非需要更新组件。实际跟 `PureComponent` 有关的就是 `shallowEqual` 的那两行，无非是在判断 `props` 和 `state` 的是否变化，最终决定要不要重新执行 `render`。
+
+如果我们自己来处理 shouldComponentUpdate 事件，就老老实实的写如下判断（注：下面代为伪码）
+```javascript
+shouldComponentUpdate(nextProps, nextState) {
+  if((nextProps.a !== this.props.a) || (nextState.a !== this.state.a) || (nextProps.b !== this.props.b) || (nextState.b !== this.state.b) ......) {
+     return true;
+  }
+  return false;
+}
+```
 
 #### 5. 最后
 最后补充几点开发 Web Component 周边的一些知识点，比如 `ESLint`、`shouldComponentUpdate` 的注意事项。
