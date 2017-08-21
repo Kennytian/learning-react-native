@@ -48,7 +48,7 @@ static propTypes = {
 
 ###### 1.1.3 组件生命周期
 
-* 创建期：`static defaultProps`, `static propTypes`, `componentWillMount`, `componentDidMount`
+* 创建期：`static defaultProps`, `static propTypes`, `constructor`，`componentWillMount`, `componentDidMount`
 * 存在期：`componentWillReceiveProps`, `shouldComponentUpdate`, `componentWillUpdate`, `componentDidUpdate`
 * 销毁期：`componentWillUnmount`
 
