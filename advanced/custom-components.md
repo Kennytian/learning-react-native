@@ -239,15 +239,10 @@ export default class CheckBoxButton extends PureComponent {
         { borderTopColor: titleStyle.color || styles.triangle.bgColor.borderTopColor }];
     }
 
-    let titleLines = 1;
-    if (this.props.titleLines) {
-      titleLines = this.props.titleLines;
-    }
-
     return (
       <View>
         <TouchableOpacity activeOpacity={1} style={bgStyle} onPress={this.props.onPress || null}>
-          <Text numberOfLines={titleLines} style={titleStyle}>{this.props.title}</Text>
+          <Text numberOfLines={this.props.titleLines || 1} style={titleStyle}>{this.props.title}</Text>
         </TouchableOpacity>
         {this.props.checked ?
           <View style={triangleStyle}>
