@@ -52,8 +52,6 @@ static propTypes = {
 * 存在期：`componentWillReceiveProps`, `shouldComponentUpdate`, `componentWillUpdate`, `componentDidUpdate`
 * 销毁期：`componentWillUnmount`
 
-只是看起来比 `React Page` 多了，`static defaultProps`, `static propTypes`，但我们在 `React Page` 里添加这两个生命周期会变成什么样？
-
 #### 1.2 Virtual DOM
 不是今天讨论的重点，以后再讲。
 
