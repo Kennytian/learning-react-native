@@ -21,17 +21,26 @@ static propTypes = {
     titleLines: PropTypes.number,
 };
 ```
->常见基本约束类型有：array，bool，func，number，object，string，symbol(ES6新类型)，其中的func是指 function。
+>常见基本约束类型有：PropTypes.array，PropTypes.bool，PropTypes.func，PropTypes.number，PropTypes.object，PropTypes.string，PropTypes.symbol(ES6新类型)，其中的PropTypes.func是指 function。
 
->React 约束类型有：node，element，oneOf，oneOfType，arrayOf，shape，any等。
+>React 约束类型有：PropTypes.node，PropTypes.element，PropTypes.oneOf，PropTypes.oneOfType，PropTypes.arrayOf，PropTypes.shape，PropTypes.any等。
+
+类型详情：
+* `node` 所有可以被渲染的对象：数字，字符串，DOM 元素或包含这些类型的数组
+* `element` 参数类型为 `React` 元素
+* `oneOf`  在规定的**参数值**选项中多选一，比如：`PropTypes.oneOf(["house", "job", "car"]);`
+* `oneOfType` 在规定的**参数类型**选项中多选一，比如：`PropTypes.oneOf(["number", "string"]);`
+* `arrayOf` 只允许使用某种类型的数组，比如：`PropTypes.arrayOf(PropTypes.number);`
+* `shape` 采用指定样式的参数对象 `PropTypes.shape({color: PropTypes.string,fontSize: PropTypes.number});`
+* `any` 不可空的任意类型 `PropTypes.any;`
 
 更多资料：https://github.com/facebook/prop-types
-
 
 #### 1.2 Virtual DOM
 不是今天讨论的重点，以后再讲。
 
 #### 2. 组件开发入门
+###### 示例1：
 组件代码：
 ```javascript
 class Greeting extends Component {
@@ -57,6 +66,36 @@ class LotsOfGreetings extends Component {
 }
 ```
 
+###### 示例2：
+组件代码：
+```javascript
+class MyComponent extends Component {
+  static propTypes = {
+    children: PropTypes.element.isRequired,
+  };
+  render() {
+    return (
+      <div>{this.props.children}</div>
+    );
+  }
+}
+```
+调用代码：
+```jsx
+class ShowElement extends Component {
+  render() {
+    return (
+      <MyComponent>
+        <div>
+          <span>一个神奇的网站<span>
+          <span>人人信赖的生活服务平台<span>
+        </div>
+      </MyComponent>
+    );
+  }
+}
+
+```
 #### 3. 组件开发提高
 
 ```javascript
@@ -196,7 +235,7 @@ export default class CheckBoxButton extends PureComponent {
 
 Component vs PureComponent
 
-#### 3. 最后
+#### 5. 最后
 
 
 
