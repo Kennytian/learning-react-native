@@ -8,7 +8,7 @@
 #### 1.1 Web Component
 `Web Component` 是一个概念，其实就早已出现。早在 `HTML 4.0` 时代，我们在页面使用 `include` 语法来复用 `header` 和 `footer` 里。但无法给这种 `component` 传参，更别谈约束和验证参数了，稍微有不同场景，我们不得不复制一份 `component` 改改后再用，在项目中会就出现类似于 `header1.html`、`header2.html` 和 `header3.html` 文件，复用率和抽象程度都较低。
 
-但 `React` 的 `Web Component` 解决上述的**参数约束**、**参数验证**，还多了**参数值范围**、**参数默认值**。并且 `React Component` 还所有跟 `React Page` 一样的生命周期。
+但 `React` 的 `Web Component` 解决上述的**参数约束**、**参数验证**，还多了**参数值范围**、**参数默认值**。并且 `React Component` 跟 `React Page` 有一样的生命周期。
 
 ###### 1.1.1 参数默认值：
 ```javascript
@@ -116,7 +116,7 @@ class ShowElement extends Component {
   }
 }
 ```
-写个 `Web Component` 就是这么简单，有没有?  但说好的参数约束，验证呢？ 请看下面高级用法：
+写一个自定义组件就是这么简单，有没有?  但说好的参数约束，验证呢？ 请看下面高级用法：
 
 #### 3. 组件开发提高
 
@@ -311,7 +311,7 @@ if (inst.shouldComponentUpdate) {
 
 简而言之，`ReactCompositeComponent` 会在 `mount` 的时候判断各个组件的类型，设定 `_compositeType`，然后根据这个类型来判断是非需要更新组件。实际跟 `PureComponent` 有关的就是 `shallowEqual` 的那两行，无非是在判断 `props` 和 `state` 的是否变化，最终决定要不要重新执行 `render`。
 
-如果我们**不**继承 `PureComponent`，又想要优化，就得自己来处理 `shouldComponentUpdate` 事件，就老老实实的写如下判断（注：下面代为伪码）
+如果我们**不**继承 `PureComponent`，又想要优化，就得自己来处理 `shouldComponentUpdate` 事件，就老老实实的写如下判断（注：下面为伪码）
 ```javascript
 shouldComponentUpdate(nextProps, nextState) {
   if((nextProps.a !== this.props.a) || (nextState.a !== this.state.a) || (nextProps.b !== this.props.b) || (nextState.b !== this.state.b) ......) {
@@ -322,7 +322,7 @@ shouldComponentUpdate(nextProps, nextState) {
 ```
 
 #### 5. 最后
-最后补充几点开发 Web Component 周边的一些知识点，比如 `ESLint`、`shouldComponentUpdate` 的注意事项。
+最后补充几点开发 React 自定义组件周边的一些知识点，比如 `ESLint`、`shouldComponentUpdate` 的注意事项。
 
 * **ESLint** 如果使用了`ESLint + Airbnb`，会强制要求组件里的每一个属性都必须有默认值(defaultProps里)。
 * **shouldComponentUpdate** 使用 `PureComponent` 时，避免使用可变对象作为 `props` 和 `state`，取而代之的是每次返回一个全新的对象，比如数组参数就通过 `concat` 来返回新的数组。
