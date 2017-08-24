@@ -274,11 +274,11 @@ export default class CheckBoxButtonDemo extends Component {
 ```
 
 代码分析：
-* `Text`, `View`, `TouchableOpacity` 是 `react native` 控件，相当于`span`, `div`, 支持 `oncick` 事件的控件
+* `Text`, `View`, `TouchableOpacity` 是 `react native` 控件，相当于 `HTML` 页面里的 `span`, `div`, 支持 `oncick` 事件的控件
 * 在 `React Native` 里，没有类似 `.css` 的文件，样式文件都是以 JS 文件形式书写和引用
 * `PureComponent` 是自带优化功能的 `Component`，后面会详谈
-* 在 `static defaultProps = { }` 里编写属性参数的默认值
-* 在 `static propTypes = { }`  里编写属性参数的约束
+* 在 `static defaultProps = { }` 里编写属性参数的**默认值**
+* 在 `static propTypes = { }`  里编写属性参数的**约束**
 
 #### 4. 组件开发优化
 >Component vs PureComponent
