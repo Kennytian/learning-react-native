@@ -48,7 +48,7 @@ static propTypes = {
 
 ###### 1.1.3 组件生命周期
 
-* 创建期：`static defaultProps`, `static propTypes`, `constructor`，`componentWillMount`, `componentDidMount`
+* 创建期：`static defaultProps`, `static propTypes`, `constructor`，`componentWillMount`, `render`, `componentDidMount`
 * 存在期：`componentWillReceiveProps`, `shouldComponentUpdate`, `componentWillUpdate`, `componentDidUpdate`
 * 销毁期：`componentWillUnmount`
 
@@ -130,75 +130,7 @@ import React, { PropTypes, PureComponent } from 'react';
 import { Text, View, TouchableOpacity } from 'react-native';
 
 const styles = {
-  bg: {
-    base: {
-      width: 143,
-      height: 53,
-      borderRadius: 1.5,
-      alignItems: 'center',
-      justifyContent: 'center',
-    },
-    normal: {
-      backgroundColor: '#F7F7F7',
-    },
-    checked: {
-      backgroundColor: '#FFF7F5',
-    },
-  },
-  text: {
-    normal: {
-      fontSize: 18,
-      color: '#333',
-    },
-    checked: {
-      fontSize: 18,
-      color: '#FF552E',
-    },
-  },
-  triangle: {
-    base: {
-      width: 0,
-      height: 0,
-      backgroundColor: 'transparent',
-      borderStyle: 'solid',
-      borderRightWidth: 22,
-      borderTopWidth: 22,
-      borderRightColor: 'transparent',
-      // ,borderTopColor: '#FF552E'
-    },
-    corner: {
-      transform: [
-        { rotate: '180deg' },
-      ],
-    },
-    position: {
-      position: 'absolute',
-      bottom: 0,
-      right: 0,
-    },
-    bgColor: {
-      borderTopColor: '#FF552E',
-    },
-  },
-  correct: {
-    base: {
-      width: 12,
-      height: 6,
-      borderStyle: 'solid',
-      borderLeftWidth: 2,
-      borderBottomWidth: 2,
-      borderLeftColor: '#FFF',
-      borderBottomColor: '#FFF',
-      transform: [
-        { rotate: '135deg' },
-      ],
-    },
-    position: {
-      position: 'absolute',
-      top: -16.5,
-      right: -13.5,
-    },
-  },
+   // 样式代码略
 };
 
 export default class CheckBoxButton extends PureComponent {
