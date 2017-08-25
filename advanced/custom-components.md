@@ -48,7 +48,7 @@ static propTypes = {
 
 ###### 1.1.3 组件生命周期
 
-* 创建期：`static defaultProps`, `static propTypes`, `constructor`，`componentWillMount`, `render`, `componentDidMount`
+* 创建期：`static propTypes`, `static defaultProps`, `constructor`，`componentWillMount`, `render`, `componentDidMount`
 * 存在期：`componentWillReceiveProps`, `shouldComponentUpdate`, `componentWillUpdate`, `componentDidUpdate`
 * 销毁期：`componentWillUnmount`
 
@@ -134,16 +134,6 @@ const styles = {
 };
 
 export default class CheckBoxButton extends PureComponent {
-  static defaultProps = {
-    titleNormalStyle: null,
-    titleCheckStyle: null,
-    bgNormalStyle: null,
-    bgCheckStyle: null,
-
-    checked: false,
-    titleLines: 0,
-  };
-
   static propTypes = {
     onPress: PropTypes.func.isRequired,
     title: PropTypes.string.isRequired,
@@ -155,6 +145,16 @@ export default class CheckBoxButton extends PureComponent {
 
     checked: PropTypes.bool,
     titleLines: PropTypes.number,
+  };
+
+  static defaultProps = {
+    titleNormalStyle: null,
+    titleCheckStyle: null,
+    bgNormalStyle: null,
+    bgCheckStyle: null,
+
+    checked: false,
+    titleLines: 0,
   };
 
   render() {
