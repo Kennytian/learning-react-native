@@ -283,6 +283,12 @@ export default class CheckBoxButtonDemo extends Component {
 #### 4. 组件开发优化
 >Component vs PureComponent
 
+优化前：
+![custom-component-default](https://raw.githubusercontent.com/Kennytian/learning-react-native/master/images/custom-component-default.png)
+
+优化后：
+![custom-component-default](https://raw.githubusercontent.com/Kennytian/learning-react-native/master/images/custom-component-purecomponent.png)
+
 `Component` 和 `PureComponent` 的区别就是：`PureComponent` 已经定义好了 `shouldUpdateComponent` 而 `Component` 需要显示定义。
 
 我们从简短的源码一看究竟：
