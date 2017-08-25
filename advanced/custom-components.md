@@ -74,11 +74,11 @@ import Greeting from './Greeting';
 class LotsOfGreetings extends Component {
   render() {
     return (
-      <div>
+      <View>
         <Greeting name='Growth FE' />
         <Greeting name='Growth Android' />
         <Greeting name='Growth iOS' />
-      </div>
+      </View>
     );
   }
 }
