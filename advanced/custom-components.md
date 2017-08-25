@@ -39,7 +39,7 @@ static propTypes = {
 * `node` 所有可以被渲染的对象：数字，字符串，DOM 元素或包含这些类型的数组
 * `element` 参数类型为 `React` 元素
 * `oneOf`  在规定的**参数值**选项中多选一，比如：`PropTypes.oneOf(["house", "job", "car"]);`
-* `oneOfType` 在规定的**参数类型**选项中多选一，比如：`PropTypes.oneOf(["number", "string"]);`
+* `oneOfType` 在规定的**参数类型**选项中多选一，比如：`PropTypes.oneOfType(["number", "string"]);`
 * `arrayOf` 只允许使用某种类型的数组，比如：`PropTypes.arrayOf(PropTypes.number);`
 * `shape` 采用指定样式的参数对象 `PropTypes.shape({color: PropTypes.string,fontSize: PropTypes.number});`
 * `any` 不可空的任意类型 `PropTypes.any;`
