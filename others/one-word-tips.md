@@ -71,6 +71,7 @@ Person person;
 person.weight= 75;
 person.height = 1.73
 ```
+6. 命令行下启动iPhone模拟器，`xcrun simctl list` 查出机型ID，命令行里执行：`open /Applications/Xcode.app/Contents/Developer/Applications/Simulator.app --args -CurrentDeviceUDID EC622D4A-EB75-4305-A9F1-8B4C43E5D48E`
 
 ## Git
 1. 删除**最后一次**缓存记录 `git stash drop stash@{0}`
