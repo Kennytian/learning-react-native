@@ -4,7 +4,7 @@
 - 文中的 React，是指 React 15.x 版。
 - 文中的 React Fiber，是指 React 16.x 版中新增的一个`亮点功能`。
 - 文中的 React Stack 是指 React 处理任务时的同步线程。
-- 中文的 React Fiber 也指 React 处理任务时的异步线程。
+- 文中的 React Fiber 是指 React 处理任务时的异步线程。
 
 ### React 是什么？
 React 是 Facebook 推出的前端「View」库，以高性能 Virtual DOM 算法和 Web Component 思想完美结合起来，自推出以来得到国内外开发者高度认可。 
