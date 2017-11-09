@@ -59,9 +59,9 @@ Virtual DOM 是如何高性能呢？ 简单来说，还没有 React 之前，如
 
 我们看看 React 同步执行时的 CPU、FPS、GUP、HEAP 图：
 
-![react-stack-pref](https://raw.githubusercontent.com/Kennytian/learning-react-native/master/images/react-stack-pref.png)
+![react-stack-pref](https://github.com/Kennytian/learning-react-native/blob/master/images/react-stack-perf.png)
 
-![react-fiber-pref](https://raw.githubusercontent.com/Kennytian/learning-react-native/master/images/react-fiber-pref.png)
+![react-fiber-pref](https://github.com/Kennytian/learning-react-native/blob/master/images/react-fiber-perf.png)
 
 总体来说：React Fiber 的FPS高，内存 和 CPU 使用曲线更平滑，线程切片更小，更细。
 
@@ -70,7 +70,7 @@ Virtual DOM 是如何高性能呢？ 简单来说，还没有 React 之前，如
 我们只要将 react 和 react-dom 升级到 16.0.0 版即可。
 
 ### 演示Demo
-[https://www.github.com/Kennytian/learning-react-native/utilities/react-fiber-demo.zip](https://www.github.com/Kennytian/learning-react-native/utilities/react-fiber-demo.zip)
+[https://github.com/Kennytian/learning-react-native/blob/master/utilities/react-fiber-demo.zip](https://github.com/Kennytian/learning-react-native/blob/master/utilities/react-fiber-demo.zip)
 
 ### 参考阅读
 * https://zhuanlan.zhihu.com/p/26027085

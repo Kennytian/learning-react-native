@@ -28,6 +28,7 @@
 * [Xcode 知识点](https://github.com/Kennytian/learning-react-native/blob/master/environment/xcode.md)
 
 ## 高级
+* [了解 React Fiber](https://github.com/Kennytian/learning-react-native/blob/master/advanced/about-react-fiber.md)
 * [提交 App Store 审核总结](https://github.com/Kennytian/learning-react-native/blob/master/others/app-store-reject.md)
 * [Immutable 实战](https://github.com/Kennytian/learning-react-native/blob/master/others/action-immutable.md)
 * [React Native ESLint & Airbnb 配置](https://github.com/Kennytian/learning-react-native/blob/master/environment/react-native-eslint.md)
