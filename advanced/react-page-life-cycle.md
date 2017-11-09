@@ -5,11 +5,6 @@
 一位群友解答：改变当前组件的 `state` 后，组建重新 `render`，触发子组件的 `props` 更新。
 
 ```javascript
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- * @flow
- */
 
 import React, {Component} from 'react';
 import {
