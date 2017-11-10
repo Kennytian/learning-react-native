@@ -80,12 +80,12 @@ Virtual DOM 是如何高性能呢？ 简单来说，还没有 React 之前，如
 相当于把以前的 `js function` 的 调用`call stack` 改成 `fiber` 链。
 
 从上面两副图可以看出：
-1. React Fiber 的FPS绿色竖线多
-2. CPU 处理渲染(Rendering)和脚本计算(Scripting)都是交替执行的，验证了前面提到的异步与并发。
+1. `React Fiber` 的 FPS 绿色竖线多
+2. `React Fiber` 的 CPU 处理渲染(`Rendering`)和脚本计算(`Scripting`)都是交替执行的，验证了前面提到的异步与并发。
 
 ### 如何使用 React Fiber
 
-我们只要将 react 和 react-dom 升级到 16.0.0 版即可。
+我们只要将 `react` 和 `react-dom` 升级到 16.0.0 版即可。
 
 ### 演示Demo
 [https://github.com/Kennytian/learning-react-native/blob/master/utilities/react-fiber-demo.zip](https://github.com/Kennytian/learning-react-native/blob/master/utilities/react-fiber-demo.zip)
