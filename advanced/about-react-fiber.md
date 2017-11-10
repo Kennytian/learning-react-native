@@ -1,12 +1,12 @@
 ## 了解 React Fiber
 
-### 约定：
+### 1. 约定：
 - 文中的 React，是指 React 15.x 版。
 - 文中的 React Fiber，是指 React 16.x 版中新增的一个`亮点功能`。
 - 文中的 React Stack 是指 React 处理任务时的同步线程。
 - 文中的 React Fiber 是指 React 处理任务时的异步线程。
 
-### React 是什么？
+### 2. React 是什么？
 React 是 Facebook 推出的前端「View」库，以高性能 Virtual DOM 算法和 Web Component 思想完美结合起来，自推出以来得到国内外开发者高度认可。 
 
 Virtual DOM 是如何高性能呢？ 简单来说，还没有 React 之前，如果一个 HTML 页面里有 1000 个 DOM 节点，不幸要修改最后一个节点，需要递归查找上 10 亿次，算法复杂度是 O(n<sup>3</sup>)，所以网页一下就卡住了，呈现出假死状态。
@@ -19,7 +19,7 @@ Virtual DOM 是如何高性能呢？ 简单来说，还没有 React 之前，如
 
 基于以上策略，React 分别对 `tree diff`, `component diff` 和 `element diff` 进行了算法优化，事实证明这 3 个看似大胆的假想是合理且准确的，就算页面中 有 **1000** 个节点页面，改变和渲染越来也不会「卡死」。
 
-### React Fiber 是什么？
+### 3. React Fiber 是什么？
 
 ![what?](https://ww4.sinaimg.cn/mw1024/0060gdugjw1f4p6js7l7xj305k05nq2x.jpg) 
 
@@ -35,7 +35,7 @@ Virtual DOM 是如何高性能呢？ 简单来说，还没有 React 之前，如
 
 不用太紧张，不要以为 `React Fiber` 的到来是一场大革命，它只是核心算法改变了。我们这些把 `React` 当做工具的开发者，只要修改 `package.json` 中的 `React` 版本号，重新 `npm install`，一切就搞定了，然后我们就感觉到网页性能更高了一些，就是这么简单。是不是让我等吃瓜群众感受到如丝般顺滑的升级过程，用 React 就是这么自信。
 
-### React Fiber 有什么改善
+### 4. React Fiber 有什么改善
 有图有真相，下图每秒改变1次形状并且更新节点里的数字(gif图片较大，加载慢，显示也有些卡):
 
 ![react-stack](https://raw.githubusercontent.com/Kennytian/learning-react-native/master/images/react-stack.gif)
@@ -82,14 +82,14 @@ Virtual DOM 是如何高性能呢？ 简单来说，还没有 React 之前，如
 1. `React Fiber` 的 FPS 绿色竖线多
 2. `React Fiber` 的 CPU 处理渲染(`Rendering`)和脚本计算(`Scripting`)都是交替执行的，验证了前面提到的异步与并发。
 
-### 如何使用 React Fiber
+### 5. 如何使用 React Fiber
 
 我们只要将 `react` 和 `react-dom` 升级到 16.0.0 版即可。
 
-### 演示Demo
+### 6. 演示Demo
 [https://github.com/Kennytian/learning-react-native/blob/master/utilities/react-fiber-demo.zip](https://github.com/Kennytian/learning-react-native/blob/master/utilities/react-fiber-demo.zip)
 
-### 参考阅读
+### 7. 参考阅读
 * https://www.zhihu.com/question/49496872?sort=created
 * https://zhuanlan.zhihu.com/p/26027085
 * https://zhuanlan.zhihu.com/p/30611745
