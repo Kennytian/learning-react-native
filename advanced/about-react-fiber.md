@@ -46,15 +46,14 @@ Virtual DOM 是如何高性能呢？ 简单来说，还没有 React 之前，如
 
 但用 `React Fiber` 渲染看起来就流畅多了（稍微有点卡顿是gif较大的原因，实际用 HTML 展示效果更佳）。
 
-我们先来介绍两者最大的区别吧：
-
-我们看看 React 同步执行时的 FPS、CPU、NET、HEAP 图：
-
-让我们来温习一下 Chrome 里的 Performance 图：
+我们先来温习一下 Chrome 里的 Performance 图：
 - FPS：每秒帧数，绿色竖线越高，FPS 越高。 红色块表示长时间帧，出现的越多，表示越卡顿。
 - CPU：CPU 资源使用率，指示消耗 CPU 资源的事件类型。
 - NET：表示网络请求时长，这里不讨论。
 - HEAP：表示内存使用率，越低越好，内存开销和释放越平稳越好
+
+
+下面是分别是`React` 和 `React Fiber` 执行时的 FPS、CPU、NET、HEAP 图：
 
 ![react-stack-pref](https://github.com/Kennytian/learning-react-native/blob/master/images/react-stack-perf.png)
 
