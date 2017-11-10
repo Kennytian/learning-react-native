@@ -48,6 +48,16 @@ Virtual DOM 是如何高性能呢？ 简单来说，还没有 React 之前，如
 
 我们先来介绍两者最大的区别吧：
 
+我们看看 React 同步执行时的 FPS、CPU、NET、HEAP 图：
+
+让我们来温习一下 Chrome 里的 Performance 图：
+- FPS：每秒帧数，绿色竖线越高，FPS 越高。 红色块表示长时间帧，出现的越多，表示越卡顿。
+- CPU：CPU 资源使用率，指示消耗 CPU 资源的事件类型。
+- NET：表示网络请求时长，这里不讨论。
+- HEAP：表示内存使用率，越低越好，内存开销和释放越平稳越好
+
+![react-stack-pref](https://github.com/Kennytian/learning-react-native/blob/master/images/react-stack-perf.png)
+
 `React` 是同步执行的，一口气把：
  1. 调用各个组件
  2. 生命周期
@@ -56,14 +66,22 @@ Virtual DOM 是如何高性能呢？ 简单来说，还没有 React 之前，如
  5. ...（其实这中间有 N 多细节 task）
  
  这一切都完成后，才来响应其它的操作。当页面中有超级多节点时，渲染与重绘就像第一图那样，感觉一顿一顿的。
-
-我们看看 React 同步执行时的 CPU、FPS、GUP、HEAP 图：
-
-![react-stack-pref](https://github.com/Kennytian/learning-react-native/blob/master/images/react-stack-perf.png)
-
+ 
 ![react-fiber-pref](https://github.com/Kennytian/learning-react-native/blob/master/images/react-fiber-perf.png)
 
-总体来说：React Fiber 的FPS高，内存 和 CPU 使用曲线更平滑，线程切片更小，更细。
+`React Fiber` 采用新的算法，是异步并发执行计算任务。将大量计算任务拆分成非常小的task, 小到像「纤维」一样，然后异步去执行，从而使得主线程得以释放，保证了渲染的帧率。
+
+`React Fiber` 可以做到如下：
+1. 暂停一个事务，并在不久后再重新开始执行。
+2. 设定不同类型事务的优先级，并且可以调整其优先级。
+3. 复用已完成的事务。
+4. 当不再需要时，取消该事务。
+
+相当于把以前的 `js function` 的 调用`call stack` 改成 `fiber` 链。
+
+从上面两副图可以看出：
+1. React Fiber 的FPS绿色竖线多
+2. CPU 处理渲染(Rendering)和脚本计算(Scripting)都是交替执行的，验证了前面提到的异步与并发。
 
 ### 如何使用 React Fiber
 
@@ -73,6 +91,8 @@ Virtual DOM 是如何高性能呢？ 简单来说，还没有 React 之前，如
 [https://github.com/Kennytian/learning-react-native/blob/master/utilities/react-fiber-demo.zip](https://github.com/Kennytian/learning-react-native/blob/master/utilities/react-fiber-demo.zip)
 
 ### 参考阅读
+* https://www.zhihu.com/question/49496872?sort=created
 * https://zhuanlan.zhihu.com/p/26027085
 * https://zhuanlan.zhihu.com/p/30611745
-* https://mp.weixin.qq.com/s?__biz=MzIwNjQwMzUwMQ==&mid=2247485343&idx=1&sn=19d362e06fc50c51228c4cff541bf875&chksm=9723655da054ec4ba46b7978e2747a42ec34dd45a8ab9b75e7ca4e9dccc86cdcc6435f06a33d&mpshare=1&scene=23&srcid=0730HU11OAiGa6sfrCdd7eFi#rd
+* https://github.com/xieyu/blog/blob/master/React/from-jsx-to-dom.md
+* https://developers.google.com/web/tools/chrome-devtools/evaluate-performance/timeline-tool?hl=zh-cn
