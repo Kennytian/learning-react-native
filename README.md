@@ -37,6 +37,7 @@
 * [Native Modules 原理]
 * [React Native API 学习](https://github.com/Kennytian/learning-react-native/blob/master/api/react-native-api.md)
 * [React Native 性能优化](https://github.com/Kennytian/learning-react-native/blob/master/advanced/performance.md)
+* [用 TypeScript 来开发 React Native](https://github.com/Kennytian/learning-react-native/blob/master/advanced/with_typescript.md)
 
 ## 专家
 * [拆分 JS bundle]
