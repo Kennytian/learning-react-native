@@ -71,7 +71,17 @@ npm install tslint typescript --save-dev
     "lint": "tslint --fix ./App/*.ts*"
 }
 ```
-这
+
+### 常见问题：
+- 问：出现 `Super expression must either be null or a function, not undefined`
+- 答：改用 TS 来写项目，就要将原来的 `import React, { PureComponent } from 'react'` 改为 `import * as React from 'react'` 和  `class App extends React.PureComponent`
+
+- 问：出现 xxx.js `Unterminated regular expression` (222:9)
+- 答：找上这个js文件，进入第222行第9列看看。可能是原来为 js 文件(或是jsx)，现在用 TS 来写，要改为 `xxx.tsx`
+
+### 推广
 --------------------推广分隔线--------------------
 
 欢迎您帮忙纠错, 一起帮助更多的人，学习交流 QQ 群：[413381701](http://shang.qq.com/wpa/qunwpa?idkey=3b9474dacbf35e4a9659e89399758406e510e5b8a3f81109f7d07efaadc6056d)
+
+
