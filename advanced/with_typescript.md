@@ -1,5 +1,51 @@
 ## 用 TypeScript 来开发 React Native
 
+### 配置 tsconfig.json
+- 安装 TypeScript
+```
+yarn add typescript
+# or
+npm install typescript
+```
+
+- 在命令行里：
+```shell
+node_modules/.bin/tsc --init --pretty --sourceMap --target es6 --outDir ./App --module commonjs --jsx react-native
+```
+
+- 添加 `src/` 目录到 `include` 节点里。
+
+- **如果**项目中使用了decorator(就是 @connect 之类的)，需要打开 `"experimentalDecorators": true`
+
+个人项目 `tsconfig.json` 最终配置
+```json
+{
+  "compileOnSave": true,
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "jsx": "react-native",
+    "sourceMap": true,
+    "outDir": "./App",
+    "rootDir": "./src/App",
+    "watch": true,
+    "strict": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx"
+  ],
+  "exclude": [
+    "App",
+    "node_modules"
+  ]
+}
+```
+
+更多配置：http://www.typescriptlang.org/docs/handbook/compiler-options.html
+
 ### 配置 TSLint
 下面的操作都是在项目当前目录下完成：
 * 安装 TSLint
