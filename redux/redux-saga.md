@@ -29,8 +29,23 @@ export default rootSaga = function* () {
   ]);
 };
 ```
-
 用map就能省去一条条的添加yield fork
 
-
+### 二、API 解析
+- `fork` 创建一条 Effect 描述信息，指示 middleware 以 **无阻塞调用** 方式执行
+- `all` 创建一条 Effect 描述信息，指示 middleware **并行执行多个** Effect，并等待所有 Effect 完成。（类似 Promise.all([...]) 的行为）
+- `put` 创建一条 Effect 描述信息，指示 middleware 发起一个**异步执行**的 action 到 Store。
+- `call` 创建一条 Effect 描述信息，指示 middleware 调用 fn 函数, middleware 调用这个函数并检查它的结果。示例：
+```javascript
+yield put(getVersion({ isFetching: true }));
+const location = {
+  longitude: 39.9046900000,
+  latitude: 116.4071700000,
+};
+const result = yield call(fetchAppVersion, location);
+yield put(getVersion({
+  ...result,
+  isFetching: false,
+}));
+```
 
