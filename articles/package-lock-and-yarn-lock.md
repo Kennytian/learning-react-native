@@ -35,8 +35,8 @@ npm 5.0 版本以后，package-lock.json 是在 `npm install` 时候生成一份
 
 这个 issue 控诉了这个问题，明明手动改了 package.json，为啥不给我升级包！然后就导致了 5.1.0 的问题...
 
-2、5.1.0 版本后 npm install 会无视 lock 文件 去下载最新的 npm 然后有人提了这个
-[issue why is package-lock being ignored? · Issue #17979 · npm/npm](https://github.com/npm/npm/issues/17979)
+2、5.1.0 版本后 npm install 会无视 lock 文件 去下载最新的 npm 然后有人提了这个issue
+[why is package-lock being ignored? · Issue #17979 · npm/npm](https://github.com/npm/npm/issues/17979)
 
 控诉这个问题，最后演变成 5.4.2 版本后的规则。
 
