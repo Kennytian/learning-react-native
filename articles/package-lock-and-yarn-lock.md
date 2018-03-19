@@ -58,5 +58,6 @@ npm 5.0 版本以后，package-lock.json 是在 `npm install` 时候生成一份
 未完待续
 
 ### 参考文档：
-* https://www.zhihu.com/question/264560841/answer/286682428
+* https://www.zhihu.com/question/264560841
+* https://www.zhihu.com/question/62331583
 
