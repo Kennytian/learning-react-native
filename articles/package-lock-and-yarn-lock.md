@@ -47,17 +47,16 @@ npm 5.0 版本以后，package-lock.json 是在 `npm install` 时候生成一份
 最后：建议大家把 npm 升级至 5.4.2 及以上版本, 命令行执行：`npm install -g npm`
 
 ### yarn.lock 是什么？
-未完待续
+为了跨机器安装得到一致的结果，yarn 采用一个 yarn.lock 文件来应对这个问题（同package-lock.json，npm 借鉴了 yarn）。yarn.lock 会记录你安装的所有软件包的具体版本号。只要你不删除 yarn.lock 文件，再次运行 yarn install 时，会根据其中记录的版本号获取所有依赖包，这就特别适合大型项目的多人协作开发和部署。
 
-### lock 的使用
-未完待续
-
-### 该不该把 lock 文件添加到 .gitignore 里？
-* 如果你的项目组所有同事都使用 npm 5.4.2 以上版本，`package-lock.json` 不要添加到 `.gitignore`
-
-未完待续
+### 该不该把 lock 文件添加版本控制系统(划重点)
+* 如果你的项目组所有同事都使用 **npm 5.4.2 以上版本**，`package-lock.json` **应该**被提交到版本控制系统
+* 如果你的项目组使用 yarn，`yarn.lock` **应该**被提交到版本控制系统
+* 如果你的项目组有人用 npm，又有人用 yarn，那就尽早统一 :)
 
 ### 参考文档：
 * https://www.zhihu.com/question/264560841
 * https://www.zhihu.com/question/62331583
+* https://yarnpkg.com/zh-Hans/docs/yarn-lock
+
 
