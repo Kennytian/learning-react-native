@@ -67,5 +67,3 @@ if (require.main === module) {
 module.exports = cliEntry;
 ```
 * `graceful-fs` fs 文件操作增强包，gracefulify 意为替换 fs 包成为全局模块
-* 
-

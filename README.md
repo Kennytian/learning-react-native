@@ -15,6 +15,7 @@
 * [用 TypeScript 来开发 React Native](https://github.com/Kennytian/learning-react-native/blob/master/advanced/with_typescript.md)
 * [React Native 性能优化](https://github.com/Kennytian/learning-react-native/blob/master/advanced/performance.md)
 * [React Native 性能优化](https://github.com/Kennytian/learning-react-native/blob/master/advanced/performance.md)
+- [StyleSheet 源码](https://github.com/Kennytian/learning-react-native/blob/master/advanced/source-code/stylesheet.md)
 
 ### 开发工具
 * [WebStorm 一键运行 Android 项目](https://github.com/Kennytian/learning-react-native/blob/master/ide/webstorm/run_with_npm.md)
