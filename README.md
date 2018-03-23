@@ -2,6 +2,8 @@
 
 欢迎您帮忙纠错, 一起帮助更多的人，学习交流 QQ 群：[413381701](http://shang.qq.com/wpa/qunwpa?idkey=3b9474dacbf35e4a9659e89399758406e510e5b8a3f81109f7d07efaadc6056d)
 
+[![CircleCI](https://circleci.com/gh/Kennytian/learning-react-native.svg?style=svg)](https://circleci.com/gh/Kennytian/learning-react-native)
+
 ### React(Native)
 * [React Native 在 Windows 环境搭建](https://github.com/Kennytian/learning-react-native/blob/master/environment/config-environment-on-windows.md)
 * [React Native 常用控件](https://github.com/Kennytian/learning-react-native/blob/master/components/popular-component.md)
