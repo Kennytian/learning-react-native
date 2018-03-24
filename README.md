@@ -50,7 +50,7 @@
 ### Mock与测试
 - [Jest 测试之网络请求](https://github.com/Kennytian/learning-react-native/blob/master/api/jest-in-action-network-request.md)
 - [easy-mock 介绍]
-- [React Native 自动化测试]
+- [React Native 自动化测试之 Cavy]
 
 ### 原生开发
 - [开发 Native Modules 供 JS 调用](https://github.com/Kennytian/learning-react-native/blob/master/components/develop-native-modules.md)
