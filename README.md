@@ -28,6 +28,7 @@
 
 ### Node 相关
 * [实用 package scripts 配置](https://github.com/Kennytian/learning-react-native/blob/master/others/package-scripts.md)
+* [下载 yarn 源码安装方法](https://github.com/Kennytian/learning-react-native/blob/master/articles/install-yarn-with-sourcecode.md)
 * [package-lock.json 与 yarn.lock](https://github.com/Kennytian/learning-react-native/blob/master/articles/package-lock-and-yarn-lock.md)
 * [使用 NVM 管理不同的 Node.js 版本](https://github.com/Kennytian/learning-react-native/blob/master/environment/nvm.md)
 
