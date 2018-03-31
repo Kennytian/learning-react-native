@@ -16,7 +16,7 @@
 - [React Native ESLint & Airbnb 配置](https://github.com/Kennytian/learning-react-native/blob/master/environment/react-native-eslint.md)
 - [用 TypeScript 来开发 React Native](https://github.com/Kennytian/learning-react-native/blob/master/advanced/with_typescript.md)
 - [React Native 性能优化](https://github.com/Kennytian/learning-react-native/blob/master/advanced/performance.md)
-- [React Native 性能优化](https://github.com/Kennytian/learning-react-native/blob/master/advanced/performance.md)
+- [开发 React 自定义组件](https://github.com/Kennytian/learning-react-native/blob/master/advanced/custom-components.md)
 - [StyleSheet 源码](https://github.com/Kennytian/learning-react-native/blob/master/advanced/source-code/stylesheet.md)
 
 ### 开发工具
