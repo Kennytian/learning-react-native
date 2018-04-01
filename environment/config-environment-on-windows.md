@@ -29,7 +29,7 @@
 * 从官网下载[Node.js 4.4.x](https://nodejs.org/dist/v4.4.2/node-v4.4.2-x64.msi)的官方 4.x 版本，或者[Node.js 5.x](https://nodejs.org/dist/v5.10.1/node-v5.10.1-x64.msi)版本 ，安装时确保`Add to PATH`已选中状态。
 * 建议设置 npm 镜像以加速后面的过程（或使用科学上网工具）。
   <pre><code>npm config set registry https://registry.npm.taobao.org
-npm config set disturl https://npm.taobao.org/dist</code></pre>
+  npm config set disturl https://npm.taobao.org/dist</code></pre>
 
 ### 安装 Gradle
 
