@@ -26,7 +26,7 @@ React Native 采用的是 gradle 打包, 所以就以 gradle 命令为例:
 
 * Windows
   <pre><code>cd android
-gradlew assembleRelease</code></pre>
+  gradlew assembleRelease</code></pre>
 * Mac
   <pre><code>cd android && ./gradlew assembleRelease</code></pre>
 
