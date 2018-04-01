@@ -12,4 +12,4 @@
 * `react-native uninstall` 卸载并解除三方原生依赖
 * `react-native upgrade` 升级项目的模板文件至新版，如：0.38.1 至 0.42.0
 * `react-native log-android` 启动 android logcat 日志服务，供开发调试使用
-* `react-native log-ios`  启动 iOS 日志服务，供开发调试使用
+* `react-native log-ios` 启动 iOS 日志服务，供开发调试使用

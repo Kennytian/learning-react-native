@@ -5,43 +5,35 @@
 一位群友解答：改变当前组件的 `state` 后，组建重新 `render`，触发子组件的 `props` 更新。
 
 ```javascript
-
-import React, {Component} from 'react';
-import {
-  AppRegistry,
-  StyleSheet,
-  Text,
-  View, Button
-} from 'react-native';
+import React, { Component } from "react";
+import { AppRegistry, StyleSheet, Text, View, Button } from "react-native";
 
 class Children extends Component {
   constructor(props) {
     super(props);
-    console.debug('Children---------constructor', new Date());
+    console.debug("Children---------constructor", new Date());
   }
 
   componentWillMount() {
-    console.debug('Children---------componentWillMount', new Date());
+    console.debug("Children---------componentWillMount", new Date());
   }
 
   render() {
-    console.debug('Children---------render', new Date());
-    return (
-      <Text>{this.props.say}</Text>
-    );
+    console.debug("Children---------render", new Date());
+    return <Text>{this.props.say}</Text>;
   }
 
   componentDidMount() {
-    console.debug('Children---------componentDidMount', new Date());
+    console.debug("Children---------componentDidMount", new Date());
   }
 
   componentWillReceiveProps(nextProps) {
-    console.debug('Children---------componentWillReceiveProps', new Date());
+    console.debug("Children---------componentWillReceiveProps", new Date());
     console.log(this.props, nextProps);
   }
 
   shouldComponentUpdate(nextProps, nextState) {
-    console.debug('Children---------shouldComponentUpdate', new Date());
+    console.debug("Children---------shouldComponentUpdate", new Date());
     if (nextProps.say !== this.props.say) {
       return true;
     }
@@ -49,15 +41,15 @@ class Children extends Component {
   }
 
   componentWillUpdate(nextProps, nextState) {
-    console.debug('Children---------componentWillUpdate', new Date());
+    console.debug("Children---------componentWillUpdate", new Date());
   }
 
   componentDidUpdate() {
-    console.debug('Children---------componentDidUpdate', new Date());
+    console.debug("Children---------componentDidUpdate", new Date());
   }
 
   componentWillUnmount() {
-    console.debug('Children---------componentWillUnmount', new Date());
+    console.debug("Children---------componentWillUnmount", new Date());
   }
 }
 
@@ -65,76 +57,74 @@ export default class react0471 extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      now: new Date(),
+      now: new Date()
     };
-    console.debug('\n\nconstructor', new Date());
+    console.debug("\n\nconstructor", new Date());
   }
 
   componentWillMount() {
-    console.debug('componentWillMount', new Date());
+    console.debug("componentWillMount", new Date());
   }
 
   render() {
-    console.debug('render', new Date());
+    console.debug("render", new Date());
     return (
       <View style={styles.container}>
-        <Text style={styles.welcome}>
-          Welcome to React Native!
-        </Text>
-        <Children say={this.state.word}/>
-        <Button title="改变state" onPress={this.changeStateHandler}/>
-        <Button title="改变props" onPress={this.changePropsHandler}/>
+        <Text style={styles.welcome}>Welcome to React Native!</Text>
+        <Children say={this.state.word} />
+        <Button title="改变state" onPress={this.changeStateHandler} />
+        <Button title="改变props" onPress={this.changePropsHandler} />
       </View>
     );
   }
 
   componentDidMount() {
-    console.debug('componentDidMount', new Date() + "\n\n");
+    console.debug("componentDidMount", new Date() + "\n\n");
   }
 
   componentWillReceiveProps(nextProps) {
-    console.debug('componentWillReceiveProps', new Date());
+    console.debug("componentWillReceiveProps", new Date());
   }
 
   shouldComponentUpdate(nextProps, nextState) {
-    console.debug('shouldComponentUpdate', new Date());
+    console.debug("shouldComponentUpdate", new Date());
     return true;
   }
 
   componentWillUpdate(nextProps, nextState) {
-    console.debug('componentWillUpdate', new Date());
+    console.debug("componentWillUpdate", new Date());
   }
 
   componentDidUpdate() {
-    console.debug('componentDidUpdate', new Date() + "\n\n");
+    console.debug("componentDidUpdate", new Date() + "\n\n");
   }
 
   componentWillUnmount() {
-    console.debug('componentWillUnmount', new Date());
+    console.debug("componentWillUnmount", new Date());
   }
 
   changeStateHandler = () => {
-    this.setState({now: new Date()})
-  }
+    this.setState({ now: new Date() });
+  };
 
   changePropsHandler = () => {
-    this.setState({word: '我是Props-' + new Date()})
-  }
+    this.setState({ word: "我是Props-" + new Date() });
+  };
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
+    justifyContent: "center",
+    alignItems: "center",
+    backgroundColor: "#F5FCFF"
   },
   welcome: {
     fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
+    textAlign: "center",
+    margin: 10
   }
 });
 
-AppRegistry.registerComponent('react0471', () => react0471);
+AppRegistry.registerComponent("react0471", () => react0471);
 ```

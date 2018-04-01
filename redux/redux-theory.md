@@ -1,11 +1,14 @@
 ## 学习 Redux 原理
 
 ### 前言
+
 redux 基本思想是保证数据是单向流动,同时便于控制,使用,测试.
-redux不依赖于做任何库, 只要subscribe相应库的内部方法, 就可以保证数据流动的一致性.
+redux 不依赖于做任何库, 只要 subscribe 相应库的内部方法, 就可以保证数据流动的一致性.
 
 ### createStore 介绍
-#### 入门demo
+
+#### 入门 demo
+
 <pre><code>// 首先定义一个改变数据的plain函数, 成为reducer
 function count(state, action) {
     let defaultState = { year: 2016 };
@@ -40,21 +43,23 @@ store.dispatch(action1); //the year is: 2017
 store.dispatch(action2); //the year is: 2018
 store.dispatch(action3); //the year is: 2017</code></pre>
 
-### 挖掘createStore实现
-首先看createStore到底都返回什么内容:<pre><code>
+### 挖掘 createStore 实现
+
+首先看 createStore 到底都返回什么内容:<pre><code>
 export default function createStore(reducer, initialState) {
-    ...
-    return {
-        dispatch,
-        subscribe,
-        getState,
-        replaceReducer
-    }
+...
+return {
+dispatch,
+subscribe,
+getState,
+replaceReducer
+}
 }</code></pre>
-* dispatch: 用于action的分发, 改变 store 里面的 state
-* subscribe: 注册listener, store 里面 state 发生改变后, 执行该listener
-* getState: 读取state
-* replaceReducer: 替换reducer, 改变 state 修改的逻辑
+
+* dispatch: 用于 action 的分发, 改变 store 里面的 state
+* subscribe: 注册 listener, store 里面 state 发生改变后, 执行该 listener
+* getState: 读取 state
+* replaceReducer: 替换 reducer, 改变 state 修改的逻辑
 
 <pre><code>
 export default function createStore(reducer, initialState) {

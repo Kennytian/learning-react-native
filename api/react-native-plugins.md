@@ -1,8 +1,5 @@
 ## React Native Plugins
 
-
-
-
 ###DeviceEventEmitter
 
 ###NativeAppEventEmitter
@@ -14,4 +11,3 @@
 ###processColor
 
 ###requireNativeComponent
-

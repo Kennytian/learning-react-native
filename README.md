@@ -3,6 +3,7 @@
 欢迎您帮忙纠错, 一起帮助更多的人，学习交流 QQ 群：[413381701](http://shang.qq.com/wpa/qunwpa?idkey=3b9474dacbf35e4a9659e89399758406e510e5b8a3f81109f7d07efaadc6056d)
 
 [![CircleCI](https://circleci.com/gh/Kennytian/learning-react-native.svg?style=svg)](https://circleci.com/gh/Kennytian/learning-react-native)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/Kennytian/learning-react-native/pulls)
 
 ### React Native
 
