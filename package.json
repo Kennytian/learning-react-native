@@ -9,7 +9,7 @@
     "prettier": "1.11.1"
   },
   "scripts": {
-    "format": "prettier --write '**/*.{md}'"
+    "format": "prettier --write '**/*.{js,md}'"
   },
   "pre-commit": [
     "format"
