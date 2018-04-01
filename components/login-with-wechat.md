@@ -26,7 +26,7 @@ React Native 采用的是 gradle 打包, 所以就以 gradle 命令为例:
 
 * Windows
   <pre><code>cd android
-  gradlew assembleRelease</code></pre>
+gradlew assembleRelease</code></pre>
 * Mac
   <pre><code>cd android && ./gradlew assembleRelease</code></pre>
 
@@ -35,7 +35,7 @@ React Native 采用的是 gradle 打包, 所以就以 gradle 命令为例:
 1.  把已签名的 apk 拷到手机某个目录, 然后手机进入该目录, 点击安装。
 2.  如果方法 1 提示无法安装, 就执行下面命令
     <pre><code>adb push /User/kenny/xxx.apk "/data/local/tmp/com.company.xxx"
-    adb shell pm install -r "/data/local/tmp/com.company.xxx"</code></pre>
+adb shell pm install -r "/data/local/tmp/com.company.xxx"</code></pre>
     _ adb push 就是把电脑里的 apk 文件拷到 Android 手机的 `/data/local/tmp/com.company.xxx` 目录下
     _ adb shell pm install 就是安装该 apk 文件。
 
