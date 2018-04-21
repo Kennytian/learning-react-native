@@ -55,8 +55,11 @@
 
 ### Mock 与测试
 
-* [Jest 测试之网络请求](https://github.com/Kennytian/learning-react-native/blob/master/api/jest-in-action-network-request.md)
 * [easy-mock 介绍]
+* [Jest 测试之网络请求](https://github.com/Kennytian/learning-react-native/blob/master/api/jest-in-action-network-request.md)
+* [Jest 测试之 React Components](https://github.com/Kennytian/learning-react-native/blob/master/api/jest-in-action-components)
+* [Jest 测试之 Redux Action](https://github.com/Kennytian/learning-react-native/blob/master/api/jest-in-action-redux-action)
+* [Jest 测试之 Redux Reducer](https://github.com/Kennytian/learning-react-native/blob/master/api/jest-in-action-redux-reducer)
 * [React Native 自动化测试之 Cavy]
 
 ### 原生开发
