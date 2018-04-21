@@ -27,7 +27,7 @@ export function addTodo(text) {
 
 ```
  
-### Redux Action 单元测试怎么写
+### Redux Action 单元测试怎么写?
 - `__tests__/addTodo.test.js`
 ```javascript
 import { addTodo, ADD_TODO } from '../addTodo';
@@ -45,7 +45,7 @@ describe('actions', () => {
 
 ```
 
-### 怎么运行单元测试
+### 怎么运行单元测试?
 - 先在 package.json 的 script 里配置如下代码：
 ```json
 "scripts": {
