@@ -16,11 +16,11 @@
 * 项目 source 断点调试
 * Show Developer Menu（显示模拟器里的开发者菜单）
 * Disable Network Inspect（允许/禁止网络查看）
-* Log AsyncStorage content（显示AsyncStore内容）
-* Clear AsyncStorage（清除AsyncStore内容）
+* Log AsyncStorage content（显示 AsyncStore 内容）
+* Clear AsyncStorage（清除 AsyncStore 内容）
 * Toggle Developer Tools（显示/隐藏开发者工具）
-* Toggle React DevTools（显示/隐藏React开发者工具栏）
-* Toggle Redux DevTools（显示/隐藏Redux开发者工具栏）
+* Toggle React DevTools（显示/隐藏 React 开发者工具栏）
+* Toggle Redux DevTools（显示/隐藏 Redux 开发者工具栏）
 
 ### React Native Debugger 的高级使用技巧
 
