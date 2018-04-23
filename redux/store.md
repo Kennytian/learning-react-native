@@ -27,14 +27,14 @@ let store = createStore(hotelApp);
 现在我们创建好了 store
 
 <pre><code>import { addHotel, orderHotel, setVisibilityFilter, VisibilityFilter } from './actions';
- 
+
 //打印初始化状态
 console.log(store.getState());
- 
+
 //监听state更新时, 打印日志
 //注意subscribe()返回一个函数用来注销监听器
 let unsubscribe = store.subscribe(() => console.log(store.getState()));
- 
+
 //发起一系列action
 store.dispatch(addHotel('朝阳大酒店'));
 store.dispatch(addHotel('东直门酒店'));
@@ -42,7 +42,7 @@ store.dispatch(addHotel('望京大酒店'));
 store.dispatch(orderHotel(0));
 store.dispatch(orderHotel(1));
 store.dispatch(setVisibilityFilter(VisibilityFilters.isShow));
- 
+
 //停止监听state更新
 unsubscribe();
 </code></pre>
