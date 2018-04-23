@@ -96,7 +96,7 @@ function flattenStyle(style: ?StyleObj): ?Object {
 
 * #### 解读
 
-  将  数组样式和普通样式转换成一个对象格式的样式
+  将数组样式和普通样式转换成一个对象格式的样式
 
 * #### 使用
 
