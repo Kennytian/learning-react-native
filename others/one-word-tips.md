@@ -132,4 +132,5 @@ Beyound Compare 永久试用：`rm "/Users/$(whoami)/Library/Application Support
 
 ## Linux / Mac OS X
 
-1.  清除 DNS 缓存 `sudo killall -HUP mDNSResponder`
+1. 清除 DNS 缓存 `sudo killall -HUP mDNSResponder`
+2. `Command + Shift + .` 可以显示隐藏文件
