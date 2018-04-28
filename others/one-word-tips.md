@@ -134,3 +134,5 @@ Beyound Compare 永久试用：`rm "/Users/$(whoami)/Library/Application Support
 
 1. 清除 DNS 缓存 `sudo killall -HUP mDNSResponder`
 2. `Command + Shift + .` 可以显示隐藏文件
+3. `defaults write com.apple.finder AppleShowAllFiles -bool true` 显示隐藏文件
+4. `defaults write com.apple.finder _FXShowPosixPathInTitle -bool TRUE;killall Finder` 显示文件夹路径
