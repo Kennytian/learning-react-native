@@ -21,7 +21,7 @@
 
 1.在 `__tests__` 目录下创建一个 `num.js`，添加如下代码：
 
-```
+```javascript
 const sum = (a, b) => {
   return a + b;
 }
@@ -31,7 +31,7 @@ export { sum };
 
 2.在 `__tests__` 目录下创建一个 `num.test.js`，添加如下代码：
 
-```
+```javascript
 import { sum } from './num';
 
 test('adds 1 + 2 to equal 3', () => {
@@ -52,7 +52,7 @@ OK，就这么简单。
 
 1.在 `__tests__` 目录下创建一个 `network.js`，添加如下代码：
 
-```
+```javascript
 import fetch from 'isomorphic-fetch';
 
 const getMoviesFromApi = async () => {
@@ -69,7 +69,7 @@ export { getMoviesFromApi };
 
 2.在 `__tests__` 目录下创建一个 `network.test.js`，添加如下代码：
 
-```
+```javascript
 import { getMoviesFromApi } from './network';
 
 test('get movies list', () => {
@@ -94,7 +94,7 @@ PASS  ./network.test.js
 
 4.2 如果你的项目中使用 ESLint，并且把 `no-undef` 设置为 `error`，但 `__tests__` 目录下的代码想禁用这个规则，可以在 `network.test.js` 代码 `import` 代码前，添加如下代码：
 
-```
+```javascript
 /*global test,expect*/
 /*eslint no-undef: "error"*/
 
