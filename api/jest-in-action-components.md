@@ -19,7 +19,7 @@
 
 ```javascript
 import React, { PropTypes, PureComponent } from "react";
-import { StyleSheet, Text, TouchableOpacity } from "react-native";
+import { Text, TouchableOpacity } from "react-native";
 
 const styles = {
   container: {
@@ -54,11 +54,9 @@ class LoadFailed extends PureComponent {
 
   render() {
     const { text, style, textStyle } = this.props;
-    const btnStyle = StyleSheet.flatten([styles.container, style]);
-    const txtStyle = StyleSheet.flatten([styles.text, textStyle]);
     return (
-      <TouchableOpacity onPress={this.onPress} style={btnStyle}>
-        <Text style={txtStyle}>{text}</Text>
+      <TouchableOpacity onPress={this.onPress} style={[styles.container, style]}>
+        <Text style={[styles.text, textStyle]}>{text}</Text>
       </TouchableOpacity>
     );
   }
