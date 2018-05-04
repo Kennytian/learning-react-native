@@ -224,9 +224,9 @@ Execution failed for task ':app:recordFilesBeforeBundleCommandPgDebug'.
 开发调试期间, 以上手机安装 apk 时, **可能会**报一个 `com.android.ddmlib.InstallException: Unable to upload some APKs`, 我们需要修改如下几个位置:
 
 * 需要将 `android/build.gradle` 里的 `gradle:1.3.1` 改为 `gradle:1.2.3`
-* 经过测试**无需**将 `android/gradle/wrapper/gradle-wrapper.properties` 文件里的 `gradle-2.4-all.zip` 改为 `gradle-2.2-all.zip`（如果 Termial 提示要改为 2.2, 不用管它）
+* 经过测试**无需**将 `android/gradle/wrapper/gradle-wrapper.properties` 文件里的 `gradle-2.4-all.zip` 改为 `gradle-2.2-all.zip`（如果 Terminal 提示要改为 2.2, 不用管它）
 
-## 9. 新 react naitve init 的项目 iOS Release 包无法访问 HTTP 网络
+## 9. 新 react native init 的项目 iOS Release 包无法访问 HTTP 网络
 
 在主工程里的 Info.plist 里添加如下 key 和 dict 配置, 从字面意思上也能看出, 是要允许 App 传输的安全性
 
