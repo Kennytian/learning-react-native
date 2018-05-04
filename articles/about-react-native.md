@@ -5,7 +5,7 @@
 ### React 是什么？
 
 * React 起源于 Facebook 的内部项目，用来架构 Instrgram 的网站（一款图片分享的社交软件），并与 2013 年 5 月份开源，距今已经有 5 年历史。
-* React 是一个用于构建用户界面的 JavaScript 库。主要用于构建 UI，很多人认为 Reatc 是 MVC 中的 V（视图）。
+* React 是一个用于构建用户界面的 JavaScript 库。主要用于构建 UI，很多人认为 React 是 MVC 中的 V（视图）。
 * React 拥有较高的性能，代码逻辑非常简单，越来越多的人已开始关注和使用它。
 
 ### React Native 是什么？
