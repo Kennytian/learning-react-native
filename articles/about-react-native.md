@@ -115,7 +115,7 @@ React Native 最终还是以 Native 的形式显示在两端的设备上，所�
 
 ### 更多历史坑
 
-* [React Native 坑大发](./environment/react-native-pit.md)
+* [React Native 坑大发](../environment/react-native-pit.md)
 
 ## React Native 与 Weex 有什么不同？
 
