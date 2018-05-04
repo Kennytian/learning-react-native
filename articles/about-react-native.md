@@ -16,6 +16,8 @@ React 目前（2018-05-03）在 Github 上拥有 9.4 万+ stars，地址： http
 ### React Native 是什么？
 React Native 是基于 React 衍生出来一项技术，用我们熟悉的 JavaScript 来开发 App
 
+React Native 目前（2018-05-04）在 Github 上拥有 6.3 万+ stars，地址： https://github.com/facebook/react-native
+
 ## React Native 与 HTML、Native 相比有哪些优势？
 ### HTML 特点
 - 学习成本低
