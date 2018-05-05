@@ -47,7 +47,7 @@
 > 简单来说
 
 * JavaScript -> JavaScript Bridge -> Native Bridge -> Native
-* Native -> Native Bridge -> JavaScript Bridge -> Native
+* Native -> Native Bridge -> JavaScript Bridge -> JavaScript
 
 说人话就是：在 React Native 的应用中，存在着两个不同的技术王国：JS 王国和 Native 王国。应用在启动时会先进行双向注册，搭好桥，让两个王国知道彼此的存在，以及定义好彼此合作的方式：
 
