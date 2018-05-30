@@ -136,3 +136,4 @@ Beyound Compare 永久试用：`rm "/Users/$(whoami)/Library/Application Support
 2. `Command + Shift + .` 可以显示隐藏文件
 3. `defaults write com.apple.finder AppleShowAllFiles -bool true` 显示隐藏文件
 4. `defaults write com.apple.finder _FXShowPosixPathInTitle -bool TRUE;killall Finder` 显示文件夹路径
+5. `open ~/Library/LaunchAgents` Mac 电脑里的启动项，删除你不需要的。 更多参考 https://www.zhihu.com/question/28268529
