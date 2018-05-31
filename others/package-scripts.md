@@ -46,5 +46,5 @@
   * 编译打包 `Android` 项目
 * `"install-android": "cd android && ./gradlew installRelease",`
   * 编译打包安装 `Android` 项目
-* `"lint": "eslint --ext .js ./src --fix",`
+* `"lint": "eslint --ext .js ./src --fix --cache",`
   * `js` 语法规范检查，并简单更正不规范代码（前提是已经安装了 `ESLint`）
