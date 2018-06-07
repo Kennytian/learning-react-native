@@ -3,12 +3,14 @@
   "version": "1.0.0",
   "author": "Kenny Tian",
   "license": "ISC",
-  "dependencies": {
-  },
-  "devDependencies": {
-    "prettier": "^1.12.1"
-  },
   "scripts": {
     "format": "prettier --write '**/*.{js,md}'"
-  }
+  },
+  "devDependencies": {
+    "prettier": "^1.12.1",
+    "pre-commit": "^1.2.2"
+  },
+  "pre-commit": [
+    "format"
+  ]
 }
