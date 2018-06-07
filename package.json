@@ -6,9 +6,17 @@
   "dependencies": {
   },
   "devDependencies": {
-    "prettier": "^1.12.1"
+    "prettier": "^1.12.1",
+    "husky": "^1.0.0-rc.8",
+    "validate-commit-msg": "^2.14.0"
   },
   "scripts": {
     "format": "prettier --write '**/*.{js,md}'"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "validate-commit-msg",
+      "pre-commit": "yarn format"
+    }
   }
 }

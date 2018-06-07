@@ -57,8 +57,7 @@
 
 * iOS 与 JavaScript 通讯（图片来自于知乎，侵删）
 
-![](https://pic2.zhimg.com/80/v2-62ee0b22a5dcc4e68ae4dd5a07f9614a_hd.jpg) > 
-  
+![](https://pic2.zhimg.com/80/v2-62ee0b22a5dcc4e68ae4dd5a07f9614a_hd.jpg) >
 
 * JavaScript 与 iOS 通讯（图片来自于伯乐在线，侵删）
 

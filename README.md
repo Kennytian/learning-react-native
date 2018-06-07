@@ -96,6 +96,6 @@
 * [JS Native 通讯]
 * [JS packager 与拆包]
 * [RN 框架的整体设计]
-* [Native Web  web-serverswork 小程序 加载的相同和不同]
+* [Native Web web-serverswork 小程序 加载的相同和不同]
 * [Native Web RN 三种页面之间的本地通讯]
 * [RN 与 flutter 区别]

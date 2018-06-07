@@ -125,6 +125,7 @@ render(){
 7.  `Array.copyWithin()` 方法会浅拷贝数组的部分元素到同一数组的不同位置，且不改变数组的大小，返回该数组。[1, 2, 3, 4, 5].copyWithin(0, 3); // 4,5,3,4,5
 8.  `Array.find()` 如果数组中某个元素满足测试条件，就会返回那个元素的值，[1,3,5,7].find(n => n<3) //1
 9.  `Array.findIndex()` findIndex()方法用来查找数组中某指定元素的索引, 如果找不到指定的元素, 则返回 -1，[1,3,5,7].find(n => n>3) //2
+10. `let {name, passport:id} = person;` 把 passport 属性赋值给变量 id
 
 ## Tools
 
@@ -132,8 +133,8 @@ Beyound Compare 永久试用：`rm "/Users/$(whoami)/Library/Application Support
 
 ## Linux / Mac OS X
 
-1. 清除 DNS 缓存 `sudo killall -HUP mDNSResponder`
-2. `Command + Shift + .` 可以显示隐藏文件
-3. `defaults write com.apple.finder AppleShowAllFiles -bool true` 显示隐藏文件
-4. `defaults write com.apple.finder _FXShowPosixPathInTitle -bool TRUE;killall Finder` 显示文件夹路径
-5. `open ~/Library/LaunchAgents` Mac 电脑里的启动项，删除你不需要的。 更多参考 https://www.zhihu.com/question/28268529
+1.  清除 DNS 缓存 `sudo killall -HUP mDNSResponder`
+2.  `Command + Shift + .` 可以显示隐藏文件
+3.  `defaults write com.apple.finder AppleShowAllFiles -bool true` 显示隐藏文件
+4.  `defaults write com.apple.finder _FXShowPosixPathInTitle -bool TRUE;killall Finder` 显示文件夹路径
+5.  `open ~/Library/LaunchAgents` Mac 电脑里的启动项，删除你不需要的。 更多参考 https://www.zhihu.com/question/28268529

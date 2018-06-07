@@ -24,7 +24,7 @@
 ```javascript
 const sum = (a, b) => {
   return a + b;
-}
+};
 
 export { sum };
 ```
@@ -32,9 +32,9 @@ export { sum };
 2.在 `__tests__` 目录下创建一个 `num.test.js`，添加如下代码：
 
 ```javascript
-import { sum } from './num';
+import { sum } from "./num";
 
-test('adds 1 + 2 to equal 3', () => {
+test("adds 1 + 2 to equal 3", () => {
   expect(sum(1, 2)).toBe(3);
 });
 ```
@@ -53,11 +53,13 @@ OK，就这么简单。
 1.在 `__tests__` 目录下创建一个 `network.js`，添加如下代码：
 
 ```javascript
-import fetch from 'isomorphic-fetch';
+import fetch from "isomorphic-fetch";
 
 const getMoviesFromApi = async () => {
   try {
-    let response = await fetch('https://facebook.github.io/react-native/movies.json');
+    let response = await fetch(
+      "https://facebook.github.io/react-native/movies.json"
+    );
     return await response.json();
   } catch (error) {
     console.error(error);
@@ -70,9 +72,9 @@ export { getMoviesFromApi };
 2.在 `__tests__` 目录下创建一个 `network.test.js`，添加如下代码：
 
 ```javascript
-import { getMoviesFromApi } from './network';
+import { getMoviesFromApi } from "./network";
 
-test('get movies list', () => {
+test("get movies list", () => {
   return getMoviesFromApi().then(list => {
     expect(list).not.toBe(null);
   });
@@ -98,7 +100,7 @@ PASS  ./network.test.js
 /*global test,expect*/
 /*eslint no-undef: "error"*/
 
-import { getMoviesFromApi } from './network';
+import { getMoviesFromApi } from "./network";
 ```
 
 参考文档：
