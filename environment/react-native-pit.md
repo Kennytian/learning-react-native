@@ -2,16 +2,19 @@
 
 一起来学习交流, QQ 群：[413381701](http://shang.qq.com/wpa/qunwpa?idkey=3b9474dacbf35e4a9659e89399758406e510e5b8a3f81109f7d07efaadc6056d)
 
-## 25. 「取不到网络状态？」这个问题在 React Native 0.55 才修复，使用如下代码：
+## 25. 「取不到网络状态？」这个问题在 React Native 0.55 才修复，正确姿势：
 
 ```javascript
-NetInfo.isConnected.fetch().then().done(() => {
-  NetInfo.isConnected.addEventListener('change', this.dispatchConnected);
-});
+NetInfo.isConnected
+  .fetch()
+  .then()
+  .done(() => {
+    NetInfo.isConnected.addEventListener("change", this.dispatchConnected);
+  });
 
-dispatchConnected = (a) => {
+dispatchConnected = a => {
   console.log(a);
-}
+};
 ```
 
 ## 24. 解决项目中提示 `'useNativeDriver' is not supported` 警告
