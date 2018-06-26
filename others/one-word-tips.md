@@ -99,6 +99,7 @@ person.height = 1.73
 12. 删除远程 tag `git push origin :refs/tags/v0224`
 13. 同步 fork 过的项目 `git remote add upstream URL; git fetch upstream; git merge upstream/master`
 14. 克隆最近一次 commit `git clone --depth=1 https://github.com/Kennytian/learning-react-native.git`
+15. 重命名分支 git branch -m feature/branch1 feature/branch2
 
 ## ES6
 
