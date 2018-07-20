@@ -146,7 +146,7 @@ React Native 最终还是以 Native 的形式显示在两端的设备上，所�
 * 前端同学能写出高性能的功能（需求），PM 再也不拿卡说事（原生 APP 里集成 React Native 页面）。
 * 前端同学能独立做一个「简单」的两端 APP（小公司非常适合，私单也是可以的^\_^）。
 * 前端同学的价值更高了，地位提升，再也不是一个切图仔。
-* React Native APP 可以编译成：Android, Android TV，iPhone, iPad, Apple TV 等 APP。因为底层 Facebook 帮我搞定了，页面上天生支持响应式，也没问题。
+* React Native APP 可以编译成：Android, Android TV，iPhone, iPad, Apple TV 等 APP。因为底层 Facebook 帮我们搞定了，页面上天生支持响应式，也没问题。
 * 可以用 React Native 来代替 APP 里的 HTML5 页面。
 
 ## 实例介绍
