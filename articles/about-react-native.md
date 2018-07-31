@@ -141,6 +141,11 @@ React Native 最终还是以 Native 的形式显示在两端的设备上，所�
 * [awesome-react-native](https://github.com/jondot/awesome-react-native)
 * [react-native-community](https://github.com/ericvicenti/react-native-community)
 
+## React Native 、Flutter、Taro 怎么看？
+
+* Flutter 是 Google 开发的跨平台技术，使用 Dart 语言来开发。由于我没有使用过 Flutter 开发过项目，只能引用 ZacJi 的 [React Native VS Flutter评测](https://juejin.im/post/5b1e8b826fb9a01e3962618d)。
+* Taro 跟 「React Native」和 「Flutter」不是同一种技术（后两者属于APP跨平台开发），而 Taro 是一种包装或改造技术，他以微信小程序框架为基础，再使用「类React」的语法（[nerv](https://github.com/NervJS/nerv)），生成能运行在微信小程序、H5、React Native 等的应用。
+
 ## React Native 对前端技术未来的影响有什么？
 
 * 前端同学能写出高性能的功能（需求），PM 再也不拿卡说事（原生 APP 里集成 React Native 页面）。
