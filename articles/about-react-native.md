@@ -76,7 +76,7 @@ React Native 最终还是以 Native 的形式显示在两端的设备上，所�
 ### React Native 环境
 
 * Node （含 NPM）环境
-  * NodeJS 使用 5.0+, NPM 使用 3.0+，推荐安装 [LTS](https://nodejs.org/en/download/) 版本
+  * NodeJS 使用 8.0+, NPM 使用 5.0+，推荐安装 [LTS](https://nodejs.org/en/download/) 版本
   * 推荐为 NPM 配置国内镜像，如：淘宝源
 * Git
 * Xcode 8.0+（需使用 iPhone 模拟器）
