@@ -154,6 +154,13 @@ React Native 最终还是以 Native 的形式显示在两端的设备上，所�
 * React Native APP 可以编译成：Android, [Android TV](https://github.com/react-native-community/react-native-releases/blob/master/CHANGELOG.md#055)，iPhone, iPad, Apple TV 等 APP。因为底层 Facebook 帮我们搞定了，我们要做的就是把页面写成 flex 布局。
 * 可以用 React Native 来代替 APP 里的 HTML5 页面。
 
+## React Native 在 Facebook 的地位
+
+*好消息：Facebook 正在重构 React Native，将重写大量底层*
+
+* 英语版 http://facebook.github.io/react-native/blog/2018/06/14/state-of-react-native-2018
+* 中文版 https://www.oschina.net/news/97129/state-of-react-native-2018
+
 ## 实例介绍
 
 * 国外
