@@ -26,7 +26,7 @@
 * React 用 Webpack 之类的打包工具
 * React Native 使用自带的打包工具 `react packager` (现在改名叫 [metro](https://facebook.github.io/metro/))，最终生成的离线的 jsbundle 文件以 assets(资源) 的形式打包到 Android 的 apk 或 iOS 的 ipa 里
 * React 可以使用 `Plain CSS`， `LESS`， `SASS` 和 [`styled-components`](https://www.styled-components.com/) 等
-* React Native 只能用 `CSS in JavaScript`
+* React Native 用 `CSS in JavaScript`（推荐）或 [`styled-components`](https://www.styled-components.com/)
 
 ## React Native 与 HTML5、Native 相比有哪些优势？
 
