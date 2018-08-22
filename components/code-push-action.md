@@ -48,7 +48,7 @@ _注: 4 以后的选项都不是必填的, 大家可以根据实际需求调整�
 
 _注:比如当前版本为 v11, 执行这条命令, 会回滚到 v10 的内容, 但版本号已经更新为 v12 了。_
 
-#### 7.给 1.0.0~1.0.9 某个版本推送更新, 而不影响 1.1.0 版本
+#### 7.给 1.0.0-1.0.9 某个版本推送更新, 而不影响 1.1.0 版本
 
 `code-push release-react tougudashi android -d prod -m true --dev false --targetBinaryVersion "1.0.x" --des "for android"`
 
