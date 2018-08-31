@@ -61,12 +61,13 @@
 * [Jest 测试之 React Components](https://github.com/Kennytian/learning-react-native/blob/master/api/jest-in-action-components.md)
 * [Jest 测试之 Redux Action](https://github.com/Kennytian/learning-react-native/blob/master/api/jest-in-action-redux-action.md)
 * [Jest 测试之 Redux Reducer](https://github.com/Kennytian/learning-react-native/blob/master/api/jest-in-action-redux-reducer.md)
-* [React Native 自动化测试之 Cavy]
+* [React Native 自动化测试之 Detox]
 
 ### 原生开发
 
 * [开发 Native Modules 供 JS 调用](https://github.com/Kennytian/learning-react-native/blob/master/components/develop-native-modules.md)
 * [Gradle 知识点](https://github.com/Kennytian/learning-react-native/blob/master/gradle/gradle-basic.md)
+* [Maven 知识点]
 * [Objective C 基础知识](https://github.com/Kennytian/learning-react-native/blob/master/api/learning-objective-c.md)
 * [Xcode 知识点](https://github.com/Kennytian/learning-react-native/blob/master/environment/xcode.md)
 
@@ -89,7 +90,7 @@
 * [拆分 JS bundle]
 * [增量更新]
 * [自己开发一个 React Native]
-* [FlastList 原理]
+* [FlatList 原理]
 * [ImageEditor/ImageStore/CameraRoll 等. RN 照片组件能否做的和 Native 一样]
 * [ReactNavigator 和 React Router 的相关和不同]
 * [React Native 动画到底能有多炫酷？]

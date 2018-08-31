@@ -12,6 +12,11 @@
 
 ## 常用版本路径(以下为 Mac OS X 平台示例)
 
+* /Users/username/.gradle/wrapper/dists/**gradle-4.4-all**/9br9xq1tocpiv8o6njlyu5op1
+* /Users/username/.gradle/wrapper/dists/**gradle-4.1-all**/bzyivzo6n839fup2jbap0tjew
+* /Users/username/.gradle/wrapper/dists/**gradle-3.5.1-all**/42vjebfdws9pjts3l4bouoq0p
+* /Users/username/.gradle/wrapper/dists/**gradle-3.5-all**/exhrs6ca08n232b14ue48lbye
+* /Users/username/.gradle/wrapper/dists/**gradle-3.3-all**/55gk2rcmfc6p2dg9u9ohc3hw9
 * /Users/username/.gradle/wrapper/dists/**gradle-3.2.1-all**/8lz77g2tsnl6gxlpeowwkfgj1
 * /Users/username/.gradle/wrapper/dists/**gradle-2.14.1-all**/8bnwg5hd3w55iofp58khbp6yv
 * /Users/username/.gradle/wrapper/dists/**gradle-2.13-all**/1b9wlm73elu4cqnbc0rk7r7qn
