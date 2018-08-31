@@ -158,7 +158,7 @@ React Native 最终还是以 Native 的形式显示在两端的设备上，所�
 
 ## React Native 好消息
 
-*Facebook 正在重构 React Native，将重写大量底层，通过引入更先进的架构，来提高 JavaScript 和混合开发中原生 API 的互通性*
+_Facebook 正在重构 React Native，将重写大量底层，通过引入更先进的架构，来提高 JavaScript 和混合开发中原生 API 的互通性_
 
 * 英语版 http://facebook.github.io/react-native/blog/2018/06/14/state-of-react-native-2018
 * 中文版 https://www.oschina.net/news/97129/state-of-react-native-2018

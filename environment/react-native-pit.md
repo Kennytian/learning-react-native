@@ -3,6 +3,7 @@
 一起来学习交流, QQ 群：[413381701](http://shang.qq.com/wpa/qunwpa?idkey=3b9474dacbf35e4a9659e89399758406e510e5b8a3f81109f7d07efaadc6056d)
 
 ## 28. 编译 Android 时报错
+
 ```
 FAILURE: Build failed with an exception.
 
@@ -13,13 +14,17 @@ Execution failed for task ':app:transformNative_libsWithStripDebugSymbolForDebug
 * Try:
 Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output.
 ```
+
 解决：
 
 1、步骤
+
 ```
 https://www.google.com/search?q=%2Ftoolchains%2Fmipsel-linux-android-4.9%2Fprebuilt%2Fdarwin-x86_64%2Fbin%2Fmipsel-linux-android-strip&oq=%2Ftoolchains%2Fmipsel-linux-android-4.9%2Fprebuilt%2Fdarwin-x86_64%2Fbin%2Fmipsel-linux-android-strip&aqs=chrome..69i64j69i58j69i60l4.6205j0j1&sourceid=chrome&ie=UTF-8
 ```
+
 2、在 ./android/app/build.gradle 的 android 节点里添加
+
 ```
  packagingOptions{
     doNotStrip '*/mips/*.so'
@@ -28,8 +33,9 @@ https://www.google.com/search?q=%2Ftoolchains%2Fmipsel-linux-android-4.9%2Fprebu
 ```
 
 3、更多参考
-- https://github.com/android-ndk/ndk/issues/700
-- https://stackoverflow.com/questions/42739916/aarch64-linux-android-strip-file-missing
+
+* https://github.com/android-ndk/ndk/issues/700
+* https://stackoverflow.com/questions/42739916/aarch64-linux-android-strip-file-missing
 
 ---
 
@@ -46,19 +52,22 @@ Execution failed for task ':react-native-device-info:processReleaseResources'.
 解决：
 
 1、步骤
+
 ```
 https://github.com/rebeccahughes/react-native-device-info/search?q=play-services+crash&type=Issues
 ```
 
-2、找到 android/gradle.properties，在文件底部添加 `googlePlayServicesVersion=11.0.4`，重新build，运行正常。
+2、找到 android/gradle.properties，在文件底部添加 `googlePlayServicesVersion=11.0.4`，重新 build，运行正常。
 
 3、更多参考
-- https://github.com/rebeccahughes/react-native-device-info/issues/365#issuecomment-374801428
-- https://github.com/rebeccahughes/react-native-device-info/issues/384#issuecomment-379719066
+
+* https://github.com/rebeccahughes/react-native-device-info/issues/365#issuecomment-374801428
+* https://github.com/rebeccahughes/react-native-device-info/issues/384#issuecomment-379719066
 
 ---
 
 ## 26. iOS 上 Release 打包报错
+
 ```
 error: failed to launch '/private/var/containers/Bundle/Application/C5F59BFB-90D3-4B20-A84C-49604IJLJILB03/xxxx.app' -- Kenny's iPhone has denied the launch request.
 ```
@@ -66,11 +75,13 @@ error: failed to launch '/private/var/containers/Bundle/Application/C5F59BFB-90D
 解决：
 
 1、步骤
+
 ```
 https://stackoverflow.com/questions/8547201/xcode-error-failed-to-launch
 ```
 
 2、查看 TARGETS -> General -> Signing(Debug) / Signing(Release)
+
 ```
 发现是发布证书，所以无法编译 release 版到我手机上，切换成开发证书即可
 ```
