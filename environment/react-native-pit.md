@@ -2,6 +2,41 @@
 
 一起来学习交流, QQ 群：[413381701](http://shang.qq.com/wpa/qunwpa?idkey=3b9474dacbf35e4a9659e89399758406e510e5b8a3f81109f7d07efaadc6056d)
 
+## 29. React Native 0.55.4 版 Android 端编译报错
+
+```
+due to missing mipsel-linux-android-4.9 toolchain files
+```
+
+### resolve：
+
+#### step 1
+
+```
+mkdir ~/Library/Android/sdk/ndk-bundle/toolchains/mips64el-linux-android-4.9/prebuilt/darwin-x86_64/bin
+touch ~/Library/Android/sdk/ndk-bundle/toolchains/mips64el-linux-android-4.9/prebuilt/darwin-x86_64/bin/mips64el-linux-android-strip
+```
+
+#### setp 2
+
+`android/build.gradle`
+```diff
+- classpath 'com.android.tools.build:gradle:2.2.3'
++ classpath 'com.android.tools.build:gradle:2.3.3'
+```
+
+`android/gradle/wrapper/gradle-wrapper.properties`
+```diff
+- distributionUrl=https\://services.gradle.org/distributions/gradle-2.14.1-all.zip
++ distributionUrl=https\://services.gradle.org/distributions/gradle-3.5.1-all.zip
+```
+
+
+### references:
+
+* https://github.com/android-ndk/ndk/issues/700#issuecomment-405051579
+
+
 ## 28. 编译 Android 时报错
 
 ```
