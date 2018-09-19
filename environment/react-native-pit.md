@@ -17,7 +17,7 @@ mkdir ~/Library/Android/sdk/ndk-bundle/toolchains/mipsel-linux-android/prebuilt/
 touch ~/Library/Android/sdk/ndk-bundle/toolchains/mipsel-linux-android/prebuilt/darwin-x86_64/bin/mipsel-linux-android-strip
 ```
 
-#### step 2
+#### step 2（options） 
 The same to issue 29
 
 
