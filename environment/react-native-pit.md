@@ -2,6 +2,25 @@
 
 一起来学习交流, QQ 群：[413381701](http://shang.qq.com/wpa/qunwpa?idkey=3b9474dacbf35e4a9659e89399758406e510e5b8a3f81109f7d07efaadc6056d)
 
+## 30. 集成了 react-native-pdf 报 Android 端错误
+
+```
+No toolchains found in the NDK toolchains folder for ABI with prefix: mipsel-linux-android
+```
+
+### resolve：
+
+#### step 1
+
+```
+mkdir ~/Library/Android/sdk/ndk-bundle/toolchains/mipsel-linux-android/prebuilt/darwin-x86_64/bin
+touch ~/Library/Android/sdk/ndk-bundle/toolchains/mipsel-linux-android/prebuilt/darwin-x86_64/bin/mipsel-linux-android-strip
+```
+
+#### step 2
+The same to issue 29
+
+
 ## 29. React Native 0.55.4 版 Android 端编译报错
 
 ```
