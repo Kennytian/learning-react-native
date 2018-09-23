@@ -6,9 +6,9 @@
 
 ## Gradle 默认安装路径
 
-* C:\Users\\<username> (大微软 Windows)
-* /Users/<username> (Mac OS X)
-* /home/<username> (Linux)
+* C:\Users\\username (大微软 Windows)
+* /Users/username (Mac OS X)
+* /home/username (Linux)
 
 ## 常用版本路径(以下为 Mac OS X 平台示例)
 
