@@ -12,23 +12,23 @@
 
 ## 常用版本路径(以下为 Mac OS X 平台示例)
 
-* /Users/username/.gradle/wrapper/dists/**gradle-4.4-all**/9br9xq1tocpiv8o6njlyu5op1
-* /Users/username/.gradle/wrapper/dists/**gradle-4.1-all**/bzyivzo6n839fup2jbap0tjew
-* /Users/username/.gradle/wrapper/dists/**gradle-3.5.1-all**/42vjebfdws9pjts3l4bouoq0p
-* /Users/username/.gradle/wrapper/dists/**gradle-3.5-all**/exhrs6ca08n232b14ue48lbye
-* /Users/username/.gradle/wrapper/dists/**gradle-3.3-all**/55gk2rcmfc6p2dg9u9ohc3hw9
-* /Users/username/.gradle/wrapper/dists/**gradle-3.2.1-all**/8lz77g2tsnl6gxlpeowwkfgj1
-* /Users/username/.gradle/wrapper/dists/**gradle-2.14.1-all**/8bnwg5hd3w55iofp58khbp6yv
-* /Users/username/.gradle/wrapper/dists/**gradle-2.13-all**/1b9wlm73elu4cqnbc0rk7r7qn
-* /Users/username/.gradle/wrapper/dists/**gradle-2.12-all**/8ywkdai6puj5z81fume4e7njw
-* /Users/username/.gradle/wrapper/dists/**gradle-2.11-all**/ace7yl0a7udokebb27mt9s3qr
-* /Users/username/.gradle/wrapper/dists/**gradle-2.10-all**/a4w5fzrkeut1ox71xslb49gst
-* /Users/username/.gradle/wrapper/dists/**gradle-2.8-all**/ah86jmo43de9lfa8xg9ux3c4h
-* /Users/username/.gradle/wrapper/dists/**gradle-2.4-all**/6r4uqcc6ovnq6ac6s0txzcpc0
-* /Users/username/.gradle/wrapper/dists/**gradle-2.2.1-all**/c64ydeuardnfqctvr1gm30w53
-* /Users/username/.gradle/wrapper/dists/**gradle-2.2-all**/1vevkra640w3rb9hkuw50q5we
-* /Users/username/.gradle/wrapper/dists/**gradle-2.1-all**/488seql5pimt7vjvdsuqhh1ut
-* /Users/username/.gradle/wrapper/dists/**gradle-1.11-all**/etpezq1xtmacak8xwbc3ogwxf
+* ~/.gradle/wrapper/dists/**gradle-4.4-all**/9br9xq1tocpiv8o6njlyu5op1
+* ~/.gradle/wrapper/dists/**gradle-4.1-all**/bzyivzo6n839fup2jbap0tjew
+* ~/.gradle/wrapper/dists/**gradle-3.5.1-all**/42vjebfdws9pjts3l4bouoq0p
+* ~/.gradle/wrapper/dists/**gradle-3.5-all**/exhrs6ca08n232b14ue48lbye
+* ~/.gradle/wrapper/dists/**gradle-3.3-all**/55gk2rcmfc6p2dg9u9ohc3hw9
+* ~/.gradle/wrapper/dists/**gradle-3.2.1-all**/8lz77g2tsnl6gxlpeowwkfgj1
+* ~/.gradle/wrapper/dists/**gradle-2.14.1-all**/8bnwg5hd3w55iofp58khbp6yv
+* ~/.gradle/wrapper/dists/**gradle-2.13-all**/1b9wlm73elu4cqnbc0rk7r7qn
+* ~/.gradle/wrapper/dists/**gradle-2.12-all**/8ywkdai6puj5z81fume4e7njw
+* ~/.gradle/wrapper/dists/**gradle-2.11-all**/ace7yl0a7udokebb27mt9s3qr
+* ~/.gradle/wrapper/dists/**gradle-2.10-all**/a4w5fzrkeut1ox71xslb49gst
+* ~/.gradle/wrapper/dists/**gradle-2.8-all**/ah86jmo43de9lfa8xg9ux3c4h
+* ~/.gradle/wrapper/dists/**gradle-2.4-all**/6r4uqcc6ovnq6ac6s0txzcpc0
+* ~/.gradle/wrapper/dists/**gradle-2.2.1-all**/c64ydeuardnfqctvr1gm30w53
+* ~/.gradle/wrapper/dists/**gradle-2.2-all**/1vevkra640w3rb9hkuw50q5we
+* ~/.gradle/wrapper/dists/**gradle-2.1-all**/488seql5pimt7vjvdsuqhh1ut
+* ~/.gradle/wrapper/dists/**gradle-1.11-all**/etpezq1xtmacak8xwbc3ogwxf
 
 ## 简单优化
 
