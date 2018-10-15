@@ -13,6 +13,9 @@ No toolchains found in the NDK toolchains folder for ABI with prefix: mipsel-lin
 #### step 1
 
 ```
+mkdir ~/Library/Android/sdk/ndk-bundle/toolchains/mips64el-linux-android-4.9/prebuilt/darwin-x86_64/bin
+touch ~/Library/Android/sdk/ndk-bundle/toolchains/mips64el-linux-android-4.9/prebuilt/darwin-x86_64/bin/mips64el-linux-android-strip
+
 mkdir ~/Library/Android/sdk/ndk-bundle/toolchains/mipsel-linux-android/prebuilt/darwin-x86_64/bin
 touch ~/Library/Android/sdk/ndk-bundle/toolchains/mipsel-linux-android/prebuilt/darwin-x86_64/bin/mipsel-linux-android-strip
 ```
