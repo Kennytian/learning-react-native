@@ -158,3 +158,5 @@ _提示：这里为了演示，所以执行了两次 `eslint --init`，选项是
 最后：推荐大家用这个 eslintrc 编辑器，真是太方便了 https://pirosikick.github.io/eslintrc-editor
 
 Enjoy your code!
+
+![image](https://user-images.githubusercontent.com/2621619/48605017-8638f700-e9b6-11e8-822a-a3badee9473b.png)
