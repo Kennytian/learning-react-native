@@ -46,6 +46,7 @@
 * [Redux 之 Store](https://github.com/Kennytian/learning-react-native/blob/master/redux/store.md)
 * [Redux-Saga](https://github.com/Kennytian/learning-react-native/blob/master/redux/redux-saga.md)
 * [mobx](https://github.com/Kennytian/learning-react-native/blob/master/mobx/first.md)
+* [修改 ESLint 错误提示](./articles/fix-eslint-error-hint.md)
 
 ### 原生集成
 
