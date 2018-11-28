@@ -20,9 +20,9 @@ mkdir ~/Library/Android/sdk/ndk-bundle/toolchains/mipsel-linux-android/prebuilt/
 touch ~/Library/Android/sdk/ndk-bundle/toolchains/mipsel-linux-android/prebuilt/darwin-x86_64/bin/mipsel-linux-android-strip
 ```
 
-#### step 2（options） 
-The same to issue 29
+#### step 2（options）
 
+The same to issue 29
 
 ## 29. React Native 0.55.4 版 Android 端编译报错
 
@@ -42,22 +42,22 @@ touch ~/Library/Android/sdk/ndk-bundle/toolchains/mips64el-linux-android-4.9/pre
 #### setp 2
 
 `android/build.gradle`
+
 ```diff
 - classpath 'com.android.tools.build:gradle:2.2.3'
 + classpath 'com.android.tools.build:gradle:2.3.3'
 ```
 
 `android/gradle/wrapper/gradle-wrapper.properties`
+
 ```diff
 - distributionUrl=https\://services.gradle.org/distributions/gradle-2.14.1-all.zip
 + distributionUrl=https\://services.gradle.org/distributions/gradle-3.5.1-all.zip
 ```
 
-
 ### references:
 
 * https://github.com/android-ndk/ndk/issues/700#issuecomment-405051579
-
 
 ## 28. 编译 Android 时报错
 

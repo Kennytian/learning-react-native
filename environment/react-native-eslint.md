@@ -160,6 +160,7 @@ _提示：这里为了演示，所以执行了两次 `eslint --init`，选项是
 Enjoy your code!
 
 ** WebStorm 里配置成跟 ESLint 里一样风格 **
-- Code Style -> JavaScript -> Spaces -> Object literal braces
+
+* Code Style -> JavaScript -> Spaces -> Object literal braces
 
 ![image](https://wx3.sinaimg.cn/mw690/77c29b23ly1fx9y82ekkpj21660qo43g.jpg)
