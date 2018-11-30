@@ -79,6 +79,7 @@
 * [bugsnag-react-native]
 * [react-native-instabug]
 * [react-native-google-analytics-bridge]
+* [纯 JS 崩溃信息收集 fundebug-reactnative](./articles/fundebug-reactnative.md)
 
 ### 上架与市场
 
