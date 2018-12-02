@@ -14,10 +14,8 @@
 * [React Native 命令大全](https://github.com/Kennytian/learning-react-native/blob/master/api/react-native-commands.md)
 * [一句技巧](https://github.com/Kennytian/learning-react-native/blob/master/others/one-word-tips.md)
 * **[React Native 面试题](https://github.com/Kennytian/learning-react-native/blob/master/others/react-native-interview.md)**
-* [了解 React Fiber](https://github.com/Kennytian/learning-react-native/blob/master/advanced/about-react-fiber.md)
 * [React Native ESLint & Airbnb 配置](https://github.com/Kennytian/learning-react-native/blob/master/environment/react-native-eslint.md)
 * [用 TypeScript 来开发 React Native](https://github.com/Kennytian/learning-react-native/blob/master/advanced/with_typescript.md)
-* [React Native 性能优化](https://github.com/Kennytian/learning-react-native/blob/master/advanced/performance.md)
 * [开发 React 自定义组件](https://github.com/Kennytian/learning-react-native/blob/master/advanced/custom-components.md)
 * [StyleSheet 源码](https://github.com/Kennytian/learning-react-native/blob/master/advanced/source-code/stylesheet.md)
 
@@ -85,6 +83,12 @@
 
 * [提交 App Store 审核总结](https://github.com/Kennytian/learning-react-native/blob/master/others/app-store-reject.md)
 * [用 Jenkins CI 打 Android 和 iOS 包](https://github.com/Kennytian/learning-react-native/blob/master/environment/react-native-ci.md)
+
+### 性能优化
+
+* [了解 React Fiber](./advanced/about-react-fiber.md)
+* [React Native 性能优化](./advanced/performance.md)
+* [记一次 Redux 持久化性能优化](./articles/redux-persist-optimized.md)
 
 ### TODO
 
