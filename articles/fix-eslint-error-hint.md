@@ -10,7 +10,7 @@ Good
 
 * `getData()`
 
-### 解构
+### 对象解构
 
 Bad
 
@@ -18,9 +18,17 @@ Bad
 
 Good
 
-```
-const { selectButton } = this.state;
-```
+* `const { selectButton } = this.state;`
+
+### 数组解构
+
+Bad
+
+* `const item = items[0];`
+
+Good
+
+* `const [item] = items;`
 
 ### 解构并设置初始值
 
