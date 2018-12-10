@@ -1,5 +1,19 @@
 ## 修改项目中的 ESLint 错误
 
+### 提示 `import/named`错误
+
+> 现象：
+
+代码 `import { OpenTradeStock } from '../../components/open-trade-stock';` 中的 `OpenTradeStock` 处提示`import/named` 错误
+
+> 原因：
+
+open-trade-stock.js 文件使用了 ES5 的写法，`module.exports = { OpenTradeStock }`
+
+> 解决:
+
+将 open-trade-stock.js 文件改用 ES6 的写法，`export = { OpenTradeStock }`
+
 ### 方法名下划线
 
 Bad
