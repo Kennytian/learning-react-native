@@ -2,6 +2,33 @@
 
 一起来学习交流, QQ 群：[413381701](http://shang.qq.com/wpa/qunwpa?idkey=3b9474dacbf35e4a9659e89399758406e510e5b8a3f81109f7d07efaadc6056d)
 
+## 31. 升级到 Xcode 10 报 fishhook 找不到
+
+```
+Build input file cannot be found: '/Users/qinguan/Desktop/reactnative/CodeCollab/node_modules/react-native/Libraries/WebSocket/libfishhook.a'
+```
+
+### resolve：
+
+Remove and add again libfishhook.a from Xcode and the path issue will resolve.
+
+![image](https://user-images.githubusercontent.com/2400215/45737941-92981200-bc08-11e8-80fc-978147db7a9a.png)
+
+https://github.com/facebook/react-native/issues/19569#issuecomment-422691829
+
+### 用 node.js 来实现一键修复
+
+* 下载 [fix-fishhook](../code/fix-fishhook.js)
+* 放至项目中，然后在 `package.json` 里配置
+
+```javascript
+"scripts": {
+  "fix-fishhook": "node src/utils/fix-fishhook.js"
+}
+```
+
+* `yarn fix-fishhook`
+
 ## 30. 集成了 react-native-pdf 报 Android 端错误
 
 ```
