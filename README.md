@@ -89,6 +89,7 @@
 * [了解 React Fiber](./advanced/about-react-fiber.md)
 * [React Native 性能优化](./advanced/performance.md)
 * [记一次 Redux 持久化性能优化](./articles/redux-persist-optimized.md)
+* [实战项目版本升级历程](./advanced/version-upgrade.md)
 
 ### TODO
 
