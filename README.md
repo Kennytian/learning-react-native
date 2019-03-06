@@ -29,6 +29,7 @@
 
 ### Node 相关
 
+* [package.json 的 dependencies 里有趣现象](./articles/funny-package-dependencies.md)
 * [实用 package scripts 配置](./others/package-scripts.md)
 * [下载 yarn 源码安装方法](./articles/install-yarn-with-sourcecode.md)
 * [记一次 yarn 升级失败原因](./articles/upgrade-yarn-faild.md)
