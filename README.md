@@ -2,6 +2,7 @@
 
 欢迎您帮忙纠错, 一起帮助更多的人，学习交流 QQ 群：[413381701](http://shang.qq.com/wpa/qunwpa?idkey=3b9474dacbf35e4a9659e89399758406e510e5b8a3f81109f7d07efaadc6056d)
 
+[![LICENSE](https://img.shields.io/badge/license-Anti%20996-blue.svg)](https://github.com/996icu/996.ICU/blob/master/LICENSE)
 [![CircleCI](https://circleci.com/gh/Kennytian/learning-react-native.svg?style=svg)](https://circleci.com/gh/Kennytian/learning-react-native)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/Kennytian/learning-react-native/pulls)
 
@@ -29,6 +30,7 @@
 
 ### Node 相关
 
+* [Node 命令切换 iOS 打 Debug 或 Release 包](./articles/xcscheme-switcher.md)
 * [package.json 的 dependencies 里有趣现象](./articles/funny-package-dependencies.md)
 * [实用 package scripts 配置](./others/package-scripts.md)
 * [下载 yarn 源码安装方法](./articles/install-yarn-with-sourcecode.md)
@@ -40,9 +42,9 @@
 
 * [Immutable 基础](./others/first-immutable.md)
 * [Immutable 实战](./others/action-immutable.md)
-* [Redux 之 Action](./redux/action.md)
-* [Redux 之 Reducer](./redux/reducer.md)
-* [Redux 之 Store](./redux/store.md)
+* [Redu 之 Action](./redux/action.md)
+* [Redu 之 Reducer](./redux/reducer.md)
+* [Redu 之 Store](./redux/store.md)
 * [Redux-Saga](./redux/redux-saga.md)
 * [mobx](./mobx/first.md)
 * [修改 ESLint 错误提示](./articles/fix-eslint-error-hint.md)
@@ -59,8 +61,8 @@
 * [easy-mock 介绍]
 * [Jest 测试之网络请求](./api/jest-in-action-network-request.md)
 * [Jest 测试之 React Components](./api/jest-in-action-components.md)
-* [Jest 测试之 Redux Action](./api/jest-in-action-redux-action.md)
-* [Jest 测试之 Redux Reducer](./api/jest-in-action-redux-reducer.md)
+* [Jest 测试之 ReduAction](./api/jest-in-action-redux-action.md)
+* [Jest 测试之 ReduReducer](./api/jest-in-action-redux-reducer.md)
 * [React Native 自动化测试之 Detox]
 
 ### 原生开发
@@ -90,15 +92,20 @@
 
 * [了解 React Fiber](./advanced/about-react-fiber.md)
 * [React Native 性能优化](./advanced/performance.md)
-* [记一次 Redux 持久化性能优化](./articles/redux-persist-optimized.md)
+* [记一次 Redu 持久化性能优化](./articles/redux-persist-optimized.md)
 * [实战项目版本升级历程](./advanced/version-upgrade.md)
 
 ### 服务端
 
-* [Serverless 入门（一） - 创建 IAM](./articles/serverless-create-iam.md)
-* [Serverless 入门（二） - HelloWord]
-* [Serverless 入门（三）- 初始项目解读]
-* [Serverless 入门（四）- 如何调试]
+* [Serverless 入门（一） - 创建 IAM](https://www.jianshu.com/p/9fb731a799e2)
+* [Serverless 入门（二） - HelloWord](https://www.jianshu.com/p/ddf2ffda5f63)
+* [Serverless 入门（三）- 初始项目解读](https://www.jianshu.com/p/8baba2a8fe9f)
+* [Serverless 入门（四）- 如何调试](https://www.jianshu.com/p/58d30915de8a)
+* [Serverless 入门（五）- 常用命令](https://www.jianshu.com/p/28f001ea9d9d)
+* [Serverless 入门（六）- DynamoDB 数据库（上）](https://www.jianshu.com/p/c313b61d1cbf)
+* [Serverless 入门（七）- DynamoDB 数据库（中）](https://www.jianshu.com/p/05e7f4ccd6fe)
+* [Serverless 入门（八）- DynamoDB 数据库（下）](https://www.jianshu.com/p/0f9f1561ec46)
+* [Serverless 入门（九）- 权限](https://www.jianshu.com/p/97228749d761)
 
 ### TODO
 
