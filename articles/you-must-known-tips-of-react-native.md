@@ -11,7 +11,7 @@
   * gradle
   * build.gradle
   * grale.properties
-  * gradlew  gradlew.bat
+  * gradlew gradlew.bat
   * settting.gradle
 
 ---
@@ -36,4 +36,5 @@
   * adb uninstall com.company.appname
 
 ---
-d 
+
+d
